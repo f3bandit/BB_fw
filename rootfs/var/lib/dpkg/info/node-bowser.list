@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/node-bowser
+/usr/share/doc/node-bowser/changelog.Debian.gz
+/usr/share/doc/node-bowser/copyright
+/usr/lib
+/usr/lib/nodejs
+/usr/lib/nodejs/bowser
+/usr/lib/nodejs/bowser/package.json
+/usr/lib/nodejs/bowser/bowser.js

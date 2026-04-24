@@ -1,0 +1,6 @@
+d219af9e3a9572397b2c2bc6eb08b7cf  usr/sbin/in.tftpd
+13b505b52fec22f672e5ae99854aa3f7  usr/share/doc/tftpd/README
+9bad503cbb059fbb8ad2fa528f06df79  usr/share/doc/tftpd/changelog.Debian.gz
+8ae792bb8977653f378540d09db64efd  usr/share/doc/tftpd/changelog.gz
+51331c49191bdc9dbd62bfc341bec0a5  usr/share/doc/tftpd/copyright
+8e638f14287b86e29db463683c6182d4  usr/share/man/man8/in.tftpd.8.gz

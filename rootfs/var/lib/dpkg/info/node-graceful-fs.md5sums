@@ -1,0 +1,8 @@
+7fb9340b36e141a4944b13d205af3d1d  usr/lib/nodejs/graceful-fs/fs.js
+0af3af2b5945a7073883fb5273f25893  usr/lib/nodejs/graceful-fs/graceful-fs.js
+620fc152dc9bfa087f9901703b1e2616  usr/lib/nodejs/graceful-fs/legacy-streams.js
+1a9d734069ec6854ff845ca44b67d9a7  usr/lib/nodejs/graceful-fs/package.json
+af45c9957edb1ef798122235655af168  usr/lib/nodejs/graceful-fs/polyfills.js
+6382b07dea9e13b62fafbce17aa50bda  usr/share/doc/node-graceful-fs/README.md.gz
+c31d2c0a2fd7c532743993713d6aa8e2  usr/share/doc/node-graceful-fs/changelog.Debian.gz
+abaab5e7374073feaa8bb77105b978cd  usr/share/doc/node-graceful-fs/copyright

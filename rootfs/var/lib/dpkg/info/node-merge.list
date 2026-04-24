@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/node-merge
+/usr/share/doc/node-merge/changelog.Debian.gz
+/usr/share/doc/node-merge/copyright
+/usr/lib
+/usr/lib/nodejs
+/usr/lib/nodejs/merge
+/usr/lib/nodejs/merge/package.json
+/usr/lib/nodejs/merge/merge.js

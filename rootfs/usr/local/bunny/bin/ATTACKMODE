@@ -1,0 +1,436 @@
+#!/bin/bash
+
+# NOTE:
+# This script can run up to 20 seconds.
+# This script is waiting for USB Host to install drivers
+#      and negotiating dhcp client ip address if ETHERNET is specified.
+
+# Max number of attack modes is 3. E.g.
+#   HID + STORAGE + RNDIS_ETHERNET
+# Input parameters:
+# $1:           HID
+# $2: optional: STORAGE
+# $3: optional: RNDIS_ETHERNET or CDC_ETHERNET
+# $4,$5: optional: VID_0x04b3 PID_0x4010
+
+
+usage() {
+	echo "Usage: ATTACKMODE <mode1> [mode2] [mode3]"
+	echo
+	echo "List of supported combinations of attack modes are:"
+	echo "  ATTACKMODE ARMING                       (this is setup mode)"
+	echo "  ATTACKMODE SERIAL STORAGE                                       "
+	echo "                                          (vid/pid: 0xF000/0xFFF0)"
+	echo
+	echo "  ATTACKMODE HID                          (vid/pid: 0xF000/0xFF01)"
+	echo "  ATTACKMODE STORAGE						(vid/pid: 0xF000/0xFF10)"
+	echo "  ATTACKMODE SERIAL						(vid/pid: 0xF000/0xFF11)"
+	echo "  ATTACKMODE RNDIS_ETHERNET               (For Windows)"
+	echo "                                          (vid/pid: 0xF000/0xFF12)"
+	echo "  ATTACKMODE ECM_ETHERNET                 (for Mac and Linux)"
+	echo "                                          (vid/pid: 0xF000/0xFF13)"
+	echo "  ATTACKMODE HID SERIAL                   (vid/pid: 0xF000/0xFF14)"
+	echo "  ATTACKMODE HID STORAGE                  (vid/pid: 0xF000/0xFF02)"
+	echo "  ATTACKMODE HID RNDIS_ETHERNET           (For Windows)"
+	echo "                                          (vid/pid: 0xF000/0xFF03)"
+	echo "  ATTACKMODE HID ECM_ETHERNET             (for Mac and Linux)"
+	echo "                                          (vid/pid: 0xF000/0xFF04)"
+	echo "  ATTACKMODE HID STORAGE RNDIS_ETHERNET   (For Windows)"
+	echo "                                          (vid/pid: 0xF000/0xFF05)"
+	echo "  ATTACKMODE HID STORAGE ECM_ETHERNET     (for Mac and Linux)"
+	echo "                                          (vid/pid: 0xF000/0xFF06)"
+	echo "  ATTACKMODE SERIAL RNDIS_ETHERNET        (For Windows)"
+	echo "                                          (vid/pid: 0xF000/0xFF07)"
+	echo "  ATTACKMODE SERIAL ECM_ETHERNET          (for Mac and Linux)"
+	echo "                                          (vid/pid: 0xF000/0xFF08)"
+	echo "  ATTACKMODE STORAGE RNDIS_ETHERNET       (For Windows)"
+	echo "                                          (vid/pid: 0xF000/0xFF20)"
+	echo "  ATTACKMODE STORAGE ECM_ETHERNET         (for Mac and Linux)"
+	echo "                                          (vid/pid: 0xF000/0xFF21)"
+	echo "  un-supported                            (vid/pid: 0xF000/0xFEFF)"
+}
+
+# If there is no argument, print usage and exit.
+if [ "x$1" = "x" ] ; then
+	usage
+	exit 1
+fi
+
+
+# If ATTACKMODE is already called ...
+status=`lsmod | grep g_ether | cut -d' ' -f1`
+if [ "x$status" != "x" ] ; then
+	# If dhcp service is started, then stop it.
+	dhcp_service=$(systemctl list-units -t service | grep isc-dhcp-server.service)
+	if [ "x$dhcp_service" != "x" ]; then
+		/etc/init.d/isc-dhcp-server stop
+	fi
+
+	# If agetty service of USB serial is started, stop it.
+	serial_service=$(systemctl list-units -t service | grep "serial-getty@ttyGS0.service")
+	if [ "x$serial_service" != "x" ]; then
+		systemctl stop serial-getty@ttyGS0.service
+	fi
+
+	# Unload g_ether.ko
+	echo 0 > /sys/bus/platform/devices/sunxi_usb_udc/otg_role
+	sleep 1
+	rmmod g_ether
+
+	# Give USB host some time for software way of "unplug / replug USB".
+	sleep 5
+fi
+
+
+################################################################################
+# Below are default parameters to load g_ether.ko kernel module.
+################################################################################
+
+
+insmod_cmd="insmod /usr/local/bunny/lib/bunny_gadget.ko"
+str_mass_storage=""
+if [ -b /dev/mmcblk0p1 ]; then
+	str_mass_storage=" file=/dev/mmcblk0p1 stall=0 removable=1 nofua=0"
+else
+	str_mass_storage=" file=/dev/nandf stall=0 removable=1 nofua=0"
+fi
+
+# Need to re-install RNDIS driver on Windows if serialnumber is changed.
+serialnumber="ch000001"
+host_addr="00:11:22:33:44:55"
+dev_addr="5a:00:00:5a:5a:00"
+
+vid_default="0xF000"
+pid_default="0xFEFF"
+
+pid_setup_mode="0xFFF0"
+pid_hid_only="0xFF01"
+pid_hid_storage="0xFF02"
+pid_hid_rndis="0xFF03"
+pid_hid_ecm="0xFF04"
+pid_hid_storage_rndis="0xFF05"
+pid_hid_storage_ecm="0xFF06"
+pid_serial_rndis="0xFF07"
+pid_serial_ecm="0xFF08"
+
+pid_storage_only="0xFF10"
+pid_serial_only="0xFF11"
+vid_rndis_only="0x04b3"
+pid_rndis_only="0x4010"
+pid_ecm_only="0xFF13"
+pid_hid_serial="0xFF14"
+
+pid_storage_rndis="0xFF20"
+pid_storage_ecm="0xFF21"
+
+################################################################################
+# Function to start hid_reader
+################################################################################
+hid_reader() {
+	kill $(cat /var/run/hid_reader.pid 2>/dev/null) &>/dev/null
+	touch /tmp/hid_out
+	python /usr/local/bunny/hid_reader.py &
+	echo $! > /var/run/hid_reader.pid
+}
+
+################################################################################
+# Parse and run attack modes.
+################################################################################
+
+parse_mode() {
+	if [ "x$1" = "x" ] ; then
+		return
+	fi
+
+	case $1 in
+	ARMING)
+		has_storage=1
+		has_serial=1
+		;;
+	HID)
+		has_hid=1
+		;;
+	STORAGE)
+		has_storage=1
+		;;
+	RO_STORAGE)
+		has_storage=1
+		has_rostorage=1
+		;;
+	RNDIS_ETHERNET)
+		has_net=1
+		is_win=1
+		;;
+	ECM_ETHERNET)
+		has_net=1
+		is_win=
+		;;
+	AUTO_ETHERNET)
+		has_net=1
+		is_auto=1
+		is_win=
+		;;
+	SERIAL)
+		has_serial=1
+		;;
+	VID_*)
+		str_vid_custom=$1
+		str_vid_custom=${str_vid_custom#VID_}
+		;;
+	PID_*)
+		str_pid_custom=$1
+		str_pid_custom=${str_pid_custom#PID_}
+		;;
+	SN_*)
+		str_sn_custom=$1
+		str_sn_custom=${str_sn_custom#SN_}
+		;;
+	MAN_*)
+		str_man_custom=$1
+		str_man_custom=${str_man_custom#MAN_}
+		;;
+	RNDIS_SPEED_*)
+		str_speed_custom=$1
+		str_speed_custom=${str_speed_custom#RNDIS_SPEED_}
+		;;
+	ETHERNET_TIMEOUT_*)
+		str_timeout_custom=$1
+		str_timeout_custom=${str_timeout_custom#ETHERNET_TIMEOUT_}
+		;;
+	OFF)
+		exit 0
+		;;
+	esac
+}
+
+attack_mode_params() {
+	if [ "x$has_hid" = "x1" ]; then
+		mod_params="$mod_params is_hid=1"
+		hid_reader
+	fi
+
+	if [ "x$has_storage" = "x1" ]; then
+		mod_params="$mod_params is_storage=1 $str_mass_storage"
+	fi
+
+	if [ "x$has_rostorage" = "x1" ]; then
+		mod_params="$mod_params ro=1"
+	fi
+
+	if [ "x$has_net" = "x1" ]; then
+		if [ "x$is_win" = "x1" ]; then
+			mod_params="$mod_params is_rndis=1 host_addr=$host_addr dev_addr=$dev_addr"
+		else
+			mod_params="$mod_params is_cdc_ecm=1 host_addr=$host_addr dev_addr=$dev_addr"
+		fi
+	fi
+
+	if [ "x$has_serial" = "x1" ]; then
+		mod_params="$mod_params is_cdc_serial=1"
+	fi
+
+	mod_params="$mod_params idVendor=$vid_default"
+	if [ "x$has_hid" != "x1" ] && [ "x$has_storage" = "x1" ] && [ "x$has_net" != "x1" ] && [ "x$has_serial" = "x1" ]; then
+		# setup mode, storage + serial
+		mod_params="$mod_params idProduct=$pid_setup_mode"
+	elif [ "x$has_hid" = "x1" ] && [ "x$has_storage" != "x1" ] && [ "x$has_net" != "x1" ] && [ "x$has_serial" != "x1" ]; then
+		# hid only
+		mod_params="$mod_params idProduct=$pid_hid_only"
+	elif [ "x$has_hid" != "x1" ] && [ "x$has_storage" = "x1" ] && [ "x$has_net" != "x1" ] && [ "x$has_serial" != "x1" ]; then
+		# storage only
+		mod_params="$mod_params idProduct=$pid_storage_only"
+	elif [ "x$has_hid" != "x1" ] && [ "x$has_storage" != "x1" ] && [ "x$has_net" != "x1" ] && [ "x$has_serial" = "x1" ]; then
+		# serial only
+		mod_params="$mod_params idProduct=$pid_serial_only"
+	elif [ "x$has_hid" != "x1" ] && [ "x$has_storage" != "x1" ] && [ "x$has_net" = "x1" ] && [ "x$has_serial" != "x1" ]; then
+		# ethernet only, rndis or ecm
+		if [ "x$is_win" = "x1" ]; then
+			mod_params="$mod_params idVendor=$vid_rndis_only idProduct=$pid_rndis_only"
+		else
+			mod_params="$mod_params idProduct=$pid_ecm_only"
+		fi
+	elif [ "x$has_hid" = "x1" ] && [ "x$has_storage" = "x1" ] && [ "x$has_net" != "x1" ] && [ "x$has_serial" != "x1" ]; then
+		# hid + storage
+		mod_params="$mod_params idProduct=$pid_hid_storage"
+	elif [ "x$has_hid" = "x1" ] && [ "x$has_storage" != "x1" ] && [ "x$has_net" != "x1" ] && [ "x$has_serial" = "x1" ]; then
+		# hid + serial
+		mod_params="$mod_params idProduct=$pid_hid_serial"
+	elif [ "x$has_hid" = "x1" ] && [ "x$has_storage" != "x1" ] && [ "x$has_net" = "x1" ] && [ "x$has_serial" != "x1" ]; then
+		# hid + ethernet
+		if [ "x$is_win" = "x1" ]; then
+			mod_params="$mod_params idProduct=$pid_hid_rndis"
+		else
+			mod_params="$mod_params idProduct=$pid_hid_ecm"
+		fi
+	elif [ "x$has_hid" = "x1" ] && [ "x$has_storage" = "x1" ] && [ "x$has_net" = "x1" ] && [ "x$has_serial" != "x1" ]; then
+		# hid + storage + ethernet
+		if [ "x$is_win" = "x1" ]; then
+			mod_params="$mod_params idProduct=$pid_hid_storage_rndis"
+		else
+			mod_params="$mod_params idProduct=$pid_hid_storage_ecm"
+		fi
+	elif [ "x$has_hid" != "x1" ] && [ "x$has_storage" != "x1" ] && [ "x$has_net" = "x1" ] && [ "x$has_serial" = "x1" ]; then
+		# serial + ethernet
+		if [ "x$is_win" = "x1" ]; then
+			mod_params="$mod_params idProduct=$pid_serial_rndis"
+		else
+			mod_params="$mod_params idProduct=$pid_serial_ecm"
+		fi
+	elif [ "x$has_hid" != "x1" ] && [ "x$has_storage" = "x1" ] && [ "x$has_net" = "x1" ] && [ "x$has_serial" != "x1" ]; then
+		# storage + ethernet
+		if [ "x$is_win" = "x1" ]; then
+			mod_params="$mod_params idProduct=$pid_storage_rndis"
+		else
+			mod_params="$mod_params idProduct=$pid_storage_ecm"
+		fi
+	else
+		# unsupported, use default
+		mod_params=" $mod_params idProduct=$pid_default"
+	fi
+
+	# override vid/pid
+	if [ "x$str_vid_custom" != "x" ] && [ "x$str_pid_custom" != "x" ]; then
+		mod_params="$mod_params idVendor=$str_vid_custom idProduct=$str_pid_custom"
+	fi
+
+	# override manufacturer
+	if [ "x$str_man_custom" != "x" ]; then
+		mod_params="$mod_params iManufacturer=$str_man_custom"
+	fi
+
+	# override RNDIS speed
+	if [[ "x$str_speed_custom" != "x" && $str_speed_custom =~ ^-?[0-9]+$ && "$str_speed_custom" -gt "0" ]]; then
+		[[ "$str_speed_custom" -gt "4294967" ]] && str_speed_custom=4294967
+		speed=$((str_speed_custom*1000))
+		mod_params="$mod_params rndis_speed=$speed"
+	fi
+
+	# override serial
+	if [ "x$str_sn_custom" != "x" ]; then
+		mod_params="$mod_params iSerialNumber=$str_sn_custom"
+	else
+		mod_params="$mod_params iSerialNumber=$serialnumber"
+	fi
+
+	echo insmod_cmd = $insmod_cmd
+	echo mod_params = $mod_params
+}
+
+load_module() {
+#	echo "--- to $insmod_cmd $mod_params"
+
+	insmod_cmd="$insmod_cmd $mod_params"
+	/bin/sh -c "$insmod_cmd"
+	# sleep 1
+	echo 2 > /sys/bus/platform/devices/sunxi_usb_udc/otg_role
+}
+
+
+################################################################################
+# Parse /var/lib/dhcp/dhcpd.leases for TARGET_IP
+################################################################################
+
+output_folder=/tmp
+leasefile="/var/lib/dhcp/dhcpd.leases"
+
+check_dhcp_target_ip() {
+	target_ip=$(cat $leasefile | grep ^lease | awk '{ print $2 }' | sort | uniq)
+	target_hostname=$(cat $leasefile | grep hostname | awk '{print $2 }' \
+			| sort | uniq | tail -n1 | sed "s/^[ \t]*//" | sed 's/\"//g' | sed 's/;//')
+}
+
+# timeout = 20 seconds
+loop_dhcp_lease() {
+	rm -rf $output_folder/dhcp.time.txt
+
+	timeout=20
+	[[ "x$str_timeout_custom" != "x" ]] && [[ "x$is_auto" != "x" ]] && {
+		timeout=$str_timeout_custom
+	}
+
+	for i in `seq $timeout`;
+	do
+		check_dhcp_target_ip
+		if [ "x$target_ip" != "x" ]; then
+			TARGET_IP=$target_ip
+			TARGET_HOSTNAME=$target_hostname
+			HOST_IP=$(cat /etc/network/interfaces.d/usb0 | grep address | awk {'print $2'})
+			echo "got dhcp ip address after $i seconds"
+			echo "got dhcp ip address after $i seconds" > $output_folder/dhcp.time.txt
+			return 0
+		fi
+
+		sleep 1
+	done
+
+	return 1
+}
+
+
+post_load_module() {
+	# delete dhcp lease file, so 'source bunny_functions.sh' won't get valid TARGET_IP
+	# if target ip is not successfully negotiated, e.g. in 2 cases:
+	# a) attack mode does not include ETHERNET
+	# b) target is configured as manual ip address
+	rm -rf /var/lib/dhcp/dhcpd.leases
+
+	if [ "x$has_net" = "x1" ]; then
+		sleep 1
+		# start dhcp server
+		/etc/init.d/isc-dhcp-server start
+
+		loop_dhcp_lease
+		ret=$?
+
+		[[ "x$is_auto" != "x" ]] && {
+			[[ "$ret" == "1" ]] && {
+				$(echo $CMD | sed 's/AUTO_ETHERNET/RNDIS_ETHERNET/gI')
+				exit
+			}
+		}
+
+		echo TARGET_IP = $TARGET_IP, TARGET_HOSTNAME = $TARGET_HOSTNAME, HOST_IP = $HOST_IP
+	fi
+
+	if [ "x$has_serial" = "x1" ]; then
+		systemctl start getty.target
+		systemctl start serial-getty@ttyGS0.service
+	fi
+
+	# Host is quicker to load hid only driver.
+	# But, host takes time to load rndis, cdc ecm or mass stoage driver.
+
+	# We wait dhcp above, there is no need to further delay here.
+	if [ "x$has_net" = "x1" ]; then
+		return
+	fi
+
+	if [ "x$is_win" = "x1" ]; then
+		if [ "x$has_storage" = "x1" ] || [ "x$has_serial" = "x1" ]; then
+			sleep 2
+		else
+			sleep 2
+		fi
+	else
+		if [ "x$has_storage" = "x1" ] || [ "x$has_serial" = "x1" ]; then
+			sleep 4
+		else
+			sleep 2
+		fi
+	fi
+}
+
+
+CMD="$0 $@"
+
+for arg in "$@"
+do
+	parse_mode $(echo $arg | awk '{print toupper($0)}')
+done
+
+
+attack_mode_params
+load_module
+post_load_module
+
+exit 0

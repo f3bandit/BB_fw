@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/node-events
+/usr/share/doc/node-events/changelog.Debian.gz
+/usr/share/doc/node-events/changelog.gz
+/usr/share/doc/node-events/copyright
+/usr/lib
+/usr/lib/nodejs
+/usr/lib/nodejs/events
+/usr/lib/nodejs/events/package.json
+/usr/lib/nodejs/events/events.js

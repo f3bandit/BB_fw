@@ -1,0 +1,3 @@
+samba-common 	 /etc/samba/smb.conf
+postgresql-common 	 /etc/postgresql-common/createcluster.conf
+postgresql-common 	 /etc/logrotate.d/postgresql-common

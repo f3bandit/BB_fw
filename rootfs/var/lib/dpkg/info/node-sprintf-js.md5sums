@@ -1,0 +1,10 @@
+403904b398a71123fc7c5173dfbe5ffe  usr/lib/nodejs/sprintf-js/package.json
+7955cc90728c050c63177dd9c53f6b5e  usr/lib/nodejs/sprintf-js/src/angular-sprintf.js
+800088baaed0f3b4543c61cc80f6819f  usr/lib/nodejs/sprintf-js/src/angular-sprintf.min.js
+cec7f6de61f126e3cae8271e01f037d3  usr/lib/nodejs/sprintf-js/src/sprintf.js
+f57086f02fde2e8b26ed703c8b6fd36f  usr/lib/nodejs/sprintf-js/src/sprintf.min.js
+a7d08b1494d88061a0e7ddd6d7887079  usr/share/doc/node-sprintf-js/README.md.gz
+f8ab122b6d6c92a037636a08d099f6e4  usr/share/doc/node-sprintf-js/changelog.Debian.gz
+7e088006355295db266a0c72491cfc20  usr/share/doc/node-sprintf-js/copyright
+66d69967f3be7a542d4e2cd085f2f8a5  usr/share/doc/node-sprintf-js/examples/angular.html
+fe1ce16143316dff5d7c6efb45e165d9  usr/share/lintian/overrides/node-sprintf-js

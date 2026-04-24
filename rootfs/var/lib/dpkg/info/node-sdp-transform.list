@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/node-sdp-transform
+/usr/share/doc/node-sdp-transform/changelog.Debian.gz
+/usr/share/doc/node-sdp-transform/changelog.gz
+/usr/share/doc/node-sdp-transform/copyright
+/usr/lib
+/usr/lib/nodejs
+/usr/lib/nodejs/sdp-transform
+/usr/lib/nodejs/sdp-transform/package.json
+/usr/lib/nodejs/sdp-transform/lib
+/usr/lib/nodejs/sdp-transform/lib/parser.js
+/usr/lib/nodejs/sdp-transform/lib/index.js
+/usr/lib/nodejs/sdp-transform/lib/writer.js
+/usr/lib/nodejs/sdp-transform/lib/grammar.js

@@ -1,0 +1,2 @@
+  * Recommend (not suggest) node-daemon when packaged for Debian, and
+    patch code to suggest install the package if missing (not use npm).

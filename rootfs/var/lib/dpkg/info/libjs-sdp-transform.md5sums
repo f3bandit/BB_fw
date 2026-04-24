@@ -1,0 +1,13 @@
+8089d929bd4382650c6acdfff9b5d4b9  usr/share/doc/libjs-sdp-transform/CHANGELOG.md
+e28d312e52c09ecf96ae87d5819b7641  usr/share/doc/libjs-sdp-transform/README.md.gz
+67af7b157870885435814e14801bb8ec  usr/share/doc/libjs-sdp-transform/changelog.Debian.gz
+4743841996d99528a32c494130cd534d  usr/share/doc/libjs-sdp-transform/changelog.gz
+9a8a79f03b9cb2ee00eba44625cdeba4  usr/share/doc/libjs-sdp-transform/copyright
+fd5057c46f4884915776988b92006926  usr/share/javascript/sdp-transform/grammar.js
+2f2cf36d6660c6e4fd46c0d71fd7c3bd  usr/share/javascript/sdp-transform/grammar.min.js
+33c3385d0335e3fc0e84b129e18734fd  usr/share/javascript/sdp-transform/index.js
+011e8fea10f141a1e885120385e26063  usr/share/javascript/sdp-transform/index.min.js
+36a5eda2f583e4808602ae45451f1dc5  usr/share/javascript/sdp-transform/parser.js
+399d313594c1d7f0f619a8fe21175de9  usr/share/javascript/sdp-transform/parser.min.js
+fa3d3da4a7d6e284a8591a6bdc85b3b9  usr/share/javascript/sdp-transform/writer.js
+13c117709e60547a5e78eed28b02f7d2  usr/share/javascript/sdp-transform/writer.min.js

@@ -1,0 +1,8 @@
+allow-hotplug usb0
+auto usb0
+iface usb0 inet static
+         address 172.16.64.1
+         netmask 255.255.255.0
+         gateway 172.16.64.64
+         dns-nameserver 8.8.8.8
+         dns-nameserver 8.8.4.4

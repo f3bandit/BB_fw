@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/lib
+/usr/lib/nodejs
+/usr/lib/nodejs/jsonfile
+/usr/lib/nodejs/jsonfile/index.js
+/usr/lib/nodejs/jsonfile/package.json
+/usr/share
+/usr/share/doc
+/usr/share/doc/node-jsonfile
+/usr/share/doc/node-jsonfile/README.md.gz
+/usr/share/doc/node-jsonfile/changelog.Debian.gz
+/usr/share/doc/node-jsonfile/changelog.gz
+/usr/share/doc/node-jsonfile/copyright

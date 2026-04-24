@@ -1,0 +1,17 @@
+bb548790ff46514de82c6b59be687e92  usr/bin/dh_python-ply
+64ef4a629f3712bf5ed706b38681522b  usr/lib/python2.7/dist-packages/ply-3.4.egg-info/PKG-INFO
+8d26767c99e76ae7c025fd8129d94c7c  usr/lib/python2.7/dist-packages/ply-3.4.egg-info/SOURCES.txt
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python2.7/dist-packages/ply-3.4.egg-info/dependency_links.txt
+5e5859c72f4c1142181a8cc267aab1a0  usr/lib/python2.7/dist-packages/ply-3.4.egg-info/top_level.txt
+a0dd49de8896e668eec846885a65f017  usr/lib/python2.7/dist-packages/ply/__init__.py
+fc0fc0d6aacae9db331c244abce67063  usr/lib/python2.7/dist-packages/ply/cpp.py
+c772f1e71818df5f36167a4b637eb8d9  usr/lib/python2.7/dist-packages/ply/ctokens.py
+2a253bf32dd4312cc9c361e6389c2eec  usr/lib/python2.7/dist-packages/ply/lex.py
+7c2c428d8629a3d14c6b924a12425d9e  usr/lib/python2.7/dist-packages/ply/yacc.py
+9e496014ea0ac9f85da4377e045ceda5  usr/share/doc/python-ply/README.Debian
+ab9c72040d97600e58367350c401d3bc  usr/share/doc/python-ply/README.gz
+10d3c85c615417356aad2af4f97a7a5a  usr/share/doc/python-ply/TODO
+5c635d09acd4db1eb4189f2f2c4352e1  usr/share/doc/python-ply/changelog.Debian.gz
+793ab39580bdadc97379e7cd142ae1d7  usr/share/doc/python-ply/changelog.gz
+53ed3ae7f17e62c92468f701f19bb526  usr/share/doc/python-ply/copyright
+370e1f56614da3b7858becc165cb64ef  usr/share/man/man1/dh_python-ply.1.gz

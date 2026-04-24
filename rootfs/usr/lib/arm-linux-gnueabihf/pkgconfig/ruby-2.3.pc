@@ -1,0 +1,56 @@
+arch=arm-linux-gnueabihf
+sitearch=${arch}
+prefix=/usr
+exec_prefix=${prefix}
+bindir=${exec_prefix}/bin
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+MAJOR=2
+MINOR=3
+TEENY=0
+ruby_version=2.3.0
+RUBY_PROGRAM_VERSION=2.3.3
+RUBY_BASE_NAME=ruby
+RUBY_VERSION_NAME=${RUBY_BASE_NAME}-${ruby_version}
+RUBY_SO_NAME=ruby-2.3
+RUBY_INSTALL_NAME=${RUBY_BASE_NAME}2.3
+DEFFILE=
+archlibdir=${libdir}/${arch}
+sitearchlibdir=${libdir}/${sitearch}
+archincludedir=${includedir}/${arch}
+sitearchincludedir=${includedir}/${sitearch}
+ruby=${bindir}/${RUBY_INSTALL_NAME}
+rubylibprefix=${libdir}/${RUBY_BASE_NAME}
+rubyarchprefix=${archlibdir}/${RUBY_BASE_NAME}
+rubysitearchprefix=${sitearchlibdir}/${RUBY_BASE_NAME}
+rubylibdir=${rubylibprefix}/${ruby_version}
+vendordir=${rubylibprefix}/vendor_ruby
+sitedir=/usr/local/lib/site_ruby
+vendorlibdir=${vendordir}/${ruby_version}
+sitelibdir=${sitedir}/${ruby_version}
+rubyarchdir=${rubyarchprefix}/${ruby_version}
+vendorarchdir=${rubysitearchprefix}/vendor_ruby/${ruby_version}
+sitearchdir=/usr/local/lib/arm-linux-gnueabihf/site_ruby
+rubyhdrdir=${includedir}/${RUBY_VERSION_NAME}
+vendorhdrdir=${rubyhdrdir}/vendor_ruby
+sitehdrdir=${rubyhdrdir}/site_ruby
+rubyarchhdrdir=${archincludedir}/${RUBY_VERSION_NAME}
+vendorarchhdrdir=${sitearchincludedir}/${RUBY_VERSION_NAME}/vendor_ruby
+sitearchhdrdir=${sitearchincludedir}/${RUBY_VERSION_NAME}/site_ruby
+LIBPATH=
+LIBRUBY_A=lib${RUBY_SO_NAME}-static.a
+LIBRUBY_SO=lib${RUBY_SO_NAME}.so.${MAJOR}.${MINOR}.${TEENY}
+LIBRUBY=${LIBRUBY_SO}
+LIBRUBYARG_SHARED=-l${RUBY_SO_NAME}
+LIBRUBYARG_STATIC=-l${RUBY_SO_NAME}-static
+LIBRUBYARG=${LIBRUBYARG_SHARED}
+LIBS=-lpthread -lgmp -ldl -lcrypt -lm 
+DLDFLAGS=
+
+Name: Ruby
+Description: Object Oriented Script Language
+Version: ${ruby_version}
+URL: http://www.ruby-lang.org
+Cflags: -I${rubyarchhdrdir} -I${rubyhdrdir}
+Libs: ${DLDFLAGS} ${LIBRUBYARG_SHARED} ${LIBS}
+Requires:

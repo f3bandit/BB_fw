@@ -1,0 +1,10 @@
+TARGETS = cron isc-dhcp-server openbsd-inetd postgresql urandom resolvconf sendsigs rsyslog umountnfs.sh hwclock.sh networking umountfs umountroot halt reboot
+sendsigs: isc-dhcp-server openbsd-inetd postgresql
+rsyslog: isc-dhcp-server sendsigs openbsd-inetd postgresql
+umountnfs.sh: isc-dhcp-server rsyslog openbsd-inetd sendsigs postgresql
+hwclock.sh: rsyslog postgresql
+networking: umountnfs.sh isc-dhcp-server postgresql
+umountfs: networking umountnfs.sh resolvconf isc-dhcp-server urandom openbsd-inetd hwclock.sh postgresql
+umountroot: umountfs
+halt: umountroot
+reboot: umountroot

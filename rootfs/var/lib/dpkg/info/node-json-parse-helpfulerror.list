@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/lib
+/usr/lib/nodejs
+/usr/lib/nodejs/json-parse-helpfulerror
+/usr/lib/nodejs/json-parse-helpfulerror/index.js
+/usr/lib/nodejs/json-parse-helpfulerror/package.json
+/usr/share
+/usr/share/doc
+/usr/share/doc/node-json-parse-helpfulerror
+/usr/share/doc/node-json-parse-helpfulerror/README.md
+/usr/share/doc/node-json-parse-helpfulerror/changelog.Debian.gz
+/usr/share/doc/node-json-parse-helpfulerror/copyright

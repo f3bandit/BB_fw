@@ -1,0 +1,11 @@
+5d0ede85b5dc2b92e87eae179eadd3cd  usr/lib/nodejs/jsconfig/jsconfig.js
+1427aacbd2c4a06420bf73a77c98a52c  usr/lib/nodejs/jsconfig/util.js
+bb5caa611774261ef4f631fbf14fe5db  usr/share/doc/node-jsconfig/README.md
+757e1e9bce4722295f587e24892e47e4  usr/share/doc/node-jsconfig/buildinfo.gz
+071040dd0db966217fc5894fb158ed6e  usr/share/doc/node-jsconfig/changelog.Debian.gz
+315f4df36159950fc4a7a58fb3048726  usr/share/doc/node-jsconfig/copyright
+8b33defed2549d867aef599496a70380  usr/share/doc/node-jsconfig/examples/cli.js
+db2acbe9380d327d4f99be3dde3b618f  usr/share/doc/node-jsconfig/examples/config.default.js
+4b6afea4cad874d753f7784ec60c9e0c  usr/share/doc/node-jsconfig/examples/config.js
+97b67c278f822b2b04bf22d4d311d1b8  usr/share/doc/node-jsconfig/examples/simple.js
+e3442804f67fc78bb8012a94b0e9bd1c  usr/share/doc/node-jsconfig/examples/sync.js

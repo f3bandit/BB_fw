@@ -1,0 +1,17 @@
+fc544b49982a59bc70f4b8f57aa811ee  usr/lib/nodejs/cli/cli.js
+362d8e5602098683c12438ab2f6da3c3  usr/lib/nodejs/cli/index.js
+55483ead53dce840505d7bd4d10a3afb  usr/share/doc/node-cli/README.md.gz
+c7478aeeabd56a32edfebf9987da1faf  usr/share/doc/node-cli/TODO.Debian
+47589319bb18956eceb102c928f56b34  usr/share/doc/node-cli/buildinfo_all.gz
+962e0d860ae012c11b43491b826cde01  usr/share/doc/node-cli/changelog.Debian.gz
+7302690e037f5979de495134c79d1d09  usr/share/doc/node-cli/copyright
+8f9caeccee1553f623b40661df673c91  usr/share/doc/node-cli/examples/cat.js
+ffcb24d0b7d6e07d44d228e9c17dee01  usr/share/doc/node-cli/examples/command.js
+78b93dcb22b5df7ea8d9dbabfc1ef659  usr/share/doc/node-cli/examples/echo.js
+25c28fde7cba099877b2d8874de8a6a0  usr/share/doc/node-cli/examples/glob.js
+70a0429b355e9b10c34a5689da15b4bb  usr/share/doc/node-cli/examples/long_desc.js
+45880687cb91dd4a543b9777fb0f9e2c  usr/share/doc/node-cli/examples/progress.js
+5bf0ef7080b085df306b8afadf711dc0  usr/share/doc/node-cli/examples/sort.js
+9fa8b45671945a7dfce2111af1863e2e  usr/share/doc/node-cli/examples/spinner.js
+09ed4352c44ec61addb576cd2b2e1193  usr/share/doc/node-cli/examples/static.coffee
+6be7cc29e702efa1bb1b6a2023f0187f  usr/share/doc/node-cli/examples/static.js

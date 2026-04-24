@@ -1,0 +1,12 @@
+3cb29f8434fabc05c913065f36d51d66  usr/lib/nodejs/JSV/environments.js
+c8bcd7bb710583bc576bdfcca80d60ef  usr/lib/nodejs/JSV/json-schema-draft-01.js
+c9872527af98ef373dd3e56099709098  usr/lib/nodejs/JSV/json-schema-draft-02.js
+e223d3f9e83016b1c51ca178704634b3  usr/lib/nodejs/JSV/json-schema-draft-03.js
+62809856246f54fcd25213a9a8f3cb3c  usr/lib/nodejs/JSV/jsv.js
+fff91a093faa5c61c5562b0cae5d9713  usr/lib/nodejs/JSV/uri/schemes/urn.js
+a7c4a1498bdf44254852d4953b9c556e  usr/lib/nodejs/JSV/uri/uri.js
+c4a0e73cf76d73a2bc684db949fc35cc  usr/share/doc/node-jsv/README.md.gz
+9b9a0d435ff3e71fb386634ca803ded5  usr/share/doc/node-jsv/buildinfo.gz
+a7992db05c238c52154191eb6acf79d9  usr/share/doc/node-jsv/changelog.Debian.gz
+7a36c83b32389b94df9dfa3e2cf4e144  usr/share/doc/node-jsv/changelog.gz
+1d4dc4a2b233ff297e7779206ccc019b  usr/share/doc/node-jsv/copyright

@@ -1,0 +1,7 @@
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libfakeroot
+/etc
+/etc/ld.so.conf.d
+/etc/ld.so.conf.d/fakeroot-arm-linux-gnueabihf.conf

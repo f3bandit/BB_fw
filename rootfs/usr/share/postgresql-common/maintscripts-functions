@@ -1,0 +1,132 @@
+# This file contains common functionality for all postgresql server
+# package maintainer scripts.
+
+# arguments: version master package [package]
+_link_manpages() {
+    MANS=$(unset GREP_OPTIONS; dpkg -L $3 $4 $5 2>/dev/null|egrep '/man/.*\.[1-9](\.gz)?$' | grep -v "$2") || true
+    [ -n "$MANS" ] || return 0
+
+    SLAVES=$(for i in $MANS; do TARGET=$(echo $i | sed "s/postgresql\/$1\///"); echo -n " --slave $TARGET $(basename $i) $i"; done)
+    # pg_basebackup once moved from server to client; upgrades are still
+    # affected by this for quite a while, so remove this alternative before
+    # reinstalling it to avoid failure. This needs to be kept until we stop
+    # supporting upgrades from -9.1.
+    if [ "$2" = "psql.1.gz" ]; then
+	OUT=$(LC_ALL=C update-alternatives --display postmaster.1.gz 2> /dev/null) || true
+	if [ "${OUT#*auto mode}" != "$OUT" ] && [ "${OUT#*pg_basebackup.1.gz}" != "$OUT" ]; then
+            echo "Adjusting postmaster.1.gz alternatives for pg_basebackup move..."
+	    update-alternatives --remove postmaster.1.gz /usr/share/postgresql/9.1/man/man1/postmaster.1.gz
+	fi
+    fi
+
+    section=$(echo "$2" | sed -e 's/.*\.\(.*\)\..*/man\1/')
+    update-alternatives --install /usr/share/man/$section/$2 \
+	$2 /usr/share/postgresql/$1/man/$section/$2 \
+	$(echo "$1" | tr -cd 0-9) $SLAVES
+}
+
+# arguments: version master
+_unlink_manpages() {
+    section=$(echo "$2" | sed -e 's/.*\.\(.*\)\..*/man\1/')
+    update-alternatives --remove $2 /usr/share/postgresql/$1/man/$section/$2
+}
+
+_remove_tsearch() {
+   if [ -e /usr/share/postgresql/$1/tsearch_data ]; then
+       find /usr/share/postgresql/$1/tsearch_data -type l \( -name '*.dict' -o -name '*.affix' \) -exec rm '{}' \;
+   fi
+}
+
+# Determine and set system's default locale; we do not want to trust the
+# environment here, as ssh and sudo both propagate the user's locale from
+# potentially a remote host, and that might not even exist; also, we want to be
+# predictable.  /etc/default/locale overrides /etc/environment. Note that
+# /etc/environment is not a shell script, so we must be careful with parsing.
+set_system_locale() {
+    loc_vars="LC_COLLATE LC_CTYPE LC_MONETARY LC_MESSAGES LC_NUMERIC LC_TIME LC_ALL LANG LANGUAGE"
+    unset $loc_vars
+    for v in $loc_vars; do
+        unset val
+        val=`pam_getenv -l $v` || true
+        [ -z "$val" ] || export $v="$val"
+    done
+    [ -e /etc/default/locale ] && . /etc/default/locale || true
+    export $loc_vars
+}
+
+# arguments: <major version> <most recently configured package version>
+configure_version() {
+    VERSION="$1"
+
+    # Create a main cluster for given version ($1) if no cluster already exists
+    # for that version and we are installing from scratch.
+    [ "$VERSION" ] || { echo "Error: configure_version: need version parameter" >&2; exit 1; }
+    if [ ! -d "/etc/postgresql/$VERSION" ] || [ -z "$(ls /etc/postgresql/$VERSION)" ] || \
+       [ -z "$(ls /etc/postgresql/$VERSION/*/postgresql.conf 2>/dev/null)" ]; then
+        # skip creating the main cluster when this is not the first install, or
+        # when explicitely disabled ($create is 1/0/"")
+        create=$(perl -I/usr/share/postgresql-common -mPgCommon -e 'print PgCommon::config_bool(PgCommon::get_conf_value 0, 0, "createcluster.conf", "create_main_cluster")')
+        if [ -z "$2" ] && [ "$create" != "0" ]; then
+            set_system_locale
+            /usr/bin/pg_createcluster -u postgres $VERSION main || 
+                echo "Error: could not create default cluster. Please create it manually with
+
+  pg_createcluster $VERSION main --start
+
+or a similar command (see 'man pg_createcluster')." >&2
+        fi
+    fi
+
+    _link_manpages "$VERSION" postmaster.1.gz "postgresql-$1" "postgresql-contrib-$1"
+
+    if [ -x /etc/init.d/postgresql ] && [ ! -x /etc/init.d/postgresql-$VERSION ]; then
+       if [ -x "`which invoke-rc.d 2>/dev/null`" ]; then
+                invoke-rc.d postgresql start $VERSION || exit $?
+        else
+                /etc/init.d/postgresql start $VERSION || exit $?
+        fi
+
+    fi
+}
+
+stop_version() {
+    if [ -x /etc/init.d/postgresql ] && [ ! -x /etc/init.d/postgresql-$1 ]; then
+       if [ -x "`which invoke-rc.d 2>/dev/null`" ]; then
+                invoke-rc.d postgresql stop $1 || exit $?
+        else
+                /etc/init.d/postgresql stop $1 || exit $?
+        fi
+
+    fi
+}
+
+remove_version() {
+    _unlink_manpages "$1" postmaster.1.gz
+    _remove_tsearch "$1"
+}
+
+configure_client_version() {
+    _link_manpages "$1" psql.1.gz "postgresql-client-$1"
+}
+
+remove_client_version() {
+    _unlink_manpages "$1" psql.1.gz
+}
+
+configure_contrib_version() {
+    _link_manpages "$1" postmaster.1.gz "postgresql-$1" "postgresql-contrib-$1"
+}
+
+remove_contrib_version() {
+    # we still want to retain the alternatives for the server packages
+    _link_manpages "$1" postmaster.1.gz "postgresql-$1"
+}
+
+configure_doc_version() {
+    _link_manpages "$1" SPI_connect.3.gz "postgresql-doc-$1"
+}
+
+remove_doc_version() {
+    _unlink_manpages "$1" SPI_connect.3.gz
+}
+

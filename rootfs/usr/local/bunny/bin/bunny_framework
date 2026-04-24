@@ -1,0 +1,144 @@
+#!/bin/bash
+
+export PATH=$PATH:/usr/local/bunny/bin:/tools
+
+function reset_bootcount() {
+	mkdir -p /mnt/bootcount
+	mount -t vfat /dev/nanda /mnt/bootcount
+
+	echo "0" > /mnt/bootcount/bootcnt.txt
+	rm -f /mnt/bootcount/tar_fail.txt
+
+	umount /dev/nanda
+	rm -rf /mnt/bootcount
+}
+
+function init_bt() {
+	stty -F /dev/ttyS1 speed 115200 cs8 -cstopb -parenb -echo -ixon -icanon -opost 
+	stty -F /dev/ttyS1 speed 115200 cs8 -cstopb -parenb -echo -ixon -icanon -opost 
+	echo -n -e "AT+NAME=BB2\r\n" > /dev/ttyS1
+	echo -n -e "AT+RESET\r\n" > /dev/ttyS1
+	echo -n -e "AT+AUTH=$((100000 + $RANDOM % 999999))\r\n" > /dev/ttyS1
+	echo -n -e "AT+RESET\r\n" > /dev/ttyS1
+	echo -n -e "AT+UPAUTH=$((100000 + $RANDOM % 999999))\r\n" > /dev/ttyS1
+	echo -n -e "AT+RESET\r\n" > /dev/ttyS1
+	echo -n -e "AT+ADV=0\r\n" > /dev/ttyS1
+	echo -n -e "AT+RESET\r\n" > /dev/ttyS1
+	echo -n -e "AT+ROLE=2\r\n" > /dev/ttyS1
+	echo -n -e "AT+RESET\r\n" > /dev/ttyS1
+}
+
+function init_bunny() {
+	reset_bootcount
+
+	echo 0 > /sys/bus/platform/devices/sunxi_usb_udc/otg_role
+
+	echo 0 > /proc/sys/kernel/hung_task_timeout_secs
+
+	echo ondemand | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor &> /dev/null
+
+	dmesg -c > /dev/null
+}
+
+function update_languages() {
+	mkdir -p /root/udisk/languages
+	cp /root/udisk/languages/*.json /usr/local/bunny/lib/languages/
+}
+
+function install_tools() {
+	mkdir -p /tools
+	mkdir -p /root/udisk/tools
+
+	dpkg -i /root/udisk/tools/*.deb &> /tmp/dpkg_log
+	rm -rf /root/udisk/tools/*.deb
+
+	cp -rf /root/udisk/tools/* /tools/ &> /dev/null
+	rm -rf /root/udisk/tools/*
+
+	[[ -f /tools/install.sh ]] && {
+		bash /tools/install.sh
+		rm /tools/install.sh
+	}
+
+	sync
+}
+
+function check_switch() {
+	local SWITCH1=$(cat /sys/class/gpio_sw/PA8/data)
+	local SWITCH2=$(cat /sys/class/gpio_sw/PL4/data)
+	local SWITCH3=$(cat /sys/class/gpio_sw/PL3/data)
+
+	[[ "$SWITCH1" == "0" ]] && echo "switch1" && return 0
+	[[ "$SWITCH2" == "0" ]] && echo "switch2" && return 0
+	[[ "$SWITCH3" == "0" ]] && echo "switch3" && return 0
+	echo "invalid" && return 0
+}
+
+function mount_udisk() {
+	mkdir -p /root/udisk
+	mount -o sync /dev/nandf /root/udisk
+}
+
+function unmount_udisk() {
+	sync
+	umount /dev/nandf
+}
+
+function install_payload() {
+	local install_file="/root/udisk/payloads/${1}/install.sh"
+	[[ -f $install_file ]] && {
+		LED SETUP
+		cp $install_file /tmp/install_payload.sh
+		sed -i 's/\r//g' /tmp/install_payload.sh
+		bash -c "${install_file}"
+		[[ "$?" == "0" ]] && {
+			mv "$install_file" "${install_file}.INSTALLED"
+			sync
+		}
+		LED OFF
+		rm /tmp/install_payload.sh
+	}
+}
+
+function run_payload() {
+	local payload="/root/udisk/payloads/${1}/payload.txt"
+	[[ -f $payload ]] && {
+		cp $payload /tmp/payload.sh
+		sed -i 's/\r//g' /tmp/payload.sh
+
+		export SWITCH_POSITION=$1
+		for f in /root/udisk/payloads/extensions/*; do source $f; done
+		[[ -f /root/udisk/config.txt ]] && source <(sed 's/\r//g' /root/udisk/config.txt)
+		PATH=$PATH bash -c '/tmp/payload.sh'
+	} || return 1
+}
+
+function hop() {
+	init_bunny
+	mount_udisk
+	init_bt
+
+	local switch=$(check_switch)
+	case $switch in
+		"switch3" | "invalid")
+			LED SETUP
+
+			update_languages
+			install_tools
+
+			LED B SLOW
+
+			sleep 1
+			run_payload "arming" || /bin/bash -c "ATTACKMODE SERIAL STORAGE"
+			;;
+		*)
+			install_payload $switch
+			run_payload $switch
+			;;
+	esac
+
+	unmount_udisk
+}
+
+hop &
+exit 0

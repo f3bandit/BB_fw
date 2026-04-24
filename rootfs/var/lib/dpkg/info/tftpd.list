@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/tftpd
+/usr/share/doc/tftpd/changelog.Debian.gz
+/usr/share/doc/tftpd/README
+/usr/share/doc/tftpd/changelog.gz
+/usr/share/doc/tftpd/copyright
+/usr/share/man
+/usr/share/man/man8
+/usr/share/man/man8/in.tftpd.8.gz
+/usr/sbin
+/usr/sbin/in.tftpd
+/usr/share/man/man8/tftpd.8.gz

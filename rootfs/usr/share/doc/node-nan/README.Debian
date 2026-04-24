@@ -1,0 +1,41 @@
+== nan.h == 
+
+"""
+A header file filled with macro and utility goodness for making addon
+development for Node.js easier across versions 0.8, 0.10 and 0.11, and
+eventually 0.12.
+
+[...]
+"""
+
+On Debian system this header file (for now) gets installed into
+
+  /usr/include/
+
+so the header file nan.h gets indeed installed into the system's default
+include path.
+
+Upstream's README.md suggests to install the nan.h file into the
+nan Node.js module folder (/usr/lib/nodejs/nan/ on Debian systems) and
+hack the include path into binding.gyp files like this:
+
+"""
+"include_dirs" : [
+    ...
+    "<!(node -p -e \"require('path').dirname(require.resolve('nan'))\")"
+    ...
+]
+"""
+
+On Debian systems this should not be necessary (as opposed to other
+deployment methods like npm). However, as various other Node.js modules
+might try to find nan.h in that require.resolve('nan') folder, we provide
+a symlink there for now, pointing to /usr/include/nan.h.
+
+This may undergo some change in the future, but for now this seems like a
+solution that (a) goes well with the Debian policy and (b) will not break
+other Node.js modules that depend on nan.h.
+
+
+light+love
+Mike Gabriel <sunweaver@debian.org>, 20130903

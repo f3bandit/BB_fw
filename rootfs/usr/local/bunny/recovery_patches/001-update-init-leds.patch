@@ -1,0 +1,55 @@
+diff -Nur a/root/blink_led.initrd.sh b/root/blink_led.initrd.sh
+--- a/root/blink_led.initrd.sh	2017-02-09 22:25:01.000000000 -0800
++++ b/root/blink_led.initrd.sh	2017-03-22 18:39:59.000000000 -0700
+@@ -1,36 +1,19 @@
+ #!/bin/sh
+
+-led_gpio=PL6
++RED="PL10"
++BLUE="PL7"
++GREEN="PL6"
+
+-blink_led() {
+-	# stop all leds
+-	echo 0 > /sys/class/gpio_sw/PL6/data
+-	echo 0 > /sys/class/gpio_sw/PL7/data
+-	echo 0 > /sys/class/gpio_sw/PL10/data
++echo 0 > /sys/class/gpio_sw/${RED}/data
++echo 0 > /sys/class/gpio_sw/${GREEN}/data
++echo 0 > /sys/class/gpio_sw/${BLUE}/data
+
+-	case $1 in
+-	red)
+-		led_gpio=PL10
+-		;;
+-	green)
+-		led_gpio=PL6
+-		;;
+-	blue)
+-		led_gpio=PL7
+-		;;
+-	*)
+-		echo "error:"
+-		exit 0
+-		;;
+-	esac
+-
+-	while [ 1 ]
+-	do
+-		echo 1 > /sys/class/gpio_sw/${led_gpio}/data
+-		sleep 1
+-		echo 0 > /sys/class/gpio_sw/${led_gpio}/data
+-		sleep 1
+-	done
+-}
+-
+-blink_led $1
++while true
++do
++    echo 1 > /sys/class/gpio_sw/${RED}/data
++    sleep 0.2
++    echo 0 > /sys/class/gpio_sw/${RED}/data
++    echo 1 > /sys/class/gpio_sw/${BLUE}/data
++    sleep 0.2
++    echo 0 > /sys/class/gpio_sw/${BLUE}/data
++done
