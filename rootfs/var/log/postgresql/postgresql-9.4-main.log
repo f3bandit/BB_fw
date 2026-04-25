@@ -1,7 +1,0 @@
-2021-01-29 09:08:21 UTC [3722-1] LOG:  could not bind IPv6 socket: Cannot assign requested address
-2021-01-29 09:08:21 UTC [3722-2] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
-2021-01-29 09:08:22 UTC [3726-1] LOG:  database system was shut down at 2021-01-29 09:08:17 UTC
-2021-01-29 09:08:22 UTC [3726-2] LOG:  MultiXact member wraparound protections are now enabled
-2021-01-29 09:08:22 UTC [3722-3] LOG:  database system is ready to accept connections
-2021-01-29 09:08:22 UTC [3734-1] LOG:  autovacuum launcher started
-2021-01-29 09:08:22 UTC [3738-1] [unknown]@[unknown] LOG:  incomplete startup packet

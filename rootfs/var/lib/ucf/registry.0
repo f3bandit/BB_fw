@@ -1,2 +1,0 @@
-samba-common 	 /etc/samba/smb.conf
-postgresql-common 	 /etc/postgresql-common/createcluster.conf

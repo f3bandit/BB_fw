@@ -1,7 +1,0 @@
-7b7da9ecbd3b97a5e021305012ab57ff  usr/lib/nodejs/jsesc/bin/jsesc
-f993adc075b83311a64c9e1ce71611e3  usr/lib/nodejs/jsesc/jsesc.js
-2765f25376a272c65097b0d31b1b47f2  usr/lib/nodejs/jsesc/package.json
-ce36fab2f47bc6a2a9270b302e5e1141  usr/share/doc/node-jsesc/README.md.gz
-cd3109a1c90239855324aa90e0fe3ef9  usr/share/doc/node-jsesc/changelog.Debian.gz
-cc005cfb5dbd188670820cc6ca510dc7  usr/share/doc/node-jsesc/copyright
-98afaccf45f66125bea822ec54b607ea  usr/share/man/man1/jsesc.1.gz
