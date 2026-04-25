@@ -1,16 +1,43 @@
+# Firmware blobs / extracted images
+*.tar
 *.tar.gz
+*.tgz
 *.img
-*.rootfs
-*.rootfs.tar
-*.md5
 *.bin
 *.ko
-*.tar
-*.zip
-*.rar
-*.extracted/
-_nand*.extracted/
-analysis/tmp/
+*.rootfs
+*.rootfs.tar
+*.squashfs
+*.ext4
+*.jffs2
+*.ubifs
+*.ubi
+*.md5
+*.sha1
+*.sha256
+
+# Large analysis output
+*.log
+*.tmp
+*.cache
+*.dump
+*.strings
+*.hexdump
+*.entropy
+
+# Local working directories
+work/
+mount/
+mounted/
+extract/
+extracted/
+out/
+build/
+dist/
+
+# OS / editor noise
 .DS_Store
 Thumbs.db
-*.swp
+desktop.ini
+.vscode/
+.idea/

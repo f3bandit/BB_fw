@@ -30,3 +30,17 @@ U-Boot / boot env
   -> /usr/local/bunny/bin/bunny_framework
   -> payload execution from /root/udisk/payloads/
 ```
+
+
+## Current Project Structure
+
+```text
+BB_fw/
+├─ docs/       Reverse-engineering notes and conclusions
+├─ raw/        Raw captured evidence and command output
+├─ tools/      Helper scripts grouped by task
+├─ rebuild/    Rebuild/repack workspace and notes
+└─ .gitignore  Blocks firmware blobs and generated output
+```
+
+Firmware archives, NAND dumps, rootfs images, kernel modules, and generated analysis output should stay outside Git.
