@@ -1,0 +1,287 @@
+f3ban@FA506NF:~/bb/nand$ grep -R "init" ~/bb/mount/nandg/root -n | head -100
+grep -R "switch_root" ~/bb/mount/nandg/root -n
+grep -R "pivot_root" ~/bb/mount/nandg/root -n
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/dash: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/rmdir: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/wdctl: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/sync: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/hostname: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/mount: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/cp: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/nano: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/ss: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/ls: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/tailf: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/rbash: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/chgrp: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/bunzip2: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/mv: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/kmod: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/df: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/rm: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/dnsdomainname: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/login: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/sh: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/systemd-hwdb: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/tar: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/netstat: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/less: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/chmod: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/more: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/lsblk: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/rnano: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/nisdomainname: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/dd: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/udevadm: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/umount: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/sleep: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/kill: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/dir: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/mktemp: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/ln: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/cat: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/chown: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/bash: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/ps: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/readlink: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/date: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/mountpoint: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/mkdir: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/lsmod: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/stty: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/mknod: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/bzip2: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/ypdomainname: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/gzip: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/pidof: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/echo: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/grep: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/false: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/touch: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/ip: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/true: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/bzip2recover: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/tempfile: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/bzcat: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/fuser: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/sh.distrib: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/su: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/run-parts: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/pwd: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/findmnt: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/lesskey: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/uname: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/dmesg: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/sed: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/domainname: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/lessecho: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/vdir: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/root: Permission denied
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/rarp: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/insmod: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/dumpe2fs: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/fsck.ext4: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/getty: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/mke2fs: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/mkfs.ext3: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/sfdisk: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/badblocks: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/plipconfig: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/pivot_root: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/modprobe: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/ctrlaltdel: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/unix_chkpwd: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/runuser: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/mkfs.ext4: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/raw: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/isosize: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/start-stop-daemon: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/switch_root: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/fsfreeze: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/swapoff: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/cfdisk: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/sulogin: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/blkdiscard: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/mkfs.bfs: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/swaplabel: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/route: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/mii-tool: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/ifquery: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/devlink: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/mkfs: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/agetty: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/udevadm: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/sysctl: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/e2image: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/rmmod: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/fsck.cramfs: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/tune2fs: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/mkhomedir_helper: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/debugfs: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/fdisk: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/e2label: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/pam_tally2: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/tipc: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/wipefs: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/slattach: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/lsmod: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/killall5: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/blkid: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/logsave: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/rtmon: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/fstab-decode: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/fsck.ext3: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/fsck.ext2: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/mkfs.cramfs: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/ifconfig: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/findfs: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/nameif: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/resize2fs: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/zramctl: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/fsck: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/modinfo: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/ip: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/losetup: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/swapon: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/depmod: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/fsck.minix: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/fstrim: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/bridge: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/ldconfig: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/e2fsck: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/rtacct: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/mkswap: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/mkfs.ext2: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/iptunnel: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/chcpu: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/blockdev: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/e2undo: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/dhclient: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/ifdown: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/mkfs.minix: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/ipmaddr: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/ifup: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/unix_update: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/hwclock: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/pam_tally: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/tc: binary file matches
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/python2.7-minimal/copyright:47:the Open Source Definition).  Historically, most, but notall, Python
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/python2.7-minimal/copyright:315:     A C-program for MT19937, with initialization improved 2002/1/26.
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/python2.7-minimal/copyright:318:     Before using, initialize the state by using init_genrand(seed)
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/python2.7-minimal/copyright:319:     or init_by_array(init_key, key_length).
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/python2.7-minimal/copyright:951:Files: Lib/ensurepip/_bundled/pip-*.whl/pip/_vendor/requests/packages/urllib3/packages/ssl_match_hostname/__init__.py
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/libkrb5support0/copyright:294:   lib/gssapi/mechglue/g_init_sec_context.c
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/libkrb5support0/copyright:295:   lib/gssapi/mechglue/g_initialize.c
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/libkrb5support0/copyright:317:and the initial implementation of incremental propagation,including
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/libkrb5support0/copyright:599:The KCM Mach RPC definition file used on OS X has the following
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/libkmod2/TODO:52:    - readdir() in /sys/modules: dir without a 'initstate' file means the
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/libkmod2/README:43:module-init-tools project.
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/libkmod2/README:75:Compatibility with module-init-tools
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/libkmod2/README:78:kmod replaces module-init-tools, which is end-of-life. Most of its tools are
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/libkmod2/README:81:long deprecated on module-init-tools" to "it would be too much trouble to
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/libkmod2/README:128:* module-init-tools used /proc/modules to parse module info. kmod uses
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/sysvinit-utils/copyright:9:In version 2.85 the package was split into three (sysvinit, sysv-rc,
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/sysvinit-utils/copyright:10:and initscripts) in order to make room for alternative rc mechanisms.
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/sysvinit-utils/copyright:15:                92K sysvinit-2.86.tar.gz
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/sysvinit-utils/copyright:16:Alternate-Site: sunsite.unc.edu /pub/Linux/system/daemons/init
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/sysvinit-utils/copyright:17:                92K sysvinit-2.86.tar.gz
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/sysvinit-utils/copyright:19:Send patches to sysvinit-devel@nongnu.org.
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/sysvinit-utils/copyright:21:The sysvinit package in Debian is maintained as an alioth project.
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/sysvinit-utils/copyright:22:The project page is http://alioth.debian.org/projects/pkg-sysvinit/.
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/sysvinit-utils/copyright:25:the members pkg-sysvinit project.
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/nano/nano.html:38:span.roman {font-family: initial; font-weight: normal}
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/nano/nano.html:1194:must be specified.  This means that, after an initial instance of &quot;sr&quot;,
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/nano/faq.html:237:<blockquote><p>If you are looking to use a Free Software program similar to Pine, and Emacs is not your thing, you should definitely take a look at <a href="http://www.mutt.org/">mutt</a>. It is a full-screen, console based mail program that actually has a lot more flexibility than Pine, but has a keymap included in the distribution that allows you to use the same keystrokes as Pine would to send and receive mail. It's also under the GNU General Public License, version 2.0.<P>
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/libgcc1/copyright:291:0. Definitions.
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/libkrb5-3/copyright:294:   lib/gssapi/mechglue/g_init_sec_context.c
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/libkrb5-3/copyright:295:   lib/gssapi/mechglue/g_initialize.c
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/libkrb5-3/copyright:317:and the initial implementation of incremental propagation, including
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/libkrb5-3/copyright:599:The KCM Mach RPC definition file used on OS X has the following
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/libkrb5-3/README.Debian:6:  contains the basic kinit, klist, and kdestroy binaries to manage user
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/libunistring0/copyright:25:Files: m4/init-package-version.m4
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/libpython2.7-stdlib/copyright:47:the Open Source Definition).  Historically, most, but not all, Python
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/libpython2.7-stdlib/copyright:315:     A C-program for MT19937, with initialization improved 2002/1/26.
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/libpython2.7-stdlib/copyright:318:     Before using, initialize the state by using init_genrand(seed)
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/libpython2.7-stdlib/copyright:319:     or init_by_array(init_key, key_length).
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/libpython2.7-stdlib/copyright:951:Files: Lib/ensurepip/_bundled/pip-*.whl/pip/_vendor/requests/packages/urllib3/packages/ssl_match_hostname/__init__.py
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/perl-base/copyright:2101: Definitions
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/perl-base/copyright:2540:  original cannot possibly (by definition) be withheld from you. Also
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/perl-base/copyright:2541:  by definition, You (singular) have all the rights to this code
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/util-linux/modems-with-agetty.txt:5:Using a comms program to initialize the modem
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/util-linux/modems-with-agetty.txt:8:* Use kermit or minicom to initialize the modem to
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/util-linux/modems-with-agetty.txt:49:in the command field of the appropriate line in /etc/inittab to start
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/util-linux/modems-with-agetty.txt:55:Use the agetty -I command line option to specify a modem init string, like
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/util-linux/modems-with-agetty.txt:57:/etc/inittab.
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/util-linux/modems-with-agetty.txt:64:If you're using simpleinit (part of this package) instead of the SYSV
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/util-linux/modems-with-agetty.txt:65:compatible init (you're most likely using the SYSV one!) then you must
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/util-linux/modems-with-agetty.txt:69:initialized each time agetty starts.
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/util-linux/howto-tests.txt:55: The tests touch your /etc/fstab, initialize loop devices or scsi_debug devices
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/util-linux/blkid.txt:7:directly initialize cache file via (second parameter is cache
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/util-linux/blkid.txt:63:and deallocated.  To initialize the blkid cache, blkid_get_cache()
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/python2.7/copyright:47:the Open Source Definition).  Historically, most, but not all, Python
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/python2.7/copyright:315:     A C-program for MT19937, with initialization improved 2002/1/26.
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/python2.7/copyright:318:     Before using, initialize the state by using init_genrand(seed)
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/python2.7/copyright:319:     or init_by_array(init_key, key_length).
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/python2.7/copyright:951:Files: Lib/ensurepip/_bundled/pip-*.whl/pip/_vendor/requests/packages/urllib3/packages/ssl_match_hostname/__init__.py
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/python2.7/python-policy.html/ch-python3.html:101:should use Python 3 from the initial upload, new upstream versions for existing
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/publicsuffix/copyright:30: 1. Definitions
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/publicsuffix/copyright:45:     means Source Code Form to which the initial Contributor has attached
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/publicsuffix/copyright:53:     (a) that the initial Contributor has attached the notice described
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/publicsuffix/copyright:72:     whether at the time of the initial grant or subsequently,any and
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/publicsuffix/copyright:106:     purposes of this definition, "control" means (a) the power, direct
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/publicsuffix/copyright:275: 5.2. If You initiate litigation against any entity by asserting a patent
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/kmod/TODO:52:        - readdir() in /sys/modules: dir without a 'initstate' file means the
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/kmod/README:43:module-init-tools project.
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/kmod/README:75:Compatibility with module-init-tools
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/kmod/README:78:kmod replaces module-init-tools, which is end-of-life. Most of its tools are
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/kmod/README:81:long deprecated on module-init-tools" to "it would be too much trouble to
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/kmod/README:128:* module-init-tools used /proc/modules to parse module info. kmod uses
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/login/copyright:59:Also, thanks for Dennis L. Mumaugh for the initial shadow password
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/libgssapi-krb5-2/copyright:294:   lib/gssapi/mechglue/g_init_sec_context.c
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/libgssapi-krb5-2/copyright:295:   lib/gssapi/mechglue/g_initialize.c
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/libgssapi-krb5-2/copyright:317:and the initial implementation of incremental propagation, including
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/libgssapi-krb5-2/copyright:599:The KCM Mach RPC definition file used on OS X has the following
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/ca-certificates/copyright:45: 1. Definitions
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/ca-certificates/copyright:60:     means Source Code Form to which the initial Contributor has attached
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/ca-certificates/copyright:68:     (a) that the initial Contributor has attached the notice described
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/ca-certificates/copyright:87:     whether at the time of the initial grant or subsequently, any and
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/ca-certificates/copyright:121:     purposes of this definition, "control" means (a) the power, direct
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/ca-certificates/copyright:290: 5.2. If You initiate litigation against any entity by asserting a patent
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/python-minimal/copyright:39:the Open Source Definition).  Historically, most, but not all, Python
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/krb5-locales/copyright:294:   lib/gssapi/mechglue/g_init_sec_context.c
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/krb5-locales/copyright:295:   lib/gssapi/mechglue/g_initialize.c
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/krb5-locales/copyright:317:and the initial implementation of incremental propagation, including
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/krb5-locales/copyright:599:The KCM Mach RPC definition file used on OS X has the following
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/libpam-modules/examples/upperLOWER.c:72:     FD_ZERO(&readers);                    /* initialize reading mask */
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/libpython2.7-minimal/copyright:47:the Open Source Definition).  Historically, most, but not all, Python
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/libpython2.7-minimal/copyright:315:     A C-program for MT19937, with initialization improved 2002/1/26.
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/libpython2.7-minimal/copyright:318:     Before using, initialize the state by using init_genrand(seed)
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/libpython2.7-minimal/copyright:319:     or init_by_array(init_key, key_length).
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/libpython2.7-minimal/copyright:951:Files: Lib/ensurepip/_bundled/pip-*.whl/pip/_vendor/requests/packages/urllib3/packages/ssl_match_hostname/__init__.py
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/libgpm2/copyright:16:The initial changes while packaging were minor :-
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/libxtables12/copyright:482: Definitions:
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/libstdc++6/copyright:291:0. Definitions.
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/lsb-base/copyright:8:Files: init-functions.d/50-ubuntu-logging
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/lsb-base/copyright:12:Files: init-functions
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/adduser/examples/adduser.local.conf.examples/skel/dot.bashrc:2:#          ~/.bashrc: Personal initialisation script for Bash           #
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/doc/adduser/examples/adduser.local.conf.examples/skel/dot.bash_profile:2:#       ~/.bash_profile: Personal initialisation script for Bash        #
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/root: Permission denied
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/switch_root: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/man/man1/w.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/bin/pyversions: No such file or directory
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/bin/w: No such file or directory
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/lib/ssl/private: Permission denied
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/lib/python2.7/sitecustomize.py: No such file or directory
+grep: /home/f3ban/bb/mount/nandg/root/lost+found: Permission denied
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/root: Permission denied
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/pivot_root: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/man/man1/w.1.gz: No such file or directory
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/bash-completion/completions/pivot_root:1:_pivot_root_module()
+/home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/share/bash-completion/completions/pivot_root:21:complete -F _pivot_root_module pivot_root
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/bin/pyversions: No such file or directory
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/bin/qemu-arm-static: binary file matches
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/bin/w: No such file or directory
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/lib/ssl/private: Permission denied
+grep: /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/usr/lib/python2.7/sitecustomize.py: No such file or directory
+grep: /home/f3ban/bb/mount/nandg/root/lost+found: Permission denied
+f3ban@FA506NF:~/bb/nand$

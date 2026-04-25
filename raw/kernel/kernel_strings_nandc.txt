@@ -1,0 +1,53 @@
+f3ban@FA506NF:~/bb/nand$ strings ~/bb/nand/nandc.img | head -50
+strings ~/bb/nand/nandc.img | grep -i cmdline
+Linux-3.4.39
+@ #!
+!1C "
+ -- System halted
+Attempting division by 0!
+Uncompressing Linux...
+decompressor returned an error
+ done, booting the kernel.
+invalid distance too far back
+invalid distance code
+invalid literal/length code
+incorrect header check
+unknown compression method
+invalid window size
+invalid block type
+invalid stored block lengths
+too many length or distance symbols
+invalid code lengths set
+invalid bit length repeat
+invalid literal/lengths set
+invalid distances set
+incorrect data check
+Out of memory while allocating output buffer
+Out of memory while allocating input buffer
+Out of memory while allocating z_stream
+Out of memory while allocating workspace
+Not a gzip file
+header error
+read error
+uncompression error
+(IF%
+        IPfo
+TwOuUu
+wWU&/
+V[S;zB
+rKI.wG-H
+*eNXQ
+IJ&j
+T|KQ
+n$U     *
+R|SD[
+wlZh
+<.1h?/
+%3      g
+%-~3
++FI:
+_oQ9g?D=
+>C9%
+1]U5!
+qeJ
+f3ban@FA506NF:~/bb/nand$

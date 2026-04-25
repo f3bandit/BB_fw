@@ -1,0 +1,22 @@
+f3ban@FA506NF:~/bb/nand$ strings ~/bb/nand/nandb.img | head -50
+bootdelay=0
+bootcmd=run setargs_nand boot_normal
+console=ttyS0,115200
+nand_root=/dev/nandd
+mmc_root=/dev/block/mmcblk0p7
+init=/init
+loglevel=4
+mac=
+wifi_mac=
+bt_mac=
+specialstr=
+setargs_nand=setenv bootargs console=${console} root=${nand_root} rootfstype=ext4 init=${init} loglevel=${loglevel} vmalloc=384M partitions=${partitions}
+setargs_mmc=setenv bootargs console=${console} root=${mmc_root} rootfstype=ext4 init=${init} loglevel=${loglevel} vmalloc=384M partitions=${partitions}
+boot_normal=sunxi_flash read 40007800 boot; bootm 40007800
+boot_recovery=sunxi_flash read 40007800 recovery;boota 40007800 recovery
+boot_fastboot=fastboot
+recovery_key_value_max=0x13
+recovery_key_value_min=0x10
+fastboot_key_value_max=0x8
+fastboot_key_value_min=0x2
+f3ban@FA506NF:~/bb/nand$

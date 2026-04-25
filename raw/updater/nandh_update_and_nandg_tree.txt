@@ -1,0 +1,237 @@
+f3ban@FA506NF:~/bb/nand$ sudo find ~/bb/mount/nandh/update -maxdepth 3 -type f -ls | head -100
+       15      4 -rw-r--r--   1 root     root           41 Jan 30  2021 /home/f3ban/bb/mount/nandh/update/uImage.md5
+       16 1167356 -rw-r--r--   1 root     root     1195366400 Jan 30  2021 /home/f3ban/bb/mount/nandh/update/cherry.rootfs.tar
+       17    4184 -rw-r--r--   1 root     root        4280832 Jan 30  2021 /home/f3ban/bb/mount/nandh/update/uImage
+       14       4 -rw-r--r--   1 root     root             52 Jan 30  2021 /home/f3ban/bb/mount/nandh/update/cherry.rootfs.tar.md5
+f3ban@FA506NF:~/bb/nand$ sudo find ~/bb/mount/nandg/root -maxdepth 4 -type f -ls | head -100
+     1400     76 -rwxr-xr-x   1 root     root        75440 Jan 24  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/dash
+     1410     28 -rwxr-xr-x   1 root     root        26572 Feb 22  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/rmdir
+     1482     24 -rwxr-xr-x   1 root     root        22368 Mar  7  2018 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/wdctl
+     1469      4 -rwxr-xr-x   1 root     root          140 Mar 14  2016 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/zfgrep
+     1389     24 -rwxr-xr-x   1 root     root        22464 Feb 22  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/sync
+     1428     16 -rwxr-xr-x   1 root     root        14076 Jul  3  2016 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/hostname
+     1424     32 -rwxr-xr-x   1 root     root        30832 Mar  7  2018 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/mount
+     1413     84 -rwxr-xr-x   1 root     root        84288 Feb 22  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/cp
+     1454    156 -rwxr-xr-x   1 root     root       158268 Jan 10  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/nano
+     1436     84 -rwxr-xr-x   1 root     root        83108 Nov 24  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/ss
+     1430     88 -rwxr-xr-x   1 root     root        88488 Feb 22  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/ls
+     1402     20 -rwxr-xr-x   1 root     root        18248 Mar  7  2018 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/tailf
+     1466      4 -rwxr-xr-x   2 root     root         2301 Mar 14  2016 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/uncompress
+     1457     40 -rwxr-xr-x   1 root     root        38940 Feb 22  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/chgrp
+     1411     28 -rwxr-xr-x   3 root     root        26448 Jan 29  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/bunzip2
+     1459      8 -rwxr-xr-x   1 root     root         5938 Mar 14  2016 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/zgrep
+     1475     80 -rwxr-xr-x   1 root     root        80200 Feb 22  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/mv
+     1462    100 -rwxr-xr-x   1 root     root        99944 Dec 25  2016 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/kmod
+     1401      4 -rwxr-xr-x   1 root     root          946 Apr  2  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/which
+     1394     56 -rwxr-xr-x   1 root     root        55740 Feb 22  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/df
+     1414     40 -rwxr-xr-x   1 root     root        38940 Feb 22  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/rm
+     1387     36 -rwxr-xr-x   1 root     root        34968 May 17  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/login
+     1420      8 -rwxr-xr-x   1 root     root         7765 Feb 28  2016 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/lesspipe
+     1388     52 -rwxr-xr-x   1 root     root        51140 Jul 21  2019 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/systemd-hwdb
+     1446      4 -rwxr-xr-x   1 root     root         1297 Jan 29  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/bzmore
+     1441    264 -rwxr-xr-x   1 root     root       266936 Oct 30  2016 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/tar
+     1467    104 -rwxr-xr-x   1 root     root       102924 Dec 26  2016 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/netstat
+     1399    112 -rwxr-xr-x   1 root     root       114532 Feb 28  2016 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/less
+     1386     40 -rwxr-xr-x   1 root     root        38908 Feb 22  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/chmod
+     1427     32 -rwxr-xr-x   1 root     root        30620 Mar  7  2018 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/more
+     1472     56 -rwxr-xr-x   1 root     root        55524 Mar  7  2018 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/lsblk
+     1466      4 -rwxr-xr-x   2 root     root         2301 Mar 14  2016 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/gunzip
+     1417     56 -rwxr-xr-x   1 root     root        55372 Feb 22  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/dd
+     1470    300 -rwxr-xr-x   1 root     root       305228 Jul 21  2019 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/udevadm
+     1396     24 -rwxr-xr-x   1 root     root        22492 Mar  7  2018 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/umount
+     1415     24 -rwxr-xr-x   1 root     root        22464 Feb 22  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/sleep
+     1478     20 -rwxr-xr-x   1 root     root        17928 May 17  2018 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/kill
+     1479     88 -rwxr-xr-x   1 root     root        88488 Feb 22  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/dir
+     1447     28 -rwxr-xr-x   1 root     root        26612 Feb 22  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/mktemp
+     1406     40 -rwxr-xr-x   1 root     root        38952 Feb 22  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/ln
+     1426     28 -rwxr-xr-x   1 root     root        26600 Feb 22  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/cat
+     1450     44 -rwxr-xr-x   1 root     root        43044 Feb 22  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/chown
+     1409    728 -rwxr-xr-x   1 root     root       742852 May 15  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/bash
+     1471     84 -rwxr-xr-x   1 root     root        83624 May 17  2018 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/ps
+     1448     28 -rwxr-xr-x   1 root     root        26584 Feb 22  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/readlink
+     1432     72 -rwxr-xr-x   1 root     root        71732 Feb 22  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/date
+     1422     12 -rwxr-xr-x   1 root     root         9952 Mar  7  2018 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/mountpoint
+     1407     48 -rwxr-xr-x   1 root     root        47244 Feb 22  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/mkdir
+     1455      4 -rwxr-xr-x   1 root     root           28 Jan 23  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/fgrep
+     1429     52 -rwxr-xr-x   1 root     root        51192 Feb 22  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/stty
+     1405     44 -rwxr-xr-x   1 root     root        43116 Feb 22  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/mknod
+     1411     28 -rwxr-xr-x   3 root     root        26448 Jan 29  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/bzip2
+     1391     68 -rwxr-xr-x   1 root     root        68480 Mar 14  2016 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/gzip
+     1438      4 -rwxr-xr-x   1 root     root         2140 Jan 29  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/bzdiff
+     1460      4 -rwxr-xr-x   1 root     root         2131 Mar 14  2016 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/zforce
+     1473     24 -rwxr-xr-x   1 root     root        22440 Feb 22  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/echo
+     1456    136 -rwxr-xr-x   1 root     root       136848 Jan 23  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/grep
+     1474     24 -rwxr-xr-x   1 root     root        22436 Feb 22  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/false
+     1449     60 -rwxr-xr-x   1 root     root        59444 Feb 22  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/touch
+     1397    304 -rwxr-xr-x   1 root     root       309752 Nov 24  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/ip
+     1392     24 -rwxr-xr-x   1 root     root        22436 Feb 22  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/true
+     1444      4 -rwxr-xr-x   1 root     root         1777 Mar 14  2016 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/zcmp
+     1439     12 -rwxr-xr-x   1 root     root         9856 Jan 29  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/bzip2recover
+     1443     12 -rwxr-xr-x   1 root     root         9848 Apr  2  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/tempfile
+     1434      8 -rwxr-xr-x   1 root     root         4877 Jan 29  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/bzexe
+     1451      8 -rwxr-xr-x   1 root     root         5927 Mar 14  2016 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/gzexe
+     1411     28 -rwxr-xr-x   3 root     root        26448 Jan 29  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/bzcat
+     1440     28 -rwxr-xr-x   1 root     root        26900 Aug 17  2015 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/fuser
+     1385      8 -rwxr-xr-x   1 root     root         5047 Mar 14  2016 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/znew
+     1433      4 -rwxr-xr-x   1 root     root         3642 Jan 29  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/bzgrep
+     1442      8 -rwxr-xr-x   1 root     root         5764 Mar 14  2016 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/zdiff
+     1412     32 -rwxr-xr-x   1 root     root        30968 May 17  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/su
+     1398      4 -rwxr-xr-x   1 root     root         1910 Mar 14  2016 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/zmore
+     1465     16 -rwxr-xr-x   1 root     root        14184 Apr  2  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/run-parts
+     1445     24 -rwxr-xr-x   1 root     root        22492 Feb 22  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/pwd
+     1453     44 -rwxr-xr-x   1 root     root        44020 Mar  7  2018 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/findmnt
+     1403      4 -rwxr-xr-x   1 root     root         1937 Mar 14  2016 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/zcat
+     1390     16 -rwxr-xr-x   1 root     root        14464 Feb 28  2016 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/lesskey
+     1461     24 -rwxr-xr-x   1 root     root        22460 Feb 22  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/uname
+     1480     52 -rwxr-xr-x   1 root     root        51340 Mar  7  2018 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/dmesg
+     1425     68 -rwxr-xr-x   1 root     root        67824 Feb  4  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/sed
+     1404      4 -rwxr-xr-x   1 root     root          140 Mar 14  2016 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/zegrep
+     1464      4 -rwxr-xr-x   1 root     root           28 Jan 23  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/egrep
+     1393     12 -rwxr-xr-x   1 root     root         9692 Feb 28  2016 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/lessecho
+     1481     88 -rwxr-xr-x   1 root     root        88488 Feb 22  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/vdir
+     1419      4 -rwxr-xr-x   1 root     root         2037 Mar 14  2016 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/zless
+     1294     24 -rwxr-xr-x   1 root     root        23640 Dec 26  2016 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/rarp
+     1336     24 -rwxr-xr-x   1 root     root        21972 Sep 25  2019 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/dumpe2fs
+     1356     96 -rwxr-xr-x   1 root     root        95872 Sep 25  2019 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/mke2fs
+     1359     72 -rwxr-xr-x   1 root     root        72264 Mar  7  2018 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/sfdisk
+     1353     24 -rwxr-xr-x   1 root     root        21980 Sep 25  2019 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/badblocks
+     1320     12 -rwxr-xr-x   1 root     root         9848 Dec 26  2016 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/plipconfig
+     1331      8 -rwxr-xr-x   1 root     root         5792 Mar  7  2018 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/pivot_root
+     1372     16 -rwxr-xr-x   1 root     root        14088 Mar  7  2018 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/ctrlaltdel
+     1297     24 -rwxr-xr-x   1 root     root        22344 May 27  2017 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/unix_chkpwd
+     1347     24 -rwxr-xr-x   1 root     root        22548 Mar  7  2018 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/runuser
+     1351     12 -rwxr-xr-x   1 root     root         9920 Mar  7  2018 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/raw
+     1298     16 -rwxr-xr-x   1 root     root        14116 Mar  7  2018 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/isosize
+     1339     28 -rwxr-xr-x   1 root     root        26656 Jun 26  2018 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/start-stop-daemon
+     1343     12 -rwxr-xr-x   1 root     root         9932 Mar  7  2018 /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/sbin/switch_root
+f3ban@FA506NF:~/bb/nand$ sudo diff -qr ~/bb/mount/nandd ~/bb/mount/nandg/root/cherry.rootfs/rootfs | head -100
+Files /home/f3ban/bb/mount/nandd/bin/bash and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/bash differ
+Only in /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin: bunzip2
+Only in /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin: bzcat
+Only in /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin: bzcmp
+Only in /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin: bzdiff
+Only in /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin: bzegrep
+Only in /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin: bzexe
+Only in /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin: bzfgrep
+Only in /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin: bzgrep
+Only in /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin: bzip2
+Only in /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin: bzip2recover
+Only in /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin: bzless
+Only in /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin: bzmore
+Files /home/f3ban/bb/mount/nandd/bin/cat and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/cat differ
+Only in /home/f3ban/bb/mount/nandd/bin: chacl
+Files /home/f3ban/bb/mount/nandd/bin/chgrp and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/chgrp differ
+Files /home/f3ban/bb/mount/nandd/bin/chmod and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/chmod differ
+Files /home/f3ban/bb/mount/nandd/bin/chown and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/chown differ
+Files /home/f3ban/bb/mount/nandd/bin/cp and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/cp differ
+Only in /home/f3ban/bb/mount/nandd/bin: cpio
+Files /home/f3ban/bb/mount/nandd/bin/dash and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/dash differ
+Files /home/f3ban/bb/mount/nandd/bin/date and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/date differ
+Files /home/f3ban/bb/mount/nandd/bin/dd and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/dd differ
+Files /home/f3ban/bb/mount/nandd/bin/df and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/df differ
+Files /home/f3ban/bb/mount/nandd/bin/dir and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/dir differ
+Files /home/f3ban/bb/mount/nandd/bin/dmesg and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/dmesg differ
+Files /home/f3ban/bb/mount/nandd/bin/dnsdomainname and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/dnsdomainname differ
+Files /home/f3ban/bb/mount/nandd/bin/domainname and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/domainname differ
+Files /home/f3ban/bb/mount/nandd/bin/echo and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/echo differ
+Files /home/f3ban/bb/mount/nandd/bin/egrep and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/egrep differ
+Files /home/f3ban/bb/mount/nandd/bin/false and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/false differ
+Files /home/f3ban/bb/mount/nandd/bin/fgrep and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/fgrep differ
+Files /home/f3ban/bb/mount/nandd/bin/findmnt and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/findmnt differ
+Files /home/f3ban/bb/mount/nandd/bin/fuser and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/fuser differ
+Only in /home/f3ban/bb/mount/nandd/bin: getfacl
+Files /home/f3ban/bb/mount/nandd/bin/grep and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/grep differ
+Files /home/f3ban/bb/mount/nandd/bin/gzip and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/gzip differ
+Files /home/f3ban/bb/mount/nandd/bin/hostname and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/hostname differ
+Files /home/f3ban/bb/mount/nandd/bin/ip and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/ip differ
+Only in /home/f3ban/bb/mount/nandd/bin: journalctl
+Files /home/f3ban/bb/mount/nandd/bin/kill and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/kill differ
+Files /home/f3ban/bb/mount/nandd/bin/kmod and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/kmod differ
+Files /home/f3ban/bb/mount/nandd/bin/less and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/less differ
+Files /home/f3ban/bb/mount/nandd/bin/lessecho and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/lessecho differ
+Files /home/f3ban/bb/mount/nandd/bin/lessfile and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/lessfile differ
+Files /home/f3ban/bb/mount/nandd/bin/lesskey and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/lesskey differ
+Files /home/f3ban/bb/mount/nandd/bin/lesspipe and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/lesspipe differ
+Files /home/f3ban/bb/mount/nandd/bin/ln and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/ln differ
+Files /home/f3ban/bb/mount/nandd/bin/login and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/login differ
+Only in /home/f3ban/bb/mount/nandd/bin: loginctl
+Files /home/f3ban/bb/mount/nandd/bin/ls and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/ls differ
+Files /home/f3ban/bb/mount/nandd/bin/lsblk and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/lsblk differ
+Files /home/f3ban/bb/mount/nandd/bin/lsmod and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/lsmod differ
+Only in /home/f3ban/bb/mount/nandd/bin: machinectl
+Files /home/f3ban/bb/mount/nandd/bin/mkdir and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/mkdir differ
+Files /home/f3ban/bb/mount/nandd/bin/mknod and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/mknod differ
+Files /home/f3ban/bb/mount/nandd/bin/mktemp and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/mktemp differ
+Files /home/f3ban/bb/mount/nandd/bin/more and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/more differ
+Files /home/f3ban/bb/mount/nandd/bin/mount and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/mount differ
+Files /home/f3ban/bb/mount/nandd/bin/mountpoint and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/mountpoint differ
+Only in /home/f3ban/bb/mount/nandd/bin: mt
+Only in /home/f3ban/bb/mount/nandd/bin: mt-gnu
+Files /home/f3ban/bb/mount/nandd/bin/mv and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/mv differ
+Files /home/f3ban/bb/mount/nandd/bin/nano and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/nano differ
+Only in /home/f3ban/bb/mount/nandd/bin: nc
+Only in /home/f3ban/bb/mount/nandd/bin: nc.traditional
+Only in /home/f3ban/bb/mount/nandd/bin: netcat
+Files /home/f3ban/bb/mount/nandd/bin/netstat and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/netstat differ
+Files /home/f3ban/bb/mount/nandd/bin/nisdomainname and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/nisdomainname differ
+Only in /home/f3ban/bb/mount/nandd/bin: ping
+Only in /home/f3ban/bb/mount/nandd/bin: ping6
+Files /home/f3ban/bb/mount/nandd/bin/ps and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/ps differ
+Files /home/f3ban/bb/mount/nandd/bin/pwd and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/pwd differ
+Files /home/f3ban/bb/mount/nandd/bin/rbash and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/rbash differ
+Files /home/f3ban/bb/mount/nandd/bin/readlink and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/readlink differ
+Files /home/f3ban/bb/mount/nandd/bin/rm and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/rm differ
+Files /home/f3ban/bb/mount/nandd/bin/rmdir and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/rmdir differ
+Files /home/f3ban/bb/mount/nandd/bin/rnano and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/rnano differ
+Files /home/f3ban/bb/mount/nandd/bin/run-parts and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/run-parts differ
+Files /home/f3ban/bb/mount/nandd/bin/sed and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/sed differ
+Only in /home/f3ban/bb/mount/nandd/bin: setfacl
+Files /home/f3ban/bb/mount/nandd/bin/sh and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/sh differ
+Files /home/f3ban/bb/mount/nandd/bin/sh.distrib and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/sh.distrib differ
+Files /home/f3ban/bb/mount/nandd/bin/sleep and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/sleep differ
+Files /home/f3ban/bb/mount/nandd/bin/ss and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/ss differ
+Files /home/f3ban/bb/mount/nandd/bin/stty and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/stty differ
+Files /home/f3ban/bb/mount/nandd/bin/su and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/su differ
+Files /home/f3ban/bb/mount/nandd/bin/sync and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/sync differ
+Only in /home/f3ban/bb/mount/nandd/bin: systemctl
+Only in /home/f3ban/bb/mount/nandd/bin: systemd
+Only in /home/f3ban/bb/mount/nandd/bin: systemd-ask-password
+Only in /home/f3ban/bb/mount/nandd/bin: systemd-escape
+Only in /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin: systemd-hwdb
+Only in /home/f3ban/bb/mount/nandd/bin: systemd-inhibit
+Only in /home/f3ban/bb/mount/nandd/bin: systemd-machine-id-setup
+Only in /home/f3ban/bb/mount/nandd/bin: systemd-notify
+Only in /home/f3ban/bb/mount/nandd/bin: systemd-tmpfiles
+Only in /home/f3ban/bb/mount/nandd/bin: systemd-tty-ask-password-agent
+Files /home/f3ban/bb/mount/nandd/bin/tailf and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/tailf differ
+Files /home/f3ban/bb/mount/nandd/bin/tar and /home/f3ban/bb/mount/nandg/root/cherry.rootfs/rootfs/bin/tar differ
+f3ban@FA506NF:~/bb/nand$ sudo file ~/bb/mount/nandg/init
+sudo sed -n '1,120p' ~/bb/mount/nandg/init
+/home/f3ban/bb/mount/nandg/init: POSIX shell script, ASCII text executable
+#!/bin/sh -e
+# used for initramfs
+export PATH
+. /lib/debian-installer/init-debug
+debugshell "just booted"
+
+mount /run
+mkdir -p /run/lock
+mount /proc
+mount /sys
+/lib/debian-installer/start-udev
+
+init='/bin/busybox init'
+for i in $(cat /proc/cmdline); do
+        case $i in
+                init=/init|init=init)
+                        # Avoid endless loop
+                        : ;;
+                init=*)
+                        init=${i#init=} ;;
+                noshell)
+                        sed -i '/^tty[23]/s/^/#/' /etc/inittab ;;
+        esac
+done
+debugshell "before init"
+exec $init
+f3ban@FA506NF:~/bb/nand$

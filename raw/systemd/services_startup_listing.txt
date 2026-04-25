@@ -1,0 +1,23 @@
+f3ban@FA506NF:~/bb/nand$ ls ~/bb/mount/nandd/etc/init.d/
+ls ~/bb/mount/nandd/lib/systemd/
+ls ~/bb/mount/nandd/etc/systemd/
+README                  halt                   mountall.sh            postgresql  rsync           udev-finish
+bootlogs                hostname.sh            mountdevsubfs.sh       procps      rsyslog         umountfs
+bootmisc.sh             hwclock.sh             mountkernfs.sh         rc          screen-cleanup  umountnfs.sh
+checkfs.sh              isc-dhcp-server        mountnfs-bootclean.sh  rc.local    sendsigs        umountroot
+checkroot-bootclean.sh  killprocs              mountnfs.sh            rcS         single          urandom
+checkroot.sh            kmod                   networking             reboot      skeleton        x11-common
+cron                    motd                   ntp                    resolvconf  ssh
+dbus                    mountall-bootclean.sh  openbsd-inetd          rmnologin   udev
+debian-fixup       systemd-activate       systemd-initctl        systemd-networkd-wait-online  systemd-shutdownd
+network            systemd-backlight      systemd-journald       systemd-quotacheck            systemd-sleep
+system             systemd-binfmt         systemd-localed        systemd-random-seed           systemd-socket-proxyd
+system-generators  systemd-bootchart      systemd-logind         systemd-readahead             systemd-sysctl
+system-preset      systemd-bus-proxyd     systemd-logind-launch  systemd-remount-fs            systemd-timedated
+system-shutdown    systemd-cgroups-agent  systemd-machined       systemd-reply-password        systemd-timesyncd
+system-sleep       systemd-cryptsetup     systemd-modules-load   systemd-resolved              systemd-udevd
+systemd            systemd-fsck           systemd-multi-seat-x   systemd-rfkill                systemd-update-utmp
+systemd-ac-power   systemd-hostnamed      systemd-networkd       systemd-shutdown              systemd-user-sessions
+bootchart.conf  logind.conf  ntp-units.d    system       timesyncd.conf  user.conf
+journald.conf   network      resolved.conf  system.conf  user
+f3ban@FA506NF:~/bb/nand$

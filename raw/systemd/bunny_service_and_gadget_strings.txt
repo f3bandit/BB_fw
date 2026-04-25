@@ -1,0 +1,68 @@
+f3ban@FA506NF:~/bb/nand$ cat ~/bb/mount/nandd/lib/systemd/system/bunny.service
+[Unit]
+After=network.target auditd.service
+
+[Service]
+Type=forking
+KillMode=process
+ExecStart=/usr/local/bunny/bin/bunny_framework
+
+[Install]
+WantedBy=multi-user.target
+
+f3ban@FA506NF:~/bb/nand$ cat ~/bb/mount/nandd/lib/systemd/system/bunny.service > ~/bb/reports/bunny.service.txt
+f3ban@FA506NF:~/bb/nand$ cat ~/bb/mount/nandd/usr/local/bunny/bin/bunny_framework > ~/bb/reports/bunny_framework.txt
+f3ban@FA506NF:~/bb/nand$ strings ~/bb/mount/nandd/usr/local/bunny/lib/bunny_gadget.ko | head -50
+@` H@
+USBS
+##0t0
+USBC"
+fsg_setup
+start_out_transfer
+start_in_transfer
+gs_write_complete
+hidg_set_report_complete
+uoin
+gen_ndis_query_resp
+usb_composite_setup_continue
+handle_exception
+get_next_command
+finish_reply
+composite_setup
+gserial_setup
+gen_ndis_set_resp
+rndis_msg_parser
+init
+use_eem
+stall
+luns
+nofua
+cdrom
+removable
+file
+host_addr
+dev_addr
+qmult
+iSerialNumber
+iProduct
+iManufacturer
+bcdDevice
+idProduct
+idVendor
+rndis_speed
+is_storage
+is_hid
+is_cdc_serial
+is_cdc_ecm
+is_rndis
+Mass Storage
+license=GPL
+author=David Brownell, Benedikt Spanger
+description=RNDIS/Ethernet Gadget
+parm=use_eem:use CDC EEM mode
+parmtype=use_eem:bool
+parm=stall:false to prevent bulk stalls
+parmtype=stall:bool
+f3ban@FA506NF:~/bb/nand$ ls ~/bb/mount/nandd/etc/systemd/system/multi-user.target.wants/
+bunny.service  inetd.service  postgresql.service  remote-fs.target  rsyslog.service  ssh.service  sysfixtime.service
+f3ban@FA506NF:~/bb/nand$

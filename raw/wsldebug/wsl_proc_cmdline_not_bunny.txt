@@ -1,0 +1,54 @@
+f3ban@FA506NF:~/bb/nand$ cat /proc/cmdline
+dmesg | head -50
+initrd=\initrd.img WSL_ROOT_INIT=1 panic=-1 nr_cpus=12 hv_utils.timesync_implicit=1 console=hvc0 debug pty.legacy_count=0 WSL_ENABLE_CRASH_DUMP=1
+[    0.000000] Linux version 6.6.87.2-microsoft-standard-WSL2 (root@439a258ad544) (gcc (GCC) 11.2.0, GNU ld (GNU Binutils) 2.37) #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025
+[    0.000000] Command line: initrd=\initrd.img WSL_ROOT_INIT=1 panic=-1 nr_cpus=12 hv_utils.timesync_implicit=1 console=hvc0 debug pty.legacy_count=0 WSL_ENABLE_CRASH_DUMP=1
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+[    0.000000] BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009ffff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000000e0000-0x00000000000e0fff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x00000000001fffff] ACPI data
+[    0.000000] BIOS-e820: [mem 0x0000000000200000-0x00000000ba3fffff] usable
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] APIC: Static calls initialized
+[    0.000000] DMI not present or invalid.
+[    0.000000] Hypervisor detected: Microsoft Hyper-V
+[    0.000000] Hyper-V: privilege flags low 0xae7f, high 0x3b8030, hints 0x900c2c, misc 0xe0bed7b6
+[    0.000000] Hyper-V: Nested features: 0x4a0000
+[    0.000000] Hyper-V: LAPIC Timer Frequency: 0xc3500
+[    0.000000] Hyper-V: Using hypercall for remote TLB flush
+[    0.000000] clocksource: hyperv_clocksource_tsc_page: mask: 0xffffffffffffffff max_cycles: 0x24e6a1710, max_idle_ns:440795202120 ns
+[    0.000000] clocksource: hyperv_clocksource_msr: mask: 0xffffffffffffffff max_cycles: 0x24e6a1710, max_idle_ns: 440795202120 ns
+[    0.000000] tsc: Detected 3293.814 MHz processor
+[    0.000084] e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+[    0.000088] e820: remove [mem 0x000a0000-0x000fffff] usable
+[    0.000090] last_pfn = 0xba400 max_arch_pfn = 0x400000000
+[    0.000113] MTRR map: 5 entries (4 fixed + 1 variable; max 20), built from 8 variable MTRRs
+[    0.000115] x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT
+[    0.000168] Using GB pages for direct mapping
+[    0.000255] RAMDISK: [mem 0x04be4000-0x04e8bfff]
+[    0.000258] ACPI: Early table checksum verification disabled
+[    0.000262] ACPI: RSDP 0x00000000000E0000 000024 (v02 VRTUAL)
+[    0.000266] ACPI: XSDT 0x0000000000100000 000044 (v01 VRTUAL MICROSFT 00000001 MSFT 00000001)
+[    0.000270] ACPI: FACP 0x0000000000101000 000114 (v06 VRTUAL MICROSFT 00000001 MSFT 00000001)
+[    0.000273] ACPI: DSDT 0x00000000001011B8 01E11C (v02 MSFTVM DSDT01   00000001 INTL 20230628)
+[    0.000275] ACPI: FACS 0x0000000000101114 000040
+[    0.000277] ACPI: OEM0 0x0000000000101154 000064 (v01 VRTUAL MICROSFT 00000001 MSFT 00000001)
+[    0.000279] ACPI: SRAT 0x000000000011F2D4 000370 (v02 VRTUAL MICROSFT 00000001 MSFT 00000001)
+[    0.000280] ACPI: APIC 0x000000000011F644 0000A8 (v04 VRTUAL MICROSFT 00000001 MSFT 00000001)
+[    0.000282] ACPI: Reserving FACP table memory at [mem 0x101000-0x101113]
+[    0.000282] ACPI: Reserving DSDT table memory at [mem 0x1011b8-0x11f2d3]
+[    0.000283] ACPI: Reserving FACS table memory at [mem 0x101114-0x101153]
+[    0.000283] ACPI: Reserving OEM0 table memory at [mem 0x101154-0x1011b7]
+[    0.000284] ACPI: Reserving SRAT table memory at [mem 0x11f2d4-0x11f643]
+[    0.000284] ACPI: Reserving APIC table memory at [mem 0x11f644-0x11f6eb]
+[    0.000314] SRAT: PXM 0 -> APIC 0x00 -> Node 0
+[    0.000315] SRAT: PXM 0 -> APIC 0x01 -> Node 0
+[    0.000316] SRAT: PXM 0 -> APIC 0x02 -> Node 0
+[    0.000316] SRAT: PXM 0 -> APIC 0x03 -> Node 0
+[    0.000317] SRAT: PXM 0 -> APIC 0x04 -> Node 0
+[    0.000317] SRAT: PXM 0 -> APIC 0x05 -> Node 0
+[    0.000317] SRAT: PXM 0 -> APIC 0x06 -> Node 0
+f3ban@FA506NF:~/bb/nand$

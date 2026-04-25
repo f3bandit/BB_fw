@@ -1,0 +1,5 @@
+f3ban@FA506NF:~/bb/nand$ ls ~/bb/mount/nandd/usr/local/bunny/
+ls ~/bb/mount/nandd/usr/local/
+bin  hid_reader.py  lib  recovery_patches  udisk  update_recovery.sh
+bin  bunny  etc  games  go  include  lib  man  sbin  share  src
+f3ban@FA506NF:~/bb/nand$

@@ -1,0 +1,16 @@
+*.tar.gz
+*.img
+*.rootfs
+*.rootfs.tar
+*.md5
+*.bin
+*.ko
+*.tar
+*.zip
+*.rar
+*.extracted/
+_nand*.extracted/
+analysis/tmp/
+.DS_Store
+Thumbs.db
+*.swp

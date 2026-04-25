@@ -1,41 +1,32 @@
 # Bash Bunny Firmware Analysis
 
-This repository documents the internal architecture of the Bash Bunny firmware based on full NAND extraction and analysis.
+This repository documents the Bash Bunny firmware layout from NAND dumps, mounted filesystem images, bootloader strings, kernel inspection, systemd service discovery, USB gadget strings, payload runtime analysis, and update-staging contents.
 
-## Scope
+## What is in this repo
 
-This project covers:
+- `docs/` — clean, human-readable firmware notes.
+- `raw/` — renamed raw command output/transcripts used as evidence.
+- `tools/` — helper scripts for repeatable analysis.
+- `rebuild/` — notes and placeholders for a future custom firmware rebuild pipeline.
 
-- Boot chain (U-Boot → Kernel → RootFS)
-- systemd service structure
-- Bunny runtime framework
-- Payload execution system
-- USB gadget implementation
-- NAND partition layout
-- Firmware update mechanism
-- Modding and injection entry points
+## Important exclusions
 
-## Methodology
+Firmware blobs and NAND images are intentionally excluded from Git:
 
-Firmware was analyzed by:
+- `*.tar.gz`
+- `*.img`
+- `*.rootfs`
+- `*.rootfs.tar`
+- `*.md5`
 
-1. Dumping NAND partitions
-2. Mounting filesystem images
-3. Extracting update payloads
-4. Reverse engineering runtime scripts and services
+## Confirmed architecture
 
-## Key Findings
-
-- Debian Jessie-based root filesystem
-- systemd-managed boot process
-- Root-level payload execution (no sandboxing)
-- Custom USB gadget kernel module
-- File-based firmware update system (tar-based)
-
-## Structure
-
-See individual markdown files for detailed breakdowns.
-
-## Disclaimer
-
-For educational and research purposes only.
+```text
+U-Boot / boot env
+  -> Linux uImage kernel
+  -> ext4 live rootfs on nandd
+  -> systemd multi-user.target
+  -> bunny.service
+  -> /usr/local/bunny/bin/bunny_framework
+  -> payload execution from /root/udisk/payloads/
+```

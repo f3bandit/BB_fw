@@ -1,0 +1,5 @@
+f3ban@FA506NF:~/bb/nand$ diff -qr ~/bb/mount/nandd/etc ~/bb/fw/cherry.rootfs/rootfs/etc | head -100
+diff -qr ~/bb/mount/nandd/usr ~/bb/fw/cherry.rootfs/rootfs/usr | head -100
+diff: /home/f3ban/bb/fw/cherry.rootfs/rootfs/etc: No such file or directory
+diff: /home/f3ban/bb/fw/cherry.rootfs/rootfs/usr: No such file or directory
+f3ban@FA506NF:~/bb/nand$

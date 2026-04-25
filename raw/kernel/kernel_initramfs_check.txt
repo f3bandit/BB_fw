@@ -1,0 +1,15 @@
+f3ban@FA506NF:~/bb/nand$ strings ~/bb/mount/nandc.img.extracted/* | grep -n "mount"
+strings: '/home/f3ban/bb/mount/nandc.img.extracted/*': No such file
+f3ban@FA506NF:~/bb/nand$ binwalk -e ~/bb/nand/nandc.img
+ls _nandc.img.extracted/
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             uImage header, header size: 64 bytes, header CRC: 0xC709510F, created: 2021-01-31 02:25:46, image size: 4280768 bytes, Data Address: 0x40008000, Entry Point: 0x40008000, data CRC: 0x158A70D2, OS: Linux, CPU: ARM, image type: OS Kernel Image, compression type: none, image name: "Linux-3.4.39"
+64            0x40            Linux kernel ARM boot executable zImage (little-endian)
+16807         0x41A7          gzip compressed data, maximum compression, from Unix, last modified: 1970-01-01 00:00:00 (null date)
+
+41A7
+f3ban@FA506NF:~/bb/nand$ cat _nandc.img.extracted/*init*
+cat: '_nandc.img.extracted/*init*': No such file or directory
+f3ban@FA506NF:~/bb/nand$

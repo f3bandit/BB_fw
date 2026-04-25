@@ -1,0 +1,1815 @@
+f3ban@FA506NF:~/bb/nand$ grep -R "sunxi_usb" ~/bb/mount/nandd -n
+grep -R "gadget" ~/bb/mount/nandd -n
+/home/f3ban/bb/mount/nandd/var/log/kern.log:281:Jan 30 18:25:55 bunny kernel: [   10.168137] WRN:L1135(drivers/usb/sunxi_usb/udc/sunxi_udc.c):handle_ep0: ep0 setup end
+/home/f3ban/bb/mount/nandd/var/log/kern.log:563:Jan 30 18:25:55 bunny kernel: [    9.741993] WRN:L1135(drivers/usb/sunxi_usb/udc/sunxi_udc.c):handle_ep0: ep0 setup end
+/home/f3ban/bb/mount/nandd/var/log/kern.log:567:Jan 30 18:28:58 bunny kernel: [  192.300080] WRN:L1135(drivers/usb/sunxi_usb/udc/sunxi_udc.c):handle_ep0: ep0 setup end
+/home/f3ban/bb/mount/nandd/var/log/kern.log:568:Jan 30 18:29:06 bunny kernel: [  200.011254] WRN:L1135(drivers/usb/sunxi_usb/udc/sunxi_udc.c):handle_ep0: ep0 setup end
+/home/f3ban/bb/mount/nandd/var/log/kern.log:569:Jan 30 18:29:11 bunny kernel: [  205.459674] WRN:L1135(drivers/usb/sunxi_usb/udc/sunxi_udc.c):handle_ep0: ep0 setup end
+/home/f3ban/bb/mount/nandd/var/log/kern.log:570:Jan 30 18:29:15 bunny kernel: [  209.299883] WRN:L1135(drivers/usb/sunxi_usb/udc/sunxi_udc.c):handle_ep0: ep0 setup end
+/home/f3ban/bb/mount/nandd/var/log/kern.log:571:Jan 30 18:29:26 bunny kernel: [  220.956386] WRN:L1135(drivers/usb/sunxi_usb/udc/sunxi_udc.c):handle_ep0: ep0 setup end
+/home/f3ban/bb/mount/nandd/var/log/kern.log:851:Jan 30 18:25:55 bunny kernel: [    9.970048] WRN:L1135(drivers/usb/sunxi_usb/udc/sunxi_udc.c):handle_ep0: ep0 setup end
+/home/f3ban/bb/mount/nandd/var/log/kern.log:852:Jan 30 18:26:03 bunny kernel: [   17.696473] WRN:L1135(drivers/usb/sunxi_usb/udc/sunxi_udc.c):handle_ep0: ep0 setup end
+/home/f3ban/bb/mount/nandd/var/log/syslog:384:Jan 30 18:25:55 bunny kernel: [   10.168137] WRN:L1135(drivers/usb/sunxi_usb/udc/sunxi_udc.c):handle_ep0: ep0 setup end
+/home/f3ban/bb/mount/nandd/var/log/syslog:826:Jan 30 18:25:55 bunny kernel: [    9.741993] WRN:L1135(drivers/usb/sunxi_usb/udc/sunxi_udc.c):handle_ep0: ep0 setup end
+/home/f3ban/bb/mount/nandd/var/log/syslog:841:Jan 30 18:28:58 bunny kernel: [  192.300080] WRN:L1135(drivers/usb/sunxi_usb/udc/sunxi_udc.c):handle_ep0: ep0 setup end
+/home/f3ban/bb/mount/nandd/var/log/syslog:846:Jan 30 18:29:06 bunny kernel: [  200.011254] WRN:L1135(drivers/usb/sunxi_usb/udc/sunxi_udc.c):handle_ep0: ep0 setup end
+/home/f3ban/bb/mount/nandd/var/log/syslog:847:Jan 30 18:29:11 bunny kernel: [  205.459674] WRN:L1135(drivers/usb/sunxi_usb/udc/sunxi_udc.c):handle_ep0: ep0 setup end
+/home/f3ban/bb/mount/nandd/var/log/syslog:848:Jan 30 18:29:15 bunny kernel: [  209.299883] WRN:L1135(drivers/usb/sunxi_usb/udc/sunxi_udc.c):handle_ep0: ep0 setup end
+/home/f3ban/bb/mount/nandd/var/log/syslog:849:Jan 30 18:29:26 bunny kernel: [  220.956386] WRN:L1135(drivers/usb/sunxi_usb/udc/sunxi_udc.c):handle_ep0: ep0 setup end
+/home/f3ban/bb/mount/nandd/var/log/syslog:850:Jan 30 18:29:32 bunny kernel: [  226.021909] WRN:L1135(drivers/usb/sunxi_usb/udc/sunxi_udc.c):handle_ep0: ep0 setup end
+grep: /home/f3ban/bb/mount/nandd/var/log/syslog: binary file matches
+grep: /home/f3ban/bb/mount/nandd/var/log/btmp: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/lib/python-support: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/lib/container: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/lib/systemd/random-seed: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/lib/apt/lists/lock: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/lib/dpkg/lock: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/lib/dpkg/triggers/Lock: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/vhci_hcd: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/unattended-upgrades.lock: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/agetty.reload: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/crond.reboot: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/uuidd/request: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/snapd-snap.socket: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/snapd.socket: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/apport.socket: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/sudo: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/dbus/system_bus_socket: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/12: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/b8:16: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/11: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/b8:0: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/10: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/b8:32: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/9: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/b8:48: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/8: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/b7:5: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/7: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/b7:7: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/6: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/5: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/b7:3: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/b7:2: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/4: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/b7:0: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/3: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/b7:4: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/2: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/1: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/b7:1: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/b7:6: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/ptp_hyperv/c247:0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/rtc/c249:0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/virtio-ports\x2fhvc1/c244:1: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/virtio-ports\x2fhvc2/c244:2: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/virtio-ports\x2fhvc0/c244:0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-path\x2facpi-MSFT1000:00-scsi-0:0:0:1/b8:16: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-id\x2fwwn-0x600224805b5ac507b80a045bc3303ae1/b8:16: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-id\x2fscsi-3600224805b5ac507b80a045bc3303ae1/b8:16: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-diskseq\x2f26/b8:16: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-diskseq\x2f27/b8:32: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-path\x2facpi-MSFT1000:00-scsi-0:0:0:2/b8:32: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-id\x2fscsi-360022480a546e95990dea44855fd3334/b8:32: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-id\x2fwwn-0x60022480a546e95990dea44855fd3334/b8:32: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-uuid\x2f68d71d8b-046a-46ec-bcec-cb629a7dca36/b8:32: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-id\x2fwwn-0x60022480728b63b9f0b8d5e28f1d4859/b8:0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-path\x2facpi-MSFT1000:00-scsi-0:0:0:0/b8:0: No such fileor directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-id\x2fscsi-360022480728b63b9f0b8d5e28f1d4859/b8:0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-diskseq\x2f25/b8:0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-id\x2fwwn-0x600224800c96eed7918565e95b681867/b8:48: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-path\x2facpi-MSFT1000:00-scsi-0:0:0:3/b8:48: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-id\x2fscsi-3600224800c96eed7918565e95b681867/b8:48: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-uuid\x2f281fea18-729a-4231-b446-7b01686b085e/b8:48: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-diskseq\x2f28/b8:48: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-diskseq\x2f22/b7:5: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-diskseq\x2f24/b7:7: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-diskseq\x2f20/b7:3: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-diskseq\x2f17/b7:0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-diskseq\x2f18/b7:1: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-diskseq\x2f21/b7:4: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-diskseq\x2f23/b7:6: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-diskseq\x2f19/b7:2: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/static_node-tags/uaccess/snd\x2ftimer: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/control: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/initctl: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/inhibit/1.ref: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/resolve/io.systemd.Resolve.Monitor: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/resolve/io.systemd.Resolve: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/sessions/31.ref: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/sessions/1.ref: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/io.systemd.sysext: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/journal/streams/8:26916: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/journal/streams/8:11535: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/journal/streams/8:2492: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/journal/streams/8:9433: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/journal/streams/8:8340: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/journal/streams/8:6812: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/journal/streams/8:6804: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/journal/streams/8:9363: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/journal/streams/8:9358: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/journal/streams/8:4438: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/journal/io.systemd.journal: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/journal/stdout: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/journal/socket: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/journal/dev-log: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/journal/syslog: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/io.systemd.ManagedOOM: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/userdb/io.systemd.DynamicUser: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/private: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/notify: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:session-31.scope: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:user@0.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:user-runtime-dir@0.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:polkit.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:systemd-binfmt.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:session-1.scope: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:user@1000.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:user-runtime-dir@1000.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:unattended-upgrades.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:getty@tty1.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:setvtrgb.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:console-getty.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:systemd-user-sessions.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:systemd-logind.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:snapd.seeded.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:rsyslog.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:dbus.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:cron.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:systemd-update-utmp.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:systemd-timesyncd.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:systemd-resolved.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:binfmt-support.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:systemd-tmpfiles-setup.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:systemd-udevd.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:console-setup.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:systemd-tmpfiles-setup-dev.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:systemd-journal-flush.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:systemd-tmpfiles-setup-dev-early.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:systemd-sysctl.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:sys-kernel-config.mount: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:sys-fs-fuse-connections.mount: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:systemd-udev-trigger.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:systemd-remount-fs.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:systemd-modules-load.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:kmod-static-nodes.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:keyboard-setup.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:systemd-journald.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:sys-kernel-tracing.mount: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:sys-kernel-debug.mount: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:dev-mqueue.mount: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:dev-hugepages.mount: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/propagate/polkit.service: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/propagate/systemd-logind.service: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/propagate/systemd-timesyncd.service: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/propagate/systemd-resolved.service: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/propagate/binfmt-support.service: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/propagate/systemd-udevd.service: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/inaccessible/blk: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/inaccessible/chr: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/inaccessible/sock: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/inaccessible/fifo: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/inaccessible/dir: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/inaccessible/reg: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/WSL/4171_interop: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/WSL/1_interop: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/WSL/2_interop: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/user/0: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/wayland-0: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/pulse/native: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/snapd-session-agent.socket: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/pk-debconf-socket: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/gnupg/S.gpg-agent.ssh: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/gnupg/S.keyboxd: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/gnupg/S.gpg-agent: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/gnupg/S.gpg-agent.extra: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/gnupg/S.gpg-agent.browser: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/gnupg/S.dirmngr: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/bus: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/systemd/private: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/systemd/notify: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/systemd/units/invocation:gpg-agent-ssh.socket: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/systemd/units/invocation:dbus.socket: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/systemd/inaccessible/chr: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/systemd/inaccessible/sock: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/systemd/inaccessible/fifo: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/systemd/inaccessible/dir: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/systemd/inaccessible/reg: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/spool/rsyslog: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/spool/cron/crontabs: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/cache/debconf/passwords.dat: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/cache/ldconfig: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/cache/apt/archives/lock: Permission denied
+grep: /home/f3ban/bb/mount/nandd/usr/share/doc/node-jsonselect/site/JSONSelect.md: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/doc/node-jsonselect/site/js/jsonselect.js: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man8/tcptraceroute.8.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/droplang.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/postmaster.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/pg_basebackup.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/postgres.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/lft.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/initdb.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/traceproto.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/pg_dumpall.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/createlang.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/pg_restore.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/pg_resetxlog.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/pg_ctl.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/pg_upgrade.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/traceroute6.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/from.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/pg_isready.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/rename.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/createuser.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/reindexdb.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/rsh.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/pg_controldata.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/vacuumdb.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/clusterdb.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/rlogin.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/write.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/pg_dump.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/pg_recvlogical.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/w.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/pg_receivexlog.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/dropuser.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/dropdb.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/traceroute.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/createdb.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/mt.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/pg_xlogdump.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/rcp.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/psql.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_FOREIGN_DATA_WRAPPER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/INSERT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_EVENT_TRIGGER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_VIEW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_DOMAIN.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_LARGE_OBJECT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_TRIGGER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_SERVER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CHECKPOINT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_OPERATOR_FAMILY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_AGGREGATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_USER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_CONVERSION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_CAST.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/MOVE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_OPERATOR_CLASS.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_FUNCTION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_TEXT_SEARCH_TEMPLATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/COPY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_TABLESPACE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_TEXT_SEARCH_TEMPLATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_EXTENSION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/LOCK.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_SEQUENCE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_COLLATION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/PREPARE_TRANSACTION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_EXTENSION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_TYPE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/BEGIN.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_TEXT_SEARCH_CONFIGURATION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/WITH.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_OPERATOR_CLASS.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ROLLBACK.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_OWNED.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CLOSE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_DEFAULT_PRIVILEGES.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_DOMAIN.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_TRIGGER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_OPERATOR.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/SET_TRANSACTION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_TABLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ROLLBACK_TO_SAVEPOINT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/SET_ROLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/RESET.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_VIEW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_DOMAIN.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_CONVERSION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/TABLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_FOREIGN_DATA_WRAPPER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_OPERATOR_CLASS.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_GROUP.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/VALUES.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_SERVER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/REINDEX.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_OPERATOR.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_FOREIGN_TABLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/REASSIGN_OWNED.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_RULE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_COLLATION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_TYPE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_TABLESPACE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_TEXT_SEARCH_DICTIONARY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/REVOKE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ROLLBACK_PREPARED.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ABORT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/SELECT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/COMMIT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_FOREIGN_DATA_WRAPPER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_TEXT_SEARCH_DICTIONARY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_EVENT_TRIGGER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/SET_CONSTRAINTS.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/START_TRANSACTION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_TYPE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_LANGUAGE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/GRANT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/REFRESH_MATERIALIZED_VIEW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_COLLATION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/SELECT_INTO.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_RULE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_ROLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_CAST.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_TEXT_SEARCH_DICTIONARY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/COMMIT_PREPARED.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_USER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/NOTIFY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_SEQUENCE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_USER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_DATABASE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/RELEASE_SAVEPOINT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_TEXT_SEARCH_TEMPLATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/FETCH.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_FOREIGN_TABLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_OPERATOR_FAMILY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_FUNCTION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_MATERIALIZED_VIEW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/LOAD.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_MATERIALIZED_VIEW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/END.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/COMMENT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_SCHEMA.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_EVENT_TRIGGER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_DATABASE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/EXPLAIN.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/PREPARE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_TABLE_AS.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/TRUNCATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DEALLOCATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_OPERATOR.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_TEXT_SEARCH_PARSER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_USER_MAPPING.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/VACUUM.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_TABLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_INDEX.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_OPERATOR_FAMILY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_MATERIALIZED_VIEW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_TABLESPACE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/UNLISTEN.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/SET_SESSION_AUTHORIZATION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CLUSTER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_FOREIGN_TABLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_SCHEMA.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_GROUP.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_AGGREGATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/SET.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/SAVEPOINT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DECLARE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_SEQUENCE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/EXECUTE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_LANGUAGE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/LISTEN.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/UPDATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_SCHEMA.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_DATABASE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_SYSTEM.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_GROUP.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_AGGREGATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_ROLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_VIEW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_INDEX.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/SECURITY_LABEL.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DO.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/SHOW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_LANGUAGE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_USER_MAPPING.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_FUNCTION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_USER_MAPPING.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_ROLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_TABLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_RULE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_EXTENSION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ANALYZE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_INDEX.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_TRIGGER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DISCARD.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DELETE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_TEXT_SEARCH_CONFIGURATION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_TEXT_SEARCH_PARSER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_SERVER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_TEXT_SEARCH_PARSER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_CONVERSION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_TEXT_SEARCH_CONFIGURATION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man3/cerfl.3.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man3/cerff.3.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man3/cerfcf.3.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man3/cerfcl.3.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/terminfo/c/cons25: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/terminfo/x/xterm-color: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/terminfo/x/xterm-r6: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/terminfo/n/nxterm: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/terminfo/a/ansi80x25: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/terminfo/a/ansis: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/terminfo/v/vt100-am: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/terminfo/v/vt220: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/terminfo/v/vt100: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/terminfo/v/vt200: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/terminfo/s/sun1: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/terminfo/s/sun2: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/terminfo/s/sun: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/bin/systemd-stdio-bridge: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/bin/rcp: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/bin/w: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/bin/rename: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/bin/traceproto: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/bin/traceroute6: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/bin/lft: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/bin/rlogin: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/bin/rsh: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/bin/from: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/bin/X11: warning: recursive directory loop
+grep: /home/f3ban/bb/mount/nandd/usr/bin/getfacl: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/bin/setfacl: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/bin/traceroute: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/bin/chacl: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/bin/write: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/bin/iptables-xml: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/sbin/traceroute: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/sbin/tcptraceroute: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/python2.7/sitecustomize.py: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/ruby/2.3.0/rdoc/generator/template/darkfish/fonts/Lato-LightItalic.ttf: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/ruby/2.3.0/rdoc/generator/template/darkfish/fonts/Lato-RegularItalic.ttf: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/ruby/2.3.0/rdoc/generator/template/darkfish/fonts/Lato-Light.ttf: No such fileor directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/ruby/2.3.0/rdoc/generator/template/darkfish/fonts/Lato-Regular.ttf: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/libblas.so.3: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/python2.6/dist-packages/python-support.pth: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/libblas.so.3gf: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg_httpsclient-0.3.2.egg-info/requires.txt: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg_httpsclient-0.3.2.egg-info/PKG-INFO: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg_httpsclient-0.3.2.egg-info/dependency_links.txt: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg_httpsclient-0.3.2.egg-info/top_level.txt: No such fileor directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg_httpsclient-0.3.2.egg-info/not-zip-safe: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg_httpsclient-0.3.2.egg-info/entry_points.txt: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg_httpsclient-0.3.2.egg-info/SOURCES.txt: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg_httpsclient-0.3.2.egg-info/namespace_packages.txt: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg/httpsclient/ssl_peer_verification.py: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg/httpsclient/__init__.py: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg/httpsclient/https.py: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg/httpsclient/utils.py: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg/httpsclient/ssl_context_util.py: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg/httpsclient/subj_alt_name.py: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg/httpsclient/ssl_socket.py: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg/httpsclient/urllib2_build_opener.py: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg/httpsclient/test/__init__.py: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg/httpsclient/test/test_urllib2.py: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg/httpsclient/test/pki/localhost.crt: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg/httpsclient/test/pki/localhost.key: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg/httpsclient/test/pki/ca/d573507a.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg/httpsclient/test/README: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg/httpsclient/test/scripts/openssl_https_server.sh: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg/httpsclient/test/test_https.py: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg/httpsclient/test/test_utils.py: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg_httpsclient-0.3.2-nspkg.pth: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/ssl/private: Permission denied
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libcom_err.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libusb-0.1.so.4: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libnss_compat.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libnsl.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libnss_files.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libcrypt.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libanl.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libm.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libpng12.so.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libnss_nisplus.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libcidn.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libutil.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libfakeroot/libfakeroot-0.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libBrokenLocale.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libresolv.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libdl.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libthread_db.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libnss_dns.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libnss_hesiod.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libnss_nis.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libtxc_dxtn.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libz.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/librt.so: No such file or directory
+/home/f3ban/bb/mount/nandd/usr/local/bunny/bin/bunny_framework:34:      echo 0 > /sys/bus/platform/devices/sunxi_usb_udc/otg_role
+/home/f3ban/bb/mount/nandd/usr/local/bunny/bin/ATTACKMODE:76:   echo 0 > /sys/bus/platform/devices/sunxi_usb_udc/otg_role
+/home/f3ban/bb/mount/nandd/usr/local/bunny/bin/ATTACKMODE:325:  echo 2 > /sys/bus/platform/devices/sunxi_usb_udc/otg_role
+grep: /home/f3ban/bb/mount/nandd/usr/local/bunny/lib/bunny_gadget.ko: binary file matches
+grep: /home/f3ban/bb/mount/nandd/lost+found: Permission denied
+grep: /home/f3ban/bb/mount/nandd/root: Permission denied
+grep: /home/f3ban/bb/mount/nandd/bin/mt: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/group-: Permission denied
+grep: /home/f3ban/bb/mount/nandd/etc/shadow-: Permission denied
+grep: /home/f3ban/bb/mount/nandd/etc/subgid-: Permission denied
+grep: /home/f3ban/bb/mount/nandd/etc/resolv.conf: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/systemd/system/sshd.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/systemd/system/reboot.target.wants/hwclock-save.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/systemd/system/halt.target.wants/hwclock-save.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/systemd/system/sysinit.target.wants/resolvconf.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/systemd/system/multi-user.target.wants/sysfixtime.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/systemd/system/multi-user.target.wants/inetd.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/systemd/system/multi-user.target.wants/ssh.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/systemd/system/multi-user.target.wants/postgresql.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/systemd/system/multi-user.target.wants/bunny.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/systemd/system/poweroff.target.wants/hwclock-save.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/.pwd.lock: Permission denied
+grep: /home/f3ban/bb/mount/nandd/etc/gshadow: Permission denied
+grep: /home/f3ban/bb/mount/nandd/etc/shadow: Permission denied
+grep: /home/f3ban/bb/mount/nandd/etc/network/run: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/passwd-: Permission denied
+grep: /home/f3ban/bb/mount/nandd/etc/ssh/ssh_host_dsa_key: Permission denied
+grep: /home/f3ban/bb/mount/nandd/etc/ssh/ssh_host_ed25519_key: Permission denied
+grep: /home/f3ban/bb/mount/nandd/etc/ssh/ssh_host_ecdsa_key: Permission denied
+grep: /home/f3ban/bb/mount/nandd/etc/ssh/ssh_host_rsa_key: Permission denied
+grep: /home/f3ban/bb/mount/nandd/etc/resolvconf/run: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/subuid-: Permission denied
+grep: /home/f3ban/bb/mount/nandd/etc/gshadow-: Permission denied
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_FOREIGN_DATA_WRAPPER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/INSERT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/nc: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_EVENT_TRIGGER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_VIEW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/droplang.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_DOMAIN.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_LARGE_OBJECT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_TRIGGER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_SERVER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CHECKPOINT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_OPERATOR_FAMILY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/mt: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_AGGREGATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/postmaster.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/pg_basebackup.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_USER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_CONVERSION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_CAST.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/w: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/nc.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/MOVE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_OPERATOR_CLASS.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_FUNCTION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/postgres.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/rename: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_TEXT_SEARCH_TEMPLATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/lft.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/COPY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_TABLESPACE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/initdb.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_TEXT_SEARCH_TEMPLATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_EXTENSION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/LOCK.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_SEQUENCE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_COLLATION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/traceproto.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/PREPARE_TRANSACTION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_EXTENSION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_TYPE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/BEGIN.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_TEXT_SEARCH_CONFIGURATION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/pg_dumpall.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/WITH.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_OPERATOR_CLASS.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/createlang.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ROLLBACK.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_OWNED.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CLOSE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_DEFAULT_PRIVILEGES.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/traceproto: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_DOMAIN.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_TRIGGER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/traceroute6: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_OPERATOR.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/SET_TRANSACTION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_TABLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/pg_restore.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/pg_resetxlog.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ROLLBACK_TO_SAVEPOINT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/pg_ctl.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/pg_upgrade.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/SET_ROLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/RESET.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_VIEW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/traceroute6.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_DOMAIN.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_CONVERSION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/TABLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_FOREIGN_DATA_WRAPPER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_OPERATOR_CLASS.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_GROUP.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/VALUES.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_SERVER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/REINDEX.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_OPERATOR.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/from.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_FOREIGN_TABLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/REASSIGN_OWNED.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_RULE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_COLLATION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/lft: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/pg_isready.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_TYPE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_TABLESPACE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_TEXT_SEARCH_DICTIONARY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/REVOKE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/rename.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/netcat: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ROLLBACK_PREPARED.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/createuser.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ABORT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/reindexdb.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/SELECT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/COMMIT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_FOREIGN_DATA_WRAPPER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_TEXT_SEARCH_DICTIONARY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_EVENT_TRIGGER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/SET_CONSTRAINTS.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/START_TRANSACTION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_TYPE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_LANGUAGE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/GRANT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/pg_controldata.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/REFRESH_MATERIALIZED_VIEW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_COLLATION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/SELECT_INTO.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_RULE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_ROLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_CAST.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_TEXT_SEARCH_DICTIONARY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/libblas.so.3: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/COMMIT_PREPARED.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/vacuumdb.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/clusterdb.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_USER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/NOTIFY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_SEQUENCE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_USER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_DATABASE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/RELEASE_SAVEPOINT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_TEXT_SEARCH_TEMPLATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/FETCH.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_FOREIGN_TABLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/libblas.so.3gf: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_OPERATOR_FAMILY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_FUNCTION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_MATERIALIZED_VIEW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/write.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/LOAD.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_MATERIALIZED_VIEW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/END.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/COMMENT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_SCHEMA.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_EVENT_TRIGGER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/from: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_DATABASE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/pg_dump.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/EXPLAIN.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/libtxc-dxtn-arm-linux-gnueabihf: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/PREPARE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_TABLE_AS.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/TRUNCATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DEALLOCATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_OPERATOR.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_TEXT_SEARCH_PARSER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_USER_MAPPING.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/VACUUM.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_TABLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_INDEX.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/netcat.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_OPERATOR_FAMILY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_MATERIALIZED_VIEW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/pg_recvlogical.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_TABLESPACE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/UNLISTEN.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/w.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/SET_SESSION_AUTHORIZATION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CLUSTER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_FOREIGN_TABLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_SCHEMA.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/traceroute.sbin: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/pg_receivexlog.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_GROUP.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/dropuser.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_AGGREGATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/SET.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/SAVEPOINT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DECLARE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/dropdb.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_SEQUENCE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/EXECUTE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_LANGUAGE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/LISTEN.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/UPDATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_SCHEMA.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_DATABASE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_SYSTEM.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_GROUP.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_AGGREGATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_ROLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_VIEW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_INDEX.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/traceroute.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/createdb.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/traceroute: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/mt.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/SECURITY_LABEL.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DO.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/pg_xlogdump.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/SHOW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_LANGUAGE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_USER_MAPPING.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_FUNCTION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_USER_MAPPING.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_ROLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_TABLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_RULE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_EXTENSION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ANALYZE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/tcptraceroute.8.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_INDEX.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/psql.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_TRIGGER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/write: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DISCARD.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/tcptraceroute: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DELETE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_TEXT_SEARCH_CONFIGURATION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_TEXT_SEARCH_PARSER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_SERVER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_TEXT_SEARCH_PARSER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_CONVERSION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_TEXT_SEARCH_CONFIGURATION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/security/opasswd: Permission denied
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/private: Permission denied
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/aeb67534.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/Hellenic_Academic_and_Research_Institutions_RootCA_2011.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/cb156124.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/349f2832.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/5c44d531.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/TrustCor_ECA-1.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/080911ac.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/d0cddf45.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/Sonera_Class_2_Root_CA.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/40dc992e.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/GlobalSign_Root_CA_-_R2.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/2fa87019.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/Network_Solutions_Certificate_Authority.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/b1b8a7f3.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/GeoTrust_Universal_CA_2.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/9685a493.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/8867006a.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/87753b0d.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/LuxTrust_Global_Root_2.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/Hongkong_Post_Root_CA_1.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/5d3033c5.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/7c302982.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/3e45d192.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/4a6481c9.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/DST_Root_CA_X3.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/Taiwan_GRCA.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/EE_Certification_Centre_Root_CA.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/76cb8f92.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/111e6273.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/def36a68.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/1eb37bdf.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/9c2e7d30.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/343eb6cb.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/9f533518.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/7d453d8f.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/91739615.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/TrustCor_RootCert_CA-1.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/Chambers_of_Commerce_Root_-_2008.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/Staat_der_Nederlanden_EV_Root_CA.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/12d55845.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/Staat_der_Nederlanden_Root_CA_-_G2.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/E-Tugra_Certification_Authority.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/1636090b.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/OISTE_WISeKey_Global_Root_GA_CA.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/5a4d6896.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/Verisign_Class_3_Public_Primary_Certification_Authority_-_G3.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/TrustCor_RootCert_CA-2.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/4304c5e5.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/Trustis_FPS_Root_CA.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/5273a94c.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/3a3b02ce.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/3c6676aa.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/c51c224c.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/3d441de8.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/2e5ac55d.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/0c4c9b6c.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/c47d9980.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/7aaf71c0.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/3e44d2f7.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/128805a3.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/Cybertrust_Global_Root.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/03179a64.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/6410666e.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/a7605362.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/Global_Chambersign_Root_-_2008.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/QuoVadis_Root_CA.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/EC-ACC.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/c2c1704e.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/c0ff1f52.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/Staat_der_Nederlanden_Root_CA_-_G3.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/1dcd6f4c.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/d853d49e.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/5a250ea7.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/c907e29b.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/5cf9d536.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/runlevel3.target.wants/systemd-update-utmp-runlevel.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/module-init-tools.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/rescue.target.wants/systemd-update-utmp-runlevel.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/reboot.target.wants/systemd-update-utmp-runlevel.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/runlevel4.target.wants/systemd-update-utmp-runlevel.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/procps.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/runlevel1.target.wants/systemd-update-utmp-runlevel.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/sysinit.target.wants/sys-kernel-debug.mount: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/sysinit.target.wants/systemd-tmpfiles-setup-dev.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/sysinit.target.wants/systemd-sysctl.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/sysinit.target.wants/systemd-modules-load.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/sysinit.target.wants/sys-fs-fuse-connections.mount: No such file ordirectory
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/sysinit.target.wants/systemd-update-utmp.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/graphical.target.wants/systemd-update-utmp-runlevel.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/multi-user.target.wants/systemd-update-utmp-runlevel.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/kmod.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/runlevel2.target.wants/systemd-update-utmp-runlevel.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/poweroff.target.wants/systemd-update-utmp-runlevel.service: No suchfile or directory
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/getty.target.wants/getty-static.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/runlevel5.target.wants/systemd-update-utmp-runlevel.service: No such file or directory
+
+
+
+
+
+^C
+/home/f3ban/bb/mount/nandd/var/log/messages:205:Jan 30 18:25:55 bunny kernel: [    9.869665] g_ether gadget: Mass Storage Function, version: 2009/09/11
+/home/f3ban/bb/mount/nandd/var/log/messages:206:Jan 30 18:25:55 bunny kernel: [    9.869695] g_ether gadget: Number of LUNs=1
+/home/f3ban/bb/mount/nandd/var/log/messages:208:Jan 30 18:25:55 bunny kernel: [    9.869861] g_ether gadget: Ethernet Gadget, version: Memorial Day 2008
+/home/f3ban/bb/mount/nandd/var/log/messages:209:Jan 30 18:25:55 bunny kernel: [    9.869912] g_ether gadget: g_ether ready
+/home/f3ban/bb/mount/nandd/var/log/messages:210:Jan 30 18:25:55 bunny kernel: [   10.148737] g_ether gadget: high-speedconfig #2: CDC Ethernet (ECM)
+/home/f3ban/bb/mount/nandd/var/log/messages:223:Jan 30 19:06:14 bunny kernel: [ 2428.843068] g_ether gadget: high-speedconfig #2: CDC Ethernet (ECM)
+/home/f3ban/bb/mount/nandd/var/log/messages:428:Jan 30 18:25:55 bunny kernel: [    9.444067] g_ether gadget: Mass Storage Function, version: 2009/09/11
+/home/f3ban/bb/mount/nandd/var/log/messages:429:Jan 30 18:25:55 bunny kernel: [    9.444098] g_ether gadget: Number of LUNs=1
+/home/f3ban/bb/mount/nandd/var/log/messages:431:Jan 30 18:25:55 bunny kernel: [    9.444265] g_ether gadget: Ethernet Gadget, version: Memorial Day 2008
+/home/f3ban/bb/mount/nandd/var/log/messages:432:Jan 30 18:25:55 bunny kernel: [    9.444320] g_ether gadget: g_ether ready
+/home/f3ban/bb/mount/nandd/var/log/messages:433:Jan 30 18:25:55 bunny kernel: [    9.727135] g_ether gadget: high-speedconfig #2: CDC Ethernet (ECM)
+/home/f3ban/bb/mount/nandd/var/log/messages:435:Jan 30 18:27:47 bunny kernel: [  121.799552] g_ether gadget: high-speedconfig #2: CDC Ethernet (ECM)
+/home/f3ban/bb/mount/nandd/var/log/messages:438:Jan 30 18:28:58 bunny kernel: [  192.285624] g_ether gadget: high-speedconfig #2: CDC Ethernet (ECM)
+/home/f3ban/bb/mount/nandd/var/log/messages:643:Jan 30 18:25:55 bunny kernel: [    9.677389] g_ether gadget: Mass Storage Function, version: 2009/09/11
+/home/f3ban/bb/mount/nandd/var/log/messages:644:Jan 30 18:25:55 bunny kernel: [    9.677419] g_ether gadget: Number of LUNs=1
+/home/f3ban/bb/mount/nandd/var/log/messages:646:Jan 30 18:25:55 bunny kernel: [    9.677590] g_ether gadget: Ethernet Gadget, version: Memorial Day 2008
+/home/f3ban/bb/mount/nandd/var/log/messages:647:Jan 30 18:25:55 bunny kernel: [    9.677643] g_ether gadget: g_ether ready
+/home/f3ban/bb/mount/nandd/var/log/messages:648:Jan 30 18:25:55 bunny kernel: [    9.956622] g_ether gadget: high-speedconfig #2: CDC Ethernet (ECM)
+/home/f3ban/bb/mount/nandd/var/log/kern.log:273:Jan 30 18:25:55 bunny kernel: [    9.869665] g_ether gadget: Mass Storage Function, version: 2009/09/11
+/home/f3ban/bb/mount/nandd/var/log/kern.log:274:Jan 30 18:25:55 bunny kernel: [    9.869695] g_ether gadget: Number of LUNs=1
+/home/f3ban/bb/mount/nandd/var/log/kern.log:276:Jan 30 18:25:55 bunny kernel: [    9.869794] gadget_is_softwinner_otg is not -int
+/home/f3ban/bb/mount/nandd/var/log/kern.log:277:Jan 30 18:25:55 bunny kernel: [    9.869815] gadget_is_softwinner_otg is not -int
+/home/f3ban/bb/mount/nandd/var/log/kern.log:278:Jan 30 18:25:55 bunny kernel: [    9.869861] g_ether gadget: Ethernet Gadget, version: Memorial Day 2008
+/home/f3ban/bb/mount/nandd/var/log/kern.log:279:Jan 30 18:25:55 bunny kernel: [    9.869912] g_ether gadget: g_ether ready
+/home/f3ban/bb/mount/nandd/var/log/kern.log:280:Jan 30 18:25:55 bunny kernel: [   10.148737] g_ether gadget: high-speedconfig #2: CDC Ethernet (ECM)
+/home/f3ban/bb/mount/nandd/var/log/kern.log:282:Jan 30 19:06:14 bunny kernel: [ 2428.843068] g_ether gadget: high-speedconfig #2: CDC Ethernet (ECM)
+/home/f3ban/bb/mount/nandd/var/log/kern.log:555:Jan 30 18:25:55 bunny kernel: [    9.444067] g_ether gadget: Mass Storage Function, version: 2009/09/11
+/home/f3ban/bb/mount/nandd/var/log/kern.log:556:Jan 30 18:25:55 bunny kernel: [    9.444098] g_ether gadget: Number of LUNs=1
+/home/f3ban/bb/mount/nandd/var/log/kern.log:558:Jan 30 18:25:55 bunny kernel: [    9.444198] gadget_is_softwinner_otg is not -int
+/home/f3ban/bb/mount/nandd/var/log/kern.log:559:Jan 30 18:25:55 bunny kernel: [    9.444219] gadget_is_softwinner_otg is not -int
+/home/f3ban/bb/mount/nandd/var/log/kern.log:560:Jan 30 18:25:55 bunny kernel: [    9.444265] g_ether gadget: Ethernet Gadget, version: Memorial Day 2008
+/home/f3ban/bb/mount/nandd/var/log/kern.log:561:Jan 30 18:25:55 bunny kernel: [    9.444320] g_ether gadget: g_ether ready
+/home/f3ban/bb/mount/nandd/var/log/kern.log:562:Jan 30 18:25:55 bunny kernel: [    9.727135] g_ether gadget: high-speedconfig #2: CDC Ethernet (ECM)
+/home/f3ban/bb/mount/nandd/var/log/kern.log:564:Jan 30 18:27:47 bunny kernel: [  121.799552] g_ether gadget: high-speedconfig #2: CDC Ethernet (ECM)
+/home/f3ban/bb/mount/nandd/var/log/kern.log:566:Jan 30 18:28:58 bunny kernel: [  192.285624] g_ether gadget: high-speedconfig #2: CDC Ethernet (ECM)
+/home/f3ban/bb/mount/nandd/var/log/kern.log:843:Jan 30 18:25:55 bunny kernel: [    9.677389] g_ether gadget: Mass Storage Function, version: 2009/09/11
+/home/f3ban/bb/mount/nandd/var/log/kern.log:844:Jan 30 18:25:55 bunny kernel: [    9.677419] g_ether gadget: Number of LUNs=1
+/home/f3ban/bb/mount/nandd/var/log/kern.log:846:Jan 30 18:25:55 bunny kernel: [    9.677523] gadget_is_softwinner_otg is not -int
+/home/f3ban/bb/mount/nandd/var/log/kern.log:847:Jan 30 18:25:55 bunny kernel: [    9.677544] gadget_is_softwinner_otg is not -int
+/home/f3ban/bb/mount/nandd/var/log/kern.log:848:Jan 30 18:25:55 bunny kernel: [    9.677590] g_ether gadget: Ethernet Gadget, version: Memorial Day 2008
+/home/f3ban/bb/mount/nandd/var/log/kern.log:849:Jan 30 18:25:55 bunny kernel: [    9.677643] g_ether gadget: g_ether ready
+/home/f3ban/bb/mount/nandd/var/log/kern.log:850:Jan 30 18:25:55 bunny kernel: [    9.956622] g_ether gadget: high-speedconfig #2: CDC Ethernet (ECM)
+/home/f3ban/bb/mount/nandd/var/log/debug:65:Jan 30 18:25:55 bunny kernel: [    9.869794] gadget_is_softwinner_otg is not -int
+/home/f3ban/bb/mount/nandd/var/log/debug:66:Jan 30 18:25:55 bunny kernel: [    9.869815] gadget_is_softwinner_otg is not -int
+/home/f3ban/bb/mount/nandd/var/log/debug:131:Jan 30 18:25:55 bunny kernel: [    9.444198] gadget_is_softwinner_otg is not -int
+/home/f3ban/bb/mount/nandd/var/log/debug:132:Jan 30 18:25:55 bunny kernel: [    9.444219] gadget_is_softwinner_otg is not -int
+/home/f3ban/bb/mount/nandd/var/log/debug:197:Jan 30 18:25:55 bunny kernel: [    9.677523] gadget_is_softwinner_otg is not -int
+/home/f3ban/bb/mount/nandd/var/log/debug:198:Jan 30 18:25:55 bunny kernel: [    9.677544] gadget_is_softwinner_otg is not -int
+/home/f3ban/bb/mount/nandd/var/log/daemon.log:82:Jan 30 18:25:55 bunny bunny_framework[294]: insmod_cmd = insmod /usr/local/bunny/lib/bunny_gadget.ko
+/home/f3ban/bb/mount/nandd/var/log/daemon.log:226:Jan 30 18:25:55 bunny bunny_framework[323]: insmod_cmd = insmod /usr/local/bunny/lib/bunny_gadget.ko
+/home/f3ban/bb/mount/nandd/var/log/daemon.log:340:Jan 30 18:25:55 bunny bunny_framework[316]: insmod_cmd = insmod /usr/local/bunny/lib/bunny_gadget.ko
+/home/f3ban/bb/mount/nandd/var/log/syslog:357:Jan 30 18:25:55 bunny bunny_framework[294]: insmod_cmd = insmod /usr/local/bunny/lib/bunny_gadget.ko
+/home/f3ban/bb/mount/nandd/var/log/syslog:360:Jan 30 18:25:55 bunny kernel: [    9.869665] g_ether gadget: Mass StorageFunction, version: 2009/09/11
+/home/f3ban/bb/mount/nandd/var/log/syslog:361:Jan 30 18:25:55 bunny kernel: [    9.869695] g_ether gadget: Number of LUNs=1
+/home/f3ban/bb/mount/nandd/var/log/syslog:363:Jan 30 18:25:55 bunny kernel: [    9.869794] gadget_is_softwinner_otg is not -int
+/home/f3ban/bb/mount/nandd/var/log/syslog:364:Jan 30 18:25:55 bunny kernel: [    9.869815] gadget_is_softwinner_otg is not -int
+/home/f3ban/bb/mount/nandd/var/log/syslog:365:Jan 30 18:25:55 bunny kernel: [    9.869861] g_ether gadget: Ethernet Gadget, version: Memorial Day 2008
+/home/f3ban/bb/mount/nandd/var/log/syslog:366:Jan 30 18:25:55 bunny kernel: [    9.869912] g_ether gadget: g_ether ready
+/home/f3ban/bb/mount/nandd/var/log/syslog:383:Jan 30 18:25:55 bunny kernel: [   10.148737] g_ether gadget: high-speed config #2: CDC Ethernet (ECM)
+/home/f3ban/bb/mount/nandd/var/log/syslog:439:Jan 30 19:06:14 bunny kernel: [ 2428.843068] g_ether gadget: high-speed config #2: CDC Ethernet (ECM)
+/home/f3ban/bb/mount/nandd/var/log/syslog:799:Jan 30 18:25:55 bunny bunny_framework[323]: insmod_cmd = insmod /usr/local/bunny/lib/bunny_gadget.ko
+/home/f3ban/bb/mount/nandd/var/log/syslog:802:Jan 30 18:25:55 bunny kernel: [    9.444067] g_ether gadget: Mass StorageFunction, version: 2009/09/11
+/home/f3ban/bb/mount/nandd/var/log/syslog:803:Jan 30 18:25:55 bunny kernel: [    9.444098] g_ether gadget: Number of LUNs=1
+/home/f3ban/bb/mount/nandd/var/log/syslog:805:Jan 30 18:25:55 bunny kernel: [    9.444198] gadget_is_softwinner_otg is not -int
+/home/f3ban/bb/mount/nandd/var/log/syslog:806:Jan 30 18:25:55 bunny kernel: [    9.444219] gadget_is_softwinner_otg is not -int
+/home/f3ban/bb/mount/nandd/var/log/syslog:807:Jan 30 18:25:55 bunny kernel: [    9.444265] g_ether gadget: Ethernet Gadget, version: Memorial Day 2008
+/home/f3ban/bb/mount/nandd/var/log/syslog:808:Jan 30 18:25:55 bunny kernel: [    9.444320] g_ether gadget: g_ether ready
+/home/f3ban/bb/mount/nandd/var/log/syslog:825:Jan 30 18:25:55 bunny kernel: [    9.727135] g_ether gadget: high-speed config #2: CDC Ethernet (ECM)
+/home/f3ban/bb/mount/nandd/var/log/syslog:836:Jan 30 18:27:47 bunny kernel: [  121.799552] g_ether gadget: high-speed config #2: CDC Ethernet (ECM)
+/home/f3ban/bb/mount/nandd/var/log/syslog:839:Jan 30 18:28:58 bunny kernel: [  192.285624] g_ether gadget: high-speed config #2: CDC Ethernet (ECM)
+grep: /home/f3ban/bb/mount/nandd/var/log/syslog: binary file matches
+grep: /home/f3ban/bb/mount/nandd/var/log/btmp: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/lib/python-support: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/lib/container: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/lib/systemd/random-seed: Permission denied
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_source_Sources:165343:Homepage: http://greatscottgadgets.com/hackrf/
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_source_Sources:625741:Package:ttf-engadget
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_source_Sources:625742:Binary: ttf-engadget
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_source_Sources:625750: 3a4a2cb0281864e56eb6a679e3939406 1712 ttf-engadget_1.001-1-2.dsc
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_source_Sources:625751: f9bfa66c4669758ba143459a0e292392 148623 ttf-engadget_1.001-1.orig.tar.gz
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_source_Sources:625752: 3d3020f0be60e56c9a0222e11edcb5a8 1629 ttf-engadget_1.001-1-2.diff.gz
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_source_Sources:625754: e47c454cd2d03b69e4b47c276c85642d4157e508409afe2bd8cb1212f7b0ed7a 1712 ttf-engadget_1.001-1-2.dsc
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_source_Sources:625755: 6f6f6502b9c95cd02e5af2be94191e2d79a85b927f5df81c67c75a7996a08daf 148623 ttf-engadget_1.001-1.orig.tar.gz
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_source_Sources:625756: db2390f3209f6cf60357265a6b8f8fe4b48cfb73177b9eb0709566511512e262 1629 ttf-engadget_1.001-1-2.diff.gz
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_source_Sources:625757:Homepage: http://www.thibault.org/fonts/engadget/
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_source_Sources:625759: ttf-engadget deb fonts optional arch=all
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_source_Sources:625760:Directory: pool/main/t/ttf-engadget
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_binary-armhf_Packages:225560Homepage: http://greatscottgadgets.com/hackrf/
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_binary-armhf_Packages:225579Homepage: http://greatscottgadgets.com/hackrf/
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_binary-armhf_Packages:225600Homepage: http://greatscottgadgets.com/hackrf/
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_binary-armhf_Packages:758358Package: ttf-engadget
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_binary-armhf_Packages:758364Homepage: http://www.thibault.org/fonts/engadget/
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_binary-armhf_Packages:758369Filename: pool/main/t/ttf-engadget/ttf-engadget_1.001-1-1_all.deb
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_binary-armhf_Packages:254590:Homepage: http://greatscottgadgets.com/hackrf/
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_binary-armhf_Packages:254608:Homepage: http://greatscottgadgets.com/hackrf/
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_binary-armhf_Packages:254627:Homepage: http://greatscottgadgets.com/hackrf/
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_binary-armhf_Packages:854801:Package: ttf-engadget
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_binary-armhf_Packages:854807:Homepage: http://www.thibault.org/fonts/engadget/
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_binary-armhf_Packages:854812:Filename: pool/main/t/ttf-engadget/ttf-engadget_1.001-1-2_all.deb
+grep: /home/f3ban/bb/mount/nandd/var/lib/apt/lists/lock: Permission denied
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_source_Sources:153559:Homepage: http://greatscottgadgets.com/hackrf/
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_source_Sources:585525:Package: ttf-engadget
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_source_Sources:585526:Binary: ttf-engadget
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_source_Sources:585534: 2691719690bf8fb633a8d22c5032dab5 1050 ttf-engadget_1.001-1-1.dsc
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_source_Sources:585535: f9bfa66c4669758ba143459a0e292392 148623 ttf-engadget_1.001-1.orig.tar.gz
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_source_Sources:585536: 731c70ff4a12cfbf4ecf140044857377 1723 ttf-engadget_1.001-1-1.diff.gz
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_source_Sources:585538: d0385881f54aaa4b1eec8f2ef89f7dcfac47a2f7 1050 ttf-engadget_1.001-1-1.dsc
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_source_Sources:585539: 5bdd6e1b9da43cd202766900fe650b324114183f 148623 ttf-engadget_1.001-1.orig.tar.gz
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_source_Sources:585540: a66e7bf72001c7665b535d4e22c18570d8e10aac 1723 ttf-engadget_1.001-1-1.diff.gz
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_source_Sources:585542: 9d7c302f962a904fc34a35e0581e5cf10fb1eb4b697579087114b8a8c52a4064 1050 ttf-engadget_1.001-1-1.dsc
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_source_Sources:585543: 6f6f6502b9c95cd02e5af2be94191e2d79a85b927f5df81c67c75a7996a08daf 148623 ttf-engadget_1.001-1.orig.tar.gz
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_source_Sources:585544: 475bae0cc2c2eccbd9e7fe1f1986622187b41398aae4418dda88d969e16a70e8 1723 ttf-engadget_1.001-1-1.diff.gz
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_source_Sources:585545:Homepage: http://www.thibault.org/fonts/engadget/
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_source_Sources:585546:Directory: pool/main/t/ttf-engadget
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/archive.debian.org_debian_dists_jessie-backports_main_binary-armhf_Package31805:Homepage: http://greatscottgadgets.com/hackrf/
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/archive.debian.org_debian_dists_jessie-backports_main_binary-armhf_Package31823:Homepage: http://greatscottgadgets.com/hackrf/
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/archive.debian.org_debian_dists_jessie-backports_main_binary-armhf_Package31843:Homepage: http://greatscottgadgets.com/hackrf/
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_i18n_Translation-en:546880:Package: ttf-engadget
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_i18n_Translation-en:546883: This is the font used to create the engadget.com logo.
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_i18n_Translation-en:581318: Engadget,
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/archive.debian.org_debian_dists_jessie-backports_main_source_Sources:22914Homepage: http://greatscottgadgets.com/hackrf/
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_i18n_Translation-en:459218:Package: ttf-engadget
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_i18n_Translation-en:459221: This is the font used to create the engadget.com logo.
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/archive.debian.org_debian_dists_jessie-backports_main_i18n_Translation-en:71765: Engadget,
+/home/f3ban/bb/mount/nandd/var/lib/dpkg/info/linux-libc-dev:armhf.list:476:/usr/include/linux/usb/gadgetfs.h
+/home/f3ban/bb/mount/nandd/var/lib/dpkg/info/linux-libc-dev:armhf.md5sums:609:c7f585a16df110d11a899cd72b49b46d  usr/include/linux/usb/gadgetfs.h
+grep: /home/f3ban/bb/mount/nandd/var/lib/dpkg/lock: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/lib/dpkg/triggers/Lock: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/vhci_hcd: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/usbipd-win/usbip: binary file matches
+grep: /home/f3ban/bb/mount/nandd/var/run/unattended-upgrades.lock: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/agetty.reload: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/crond.reboot: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/uuidd/request: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/snapd-snap.socket: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/snapd.socket: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/apport.socket: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/sudo: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/dbus/system_bus_socket: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/12: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/b8:16: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/11: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/b8:0: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/10: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/b8:32: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/9: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/b8:48: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/8: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/b7:5: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/7: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/b7:7: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/6: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/5: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/b7:3: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/b7:2: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/4: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/b7:0: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/3: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/b7:4: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/2: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/1: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/b7:1: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/watch/b7:6: Too many levels of symbolic links
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/ptp_hyperv/c247:0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/rtc/c249:0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/virtio-ports\x2fhvc1/c244:1: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/virtio-ports\x2fhvc2/c244:2: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/virtio-ports\x2fhvc0/c244:0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-path\x2facpi-MSFT1000:00-scsi-0:0:0:1/b8:16: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-id\x2fwwn-0x600224805b5ac507b80a045bc3303ae1/b8:16: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-id\x2fscsi-3600224805b5ac507b80a045bc3303ae1/b8:16: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-diskseq\x2f26/b8:16: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-diskseq\x2f27/b8:32: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-path\x2facpi-MSFT1000:00-scsi-0:0:0:2/b8:32: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-id\x2fscsi-360022480a546e95990dea44855fd3334/b8:32: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-id\x2fwwn-0x60022480a546e95990dea44855fd3334/b8:32: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-uuid\x2f68d71d8b-046a-46ec-bcec-cb629a7dca36/b8:32: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-id\x2fwwn-0x60022480728b63b9f0b8d5e28f1d4859/b8:0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-path\x2facpi-MSFT1000:00-scsi-0:0:0:0/b8:0: No such fileor directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-id\x2fscsi-360022480728b63b9f0b8d5e28f1d4859/b8:0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-diskseq\x2f25/b8:0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-id\x2fwwn-0x600224800c96eed7918565e95b681867/b8:48: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-path\x2facpi-MSFT1000:00-scsi-0:0:0:3/b8:48: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-id\x2fscsi-3600224800c96eed7918565e95b681867/b8:48: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-uuid\x2f281fea18-729a-4231-b446-7b01686b085e/b8:48: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-diskseq\x2f28/b8:48: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-diskseq\x2f22/b7:5: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-diskseq\x2f24/b7:7: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-diskseq\x2f20/b7:3: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-diskseq\x2f17/b7:0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-diskseq\x2f18/b7:1: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-diskseq\x2f21/b7:4: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-diskseq\x2f23/b7:6: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/links/disk\x2fby-diskseq\x2f19/b7:2: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/static_node-tags/uaccess/snd\x2ftimer: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/udev/control: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/initctl: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/inhibit/1.ref: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/resolve/io.systemd.Resolve.Monitor: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/resolve/io.systemd.Resolve: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/sessions/31.ref: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/sessions/1.ref: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/io.systemd.sysext: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/journal/streams/8:26916: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/journal/streams/8:11535: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/journal/streams/8:2492: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/journal/streams/8:9433: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/journal/streams/8:8340: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/journal/streams/8:6812: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/journal/streams/8:6804: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/journal/streams/8:9363: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/journal/streams/8:9358: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/journal/streams/8:4438: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/journal/io.systemd.journal: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/journal/stdout: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/journal/socket: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/journal/dev-log: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/journal/syslog: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/io.systemd.ManagedOOM: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/userdb/io.systemd.DynamicUser: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/private: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/notify: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:session-31.scope: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:user@0.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:user-runtime-dir@0.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:polkit.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:systemd-binfmt.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:session-1.scope: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:user@1000.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:user-runtime-dir@1000.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:unattended-upgrades.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:getty@tty1.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:setvtrgb.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:console-getty.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:systemd-user-sessions.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:systemd-logind.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:snapd.seeded.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:rsyslog.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:dbus.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:cron.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:systemd-update-utmp.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:systemd-timesyncd.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:systemd-resolved.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:binfmt-support.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:systemd-tmpfiles-setup.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:systemd-udevd.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:console-setup.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:systemd-tmpfiles-setup-dev.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:systemd-journal-flush.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:systemd-tmpfiles-setup-dev-early.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:systemd-sysctl.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:sys-kernel-config.mount: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:sys-fs-fuse-connections.mount: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:systemd-udev-trigger.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:systemd-remount-fs.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:systemd-modules-load.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:kmod-static-nodes.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:keyboard-setup.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:systemd-journald.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:sys-kernel-tracing.mount: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:sys-kernel-debug.mount: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:dev-mqueue.mount: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/units/invocation:dev-hugepages.mount: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/propagate/polkit.service: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/propagate/systemd-logind.service: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/propagate/systemd-timesyncd.service: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/propagate/systemd-resolved.service: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/propagate/binfmt-support.service: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/propagate/systemd-udevd.service: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/inaccessible/blk: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/inaccessible/chr: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/inaccessible/sock: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/inaccessible/fifo: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/inaccessible/dir: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/systemd/inaccessible/reg: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/WSL/4171_interop: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/WSL/1_interop: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/WSL/2_interop: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/user/0: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/wayland-0: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/pulse/native: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/snapd-session-agent.socket: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/pk-debconf-socket: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/gnupg/S.gpg-agent.ssh: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/gnupg/S.keyboxd: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/gnupg/S.gpg-agent: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/gnupg/S.gpg-agent.extra: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/gnupg/S.gpg-agent.browser: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/gnupg/S.dirmngr: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/bus: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/systemd/private: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/systemd/notify: No such device or address
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/systemd/units/invocation:gpg-agent-ssh.socket: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/systemd/units/invocation:dbus.socket: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/systemd/inaccessible/chr: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/systemd/inaccessible/sock: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/systemd/inaccessible/fifo: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/systemd/inaccessible/dir: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/run/user/1000/systemd/inaccessible/reg: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/spool/rsyslog: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/spool/cron/crontabs: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/cache/debconf/passwords.dat: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/cache/ldconfig: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/cache/apt/srcpkgcache.bin: binary file matches
+grep: /home/f3ban/bb/mount/nandd/var/cache/apt/pkgcache.bin: binary file matches
+grep: /home/f3ban/bb/mount/nandd/var/cache/apt/archives/lock: Permission denied
+/home/f3ban/bb/mount/nandd/usr/include/linux/usb/gadgetfs.h:11: * Configuration and device descriptors get written to /dev/gadget/$CHIP,
+/home/f3ban/bb/mount/nandd/usr/include/linux/usb/gadgetfs.h:12: * which may then be used to read usb_gadgetfs_event structs.  The driver
+/home/f3ban/bb/mount/nandd/usr/include/linux/usb/gadgetfs.h:14: * or earlier; writing endpoint descriptors to /dev/gadget/$ENDPOINT
+/home/f3ban/bb/mount/nandd/usr/include/linux/usb/gadgetfs.h:32:enum usb_gadgetfs_event_type {
+/home/f3ban/bb/mount/nandd/usr/include/linux/usb/gadgetfs.h:45:struct usb_gadgetfs_event {
+/home/f3ban/bb/mount/nandd/usr/include/linux/usb/gadgetfs.h:60: enum usb_gadgetfs_event_type    type;
+/home/f3ban/bb/mount/nandd/usr/include/linux/usb/gadgetfs.h:64:/* The 'g' code is also used by printer gadget ioctl requests.
+/home/f3ban/bb/mount/nandd/usr/include/linux/usb/gadgetfs.h:71:/* IN transfers may be reported to the gadget driver as complete
+/home/f3ban/bb/mount/nandd/usr/include/linux/usb/functionfs.h:154:/* The same as in gadgetfs */
+/home/f3ban/bb/mount/nandd/usr/include/linux/usb/functionfs.h:156:/* IN transfers may be reported to the gadget driver as complete
+/home/f3ban/bb/mount/nandd/usr/include/linux/usb/g_printer.h:2: * g_printer.h -- Header file for USB Printer gadget driver
+/home/f3ban/bb/mount/nandd/usr/include/linux/usb/g_printer.h:28:/* The 'g' code is also used by gadgetfs ioctl requests.
+/home/f3ban/bb/mount/nandd/usr/include/linux/usb/ch9.h:10: * - the Linux "gadget" slave/device/peripheral side driver API.
+grep: /home/f3ban/bb/mount/nandd/usr/share/doc/node-jsonselect/site/JSONSelect.md: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/doc/node-jsonselect/site/js/jsonselect.js: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man8/tcptraceroute.8.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/droplang.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/postmaster.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/pg_basebackup.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/postgres.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/lft.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/initdb.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/traceproto.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/pg_dumpall.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/createlang.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/pg_restore.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/pg_resetxlog.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/pg_ctl.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/pg_upgrade.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/traceroute6.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/from.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/pg_isready.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/rename.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/createuser.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/reindexdb.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/rsh.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/pg_controldata.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/vacuumdb.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/clusterdb.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/rlogin.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/write.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/pg_dump.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/pg_recvlogical.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/w.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/pg_receivexlog.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/dropuser.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/dropdb.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/traceroute.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/createdb.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/mt.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/pg_xlogdump.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/rcp.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man1/psql.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_FOREIGN_DATA_WRAPPER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/INSERT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_EVENT_TRIGGER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_VIEW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_DOMAIN.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_LARGE_OBJECT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_TRIGGER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_SERVER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CHECKPOINT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_OPERATOR_FAMILY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_AGGREGATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_USER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_CONVERSION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_CAST.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/MOVE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_OPERATOR_CLASS.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_FUNCTION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_TEXT_SEARCH_TEMPLATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/COPY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_TABLESPACE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_TEXT_SEARCH_TEMPLATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_EXTENSION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/LOCK.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_SEQUENCE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_COLLATION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/PREPARE_TRANSACTION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_EXTENSION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_TYPE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/BEGIN.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_TEXT_SEARCH_CONFIGURATION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/WITH.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_OPERATOR_CLASS.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ROLLBACK.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_OWNED.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CLOSE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_DEFAULT_PRIVILEGES.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_DOMAIN.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_TRIGGER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_OPERATOR.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/SET_TRANSACTION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_TABLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ROLLBACK_TO_SAVEPOINT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/SET_ROLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/RESET.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_VIEW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_DOMAIN.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_CONVERSION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/TABLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_FOREIGN_DATA_WRAPPER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_OPERATOR_CLASS.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_GROUP.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/VALUES.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_SERVER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/REINDEX.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_OPERATOR.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_FOREIGN_TABLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/REASSIGN_OWNED.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_RULE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_COLLATION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_TYPE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_TABLESPACE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_TEXT_SEARCH_DICTIONARY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/REVOKE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ROLLBACK_PREPARED.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ABORT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/SELECT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/COMMIT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_FOREIGN_DATA_WRAPPER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_TEXT_SEARCH_DICTIONARY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_EVENT_TRIGGER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/SET_CONSTRAINTS.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/START_TRANSACTION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_TYPE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_LANGUAGE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/GRANT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/REFRESH_MATERIALIZED_VIEW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_COLLATION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/SELECT_INTO.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_RULE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_ROLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_CAST.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_TEXT_SEARCH_DICTIONARY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/COMMIT_PREPARED.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_USER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/NOTIFY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_SEQUENCE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_USER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_DATABASE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/RELEASE_SAVEPOINT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_TEXT_SEARCH_TEMPLATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/FETCH.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_FOREIGN_TABLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_OPERATOR_FAMILY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_FUNCTION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_MATERIALIZED_VIEW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/LOAD.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_MATERIALIZED_VIEW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/END.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/COMMENT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_SCHEMA.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_EVENT_TRIGGER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_DATABASE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/EXPLAIN.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/PREPARE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_TABLE_AS.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/TRUNCATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DEALLOCATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_OPERATOR.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_TEXT_SEARCH_PARSER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_USER_MAPPING.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/VACUUM.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_TABLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_INDEX.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_OPERATOR_FAMILY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_MATERIALIZED_VIEW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_TABLESPACE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/UNLISTEN.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/SET_SESSION_AUTHORIZATION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CLUSTER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_FOREIGN_TABLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_SCHEMA.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_GROUP.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_AGGREGATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/SET.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/SAVEPOINT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DECLARE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_SEQUENCE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/EXECUTE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_LANGUAGE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/LISTEN.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/UPDATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_SCHEMA.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_DATABASE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_SYSTEM.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_GROUP.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_AGGREGATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_ROLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_VIEW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_INDEX.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/SECURITY_LABEL.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DO.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/SHOW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_LANGUAGE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_USER_MAPPING.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_FUNCTION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_USER_MAPPING.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_ROLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_TABLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_RULE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_EXTENSION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ANALYZE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_INDEX.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_TRIGGER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DISCARD.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DELETE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_TEXT_SEARCH_CONFIGURATION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_TEXT_SEARCH_PARSER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/DROP_SERVER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/ALTER_TEXT_SEARCH_PARSER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_CONVERSION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man7/CREATE_TEXT_SEARCH_CONFIGURATION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man3/cerfl.3.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man3/cerff.3.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man3/cerfcf.3.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/man/man3/cerfcl.3.gz: No such file or directory
+/home/f3ban/bb/mount/nandd/usr/share/nmap/nmap-services:3119:gadgetgate1way     2677/udp        0.000330        # Gadget Gate 1 Way
+/home/f3ban/bb/mount/nandd/usr/share/nmap/nmap-services:3120:gadgetgate2way     2678/udp        0.000330        # Gadget Gate 2 Way
+/home/f3ban/bb/mount/nandd/usr/share/nmap/nselib/data/wp-plugins.lst:9758:gdgt-gadget-list-widget
+/home/f3ban/bb/mount/nandd/usr/share/nmap/nselib/data/wp-plugins.lst:9781:gdgt-gadget-list-widget
+/home/f3ban/bb/mount/nandd/usr/share/nmap/nselib/data/wp-plugins.lst:10462:widgetize-google-gadgets
+/home/f3ban/bb/mount/nandd/usr/share/nmap/nselib/data/wp-plugins.lst:10700:widgetize-google-gadgets
+/home/f3ban/bb/mount/nandd/usr/share/nmap/nselib/data/drupal-modules.lst:7597:views_google_gadget
+grep: /home/f3ban/bb/mount/nandd/usr/share/terminfo/c/cons25: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/terminfo/x/xterm-color: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/terminfo/x/xterm-r6: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/terminfo/n/nxterm: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/terminfo/a/ansi80x25: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/terminfo/a/ansis: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/terminfo/v/vt100-am: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/terminfo/v/vt220: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/terminfo/v/vt100: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/terminfo/v/vt200: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/terminfo/s/sun1: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/terminfo/s/sun2: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/share/terminfo/s/sun: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/bin/systemd-stdio-bridge: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/bin/rcp: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/bin/w: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/bin/rename: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/bin/traceproto: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/bin/traceroute6: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/bin/lft: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/bin/rlogin: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/bin/rsh: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/bin/from: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/bin/X11: warning: recursive directory loop
+grep: /home/f3ban/bb/mount/nandd/usr/bin/getfacl: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/bin/setfacl: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/bin/traceroute: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/bin/chacl: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/bin/write: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/bin/iptables-xml: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/sbin/traceroute: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/sbin/tcptraceroute: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/python2.7/sitecustomize.py: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/ruby/2.3.0/rdoc/generator/template/darkfish/fonts/Lato-LightItalic.ttf: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/ruby/2.3.0/rdoc/generator/template/darkfish/fonts/Lato-RegularItalic.ttf: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/ruby/2.3.0/rdoc/generator/template/darkfish/fonts/Lato-Light.ttf: No such fileor directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/ruby/2.3.0/rdoc/generator/template/darkfish/fonts/Lato-Regular.ttf: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/libblas.so.3: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/python2.6/dist-packages/python-support.pth: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/libblas.so.3gf: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg_httpsclient-0.3.2.egg-info/requires.txt: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg_httpsclient-0.3.2.egg-info/PKG-INFO: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg_httpsclient-0.3.2.egg-info/dependency_links.txt: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg_httpsclient-0.3.2.egg-info/top_level.txt: No such fileor directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg_httpsclient-0.3.2.egg-info/not-zip-safe: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg_httpsclient-0.3.2.egg-info/entry_points.txt: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg_httpsclient-0.3.2.egg-info/SOURCES.txt: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg_httpsclient-0.3.2.egg-info/namespace_packages.txt: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg/httpsclient/ssl_peer_verification.py: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg/httpsclient/__init__.py: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg/httpsclient/https.py: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg/httpsclient/utils.py: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg/httpsclient/ssl_context_util.py: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg/httpsclient/subj_alt_name.py: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg/httpsclient/ssl_socket.py: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg/httpsclient/urllib2_build_opener.py: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg/httpsclient/test/__init__.py: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg/httpsclient/test/test_urllib2.py: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg/httpsclient/test/pki/localhost.crt: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg/httpsclient/test/pki/localhost.key: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg/httpsclient/test/pki/ca/d573507a.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg/httpsclient/test/README: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg/httpsclient/test/scripts/openssl_https_server.sh: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg/httpsclient/test/test_https.py: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg/httpsclient/test/test_utils.py: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/pymodules/python2.7/ndg_httpsclient-0.3.2-nspkg.pth: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/ssl/private: Permission denied
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libcom_err.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libusb-0.1.so.4: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libnss_compat.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libnsl.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libnss_files.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libcrypt.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libanl.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libm.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libpng12.so.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libnss_nisplus.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libcidn.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libutil.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libfakeroot/libfakeroot-0.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libBrokenLocale.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libresolv.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libdl.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libthread_db.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libnss_dns.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libnss_hesiod.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libnss_nis.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libtxc_dxtn.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/libz.so: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/usr/lib/arm-linux-gnueabihf/librt.so: No such file or directory
+/home/f3ban/bb/mount/nandd/usr/local/bunny/bin/ATTACKMODE:90:insmod_cmd="insmod /usr/local/bunny/lib/bunny_gadget.ko"
+grep: /home/f3ban/bb/mount/nandd/usr/local/bunny/lib/bunny_gadget.ko: binary file matches
+/home/f3ban/bb/mount/nandd/usr/local/go/AUTHORS:69:Amir Mohammad Saied <amir@gluegadget.com>
+/home/f3ban/bb/mount/nandd/usr/local/go/CONTRIBUTORS:98:Amir Mohammad Saied <amir@gluegadget.com>
+grep: /home/f3ban/bb/mount/nandd/lost+found: Permission denied
+grep: /home/f3ban/bb/mount/nandd/root: Permission denied
+grep: /home/f3ban/bb/mount/nandd/bin/mt: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/group-: Permission denied
+grep: /home/f3ban/bb/mount/nandd/etc/shadow-: Permission denied
+grep: /home/f3ban/bb/mount/nandd/etc/subgid-: Permission denied
+grep: /home/f3ban/bb/mount/nandd/etc/resolv.conf: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/systemd/system/sshd.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/systemd/system/reboot.target.wants/hwclock-save.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/systemd/system/halt.target.wants/hwclock-save.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/systemd/system/sysinit.target.wants/resolvconf.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/systemd/system/multi-user.target.wants/sysfixtime.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/systemd/system/multi-user.target.wants/inetd.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/systemd/system/multi-user.target.wants/ssh.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/systemd/system/multi-user.target.wants/postgresql.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/systemd/system/multi-user.target.wants/bunny.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/systemd/system/poweroff.target.wants/hwclock-save.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/.pwd.lock: Permission denied
+grep: /home/f3ban/bb/mount/nandd/etc/gshadow: Permission denied
+grep: /home/f3ban/bb/mount/nandd/etc/shadow: Permission denied
+grep: /home/f3ban/bb/mount/nandd/etc/network/run: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/passwd-: Permission denied
+grep: /home/f3ban/bb/mount/nandd/etc/ssh/ssh_host_dsa_key: Permission denied
+grep: /home/f3ban/bb/mount/nandd/etc/ssh/ssh_host_ed25519_key: Permission denied
+grep: /home/f3ban/bb/mount/nandd/etc/ssh/ssh_host_ecdsa_key: Permission denied
+grep: /home/f3ban/bb/mount/nandd/etc/ssh/ssh_host_rsa_key: Permission denied
+grep: /home/f3ban/bb/mount/nandd/etc/resolvconf/run: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/subuid-: Permission denied
+grep: /home/f3ban/bb/mount/nandd/etc/gshadow-: Permission denied
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_FOREIGN_DATA_WRAPPER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/INSERT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/nc: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_EVENT_TRIGGER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_VIEW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/droplang.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_DOMAIN.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_LARGE_OBJECT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_TRIGGER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_SERVER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CHECKPOINT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_OPERATOR_FAMILY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/mt: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_AGGREGATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/postmaster.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/pg_basebackup.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_USER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_CONVERSION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_CAST.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/w: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/nc.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/MOVE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_OPERATOR_CLASS.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_FUNCTION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/postgres.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/rename: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_TEXT_SEARCH_TEMPLATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/lft.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/COPY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_TABLESPACE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/initdb.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_TEXT_SEARCH_TEMPLATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_EXTENSION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/LOCK.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_SEQUENCE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_COLLATION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/traceproto.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/PREPARE_TRANSACTION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_EXTENSION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_TYPE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/BEGIN.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_TEXT_SEARCH_CONFIGURATION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/pg_dumpall.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/WITH.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_OPERATOR_CLASS.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/createlang.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ROLLBACK.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_OWNED.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CLOSE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_DEFAULT_PRIVILEGES.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/traceproto: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_DOMAIN.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_TRIGGER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/traceroute6: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_OPERATOR.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/SET_TRANSACTION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_TABLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/pg_restore.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/pg_resetxlog.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ROLLBACK_TO_SAVEPOINT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/pg_ctl.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/pg_upgrade.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/SET_ROLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/RESET.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_VIEW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/traceroute6.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_DOMAIN.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_CONVERSION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/TABLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_FOREIGN_DATA_WRAPPER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_OPERATOR_CLASS.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_GROUP.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/VALUES.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_SERVER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/REINDEX.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_OPERATOR.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/from.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_FOREIGN_TABLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/REASSIGN_OWNED.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_RULE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_COLLATION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/lft: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/pg_isready.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_TYPE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_TABLESPACE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_TEXT_SEARCH_DICTIONARY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/REVOKE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/rename.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/netcat: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ROLLBACK_PREPARED.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/createuser.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ABORT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/reindexdb.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/SELECT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/COMMIT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_FOREIGN_DATA_WRAPPER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_TEXT_SEARCH_DICTIONARY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_EVENT_TRIGGER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/SET_CONSTRAINTS.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/START_TRANSACTION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_TYPE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_LANGUAGE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/GRANT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/pg_controldata.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/REFRESH_MATERIALIZED_VIEW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_COLLATION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/SELECT_INTO.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_RULE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_ROLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_CAST.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_TEXT_SEARCH_DICTIONARY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/libblas.so.3: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/COMMIT_PREPARED.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/vacuumdb.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/clusterdb.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_USER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/NOTIFY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_SEQUENCE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_USER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_DATABASE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/RELEASE_SAVEPOINT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_TEXT_SEARCH_TEMPLATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/FETCH.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_FOREIGN_TABLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/libblas.so.3gf: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_OPERATOR_FAMILY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_FUNCTION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_MATERIALIZED_VIEW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/write.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/LOAD.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_MATERIALIZED_VIEW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/END.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/COMMENT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_SCHEMA.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_EVENT_TRIGGER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/from: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_DATABASE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/pg_dump.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/EXPLAIN.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/libtxc-dxtn-arm-linux-gnueabihf: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/PREPARE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_TABLE_AS.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/TRUNCATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DEALLOCATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_OPERATOR.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_TEXT_SEARCH_PARSER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_USER_MAPPING.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/VACUUM.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_TABLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_INDEX.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/netcat.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_OPERATOR_FAMILY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_MATERIALIZED_VIEW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/pg_recvlogical.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_TABLESPACE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/UNLISTEN.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/w.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/SET_SESSION_AUTHORIZATION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CLUSTER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_FOREIGN_TABLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_SCHEMA.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/traceroute.sbin: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/pg_receivexlog.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_GROUP.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/dropuser.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_AGGREGATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/SET.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/SAVEPOINT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DECLARE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/dropdb.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_SEQUENCE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/EXECUTE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_LANGUAGE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/LISTEN.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/UPDATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_SCHEMA.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_DATABASE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_SYSTEM.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_GROUP.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_AGGREGATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_ROLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_VIEW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_INDEX.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/traceroute.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/createdb.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/traceroute: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/mt.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/SECURITY_LABEL.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DO.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/pg_xlogdump.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/SHOW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_LANGUAGE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_USER_MAPPING.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_FUNCTION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_USER_MAPPING.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_ROLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_TABLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_RULE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_EXTENSION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ANALYZE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/tcptraceroute.8.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_INDEX.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/psql.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_TRIGGER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/write: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DISCARD.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/tcptraceroute: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DELETE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_TEXT_SEARCH_CONFIGURATION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_TEXT_SEARCH_PARSER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_SERVER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_TEXT_SEARCH_PARSER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_CONVERSION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_TEXT_SEARCH_CONFIGURATION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/security/opasswd: Permission denied
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/private: Permission denied
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/aeb67534.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/Hellenic_Academic_and_Research_Institutions_RootCA_2011.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/cb156124.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/349f2832.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/5c44d531.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/TrustCor_ECA-1.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/080911ac.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/d0cddf45.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/Sonera_Class_2_Root_CA.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/40dc992e.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/GlobalSign_Root_CA_-_R2.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/2fa87019.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/Network_Solutions_Certificate_Authority.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/b1b8a7f3.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/GeoTrust_Universal_CA_2.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/9685a493.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/8867006a.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/87753b0d.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/LuxTrust_Global_Root_2.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/Hongkong_Post_Root_CA_1.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/5d3033c5.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/7c302982.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/3e45d192.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/4a6481c9.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/DST_Root_CA_X3.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/Taiwan_GRCA.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/EE_Certification_Centre_Root_CA.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/76cb8f92.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/111e6273.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/def36a68.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/1eb37bdf.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/9c2e7d30.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/343eb6cb.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/9f533518.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/7d453d8f.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/91739615.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/TrustCor_RootCert_CA-1.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/Chambers_of_Commerce_Root_-_2008.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/Staat_der_Nederlanden_EV_Root_CA.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/12d55845.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/Staat_der_Nederlanden_Root_CA_-_G2.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/E-Tugra_Certification_Authority.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/1636090b.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/OISTE_WISeKey_Global_Root_GA_CA.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/5a4d6896.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/Verisign_Class_3_Public_Primary_Certification_Authority_-_G3.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/TrustCor_RootCert_CA-2.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/4304c5e5.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/Trustis_FPS_Root_CA.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/5273a94c.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/3a3b02ce.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/3c6676aa.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/c51c224c.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/3d441de8.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/2e5ac55d.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/0c4c9b6c.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/c47d9980.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/7aaf71c0.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/3e44d2f7.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/128805a3.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/Cybertrust_Global_Root.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/03179a64.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/6410666e.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/a7605362.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/Global_Chambersign_Root_-_2008.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/QuoVadis_Root_CA.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/EC-ACC.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/c2c1704e.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/c0ff1f52.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/Staat_der_Nederlanden_Root_CA_-_G3.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/1dcd6f4c.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/d853d49e.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/5a250ea7.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/c907e29b.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/5cf9d536.0: No such file or directory
+/home/f3ban/bb/mount/nandd/lib/udev/hwdb.d/60-keyboard.hwdb:622: KEYBOARD_KEY_9003d=prog1# gadget
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/runlevel3.target.wants/systemd-update-utmp-runlevel.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/module-init-tools.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/rescue.target.wants/systemd-update-utmp-runlevel.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/reboot.target.wants/systemd-update-utmp-runlevel.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/runlevel4.target.wants/systemd-update-utmp-runlevel.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/procps.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/runlevel1.target.wants/systemd-update-utmp-runlevel.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/sysinit.target.wants/sys-kernel-debug.mount: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/sysinit.target.wants/systemd-tmpfiles-setup-dev.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/sysinit.target.wants/systemd-sysctl.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/sysinit.target.wants/systemd-modules-load.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/sysinit.target.wants/sys-fs-fuse-connections.mount: No such file ordirectory
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/sysinit.target.wants/systemd-update-utmp.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/graphical.target.wants/systemd-update-utmp-runlevel.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/multi-user.target.wants/systemd-update-utmp-runlevel.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/kmod.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/runlevel2.target.wants/systemd-update-utmp-runlevel.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/poweroff.target.wants/systemd-update-utmp-runlevel.service: No suchfile or directory
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/getty.target.wants/getty-static.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/lib/systemd/system/runlevel5.target.wants/systemd-update-utmp-runlevel.service: No such file or directory
+^C
+f3ban@FA506NF:~/bb/nand$

@@ -1,0 +1,243 @@
+f3ban@FA506NF:~/bb/nand$ sudo find ~/bb/mount/nandd -name "*bunny*" 2>/dev/null
+/home/f3ban/bb/mount/nandd/usr/local/bunny
+/home/f3ban/bb/mount/nandd/usr/local/bunny/bin/factory_reset_bunny
+/home/f3ban/bb/mount/nandd/usr/local/bunny/bin/bunny_framework
+/home/f3ban/bb/mount/nandd/usr/local/bunny/lib/bunny_gadget.ko
+/home/f3ban/bb/mount/nandd/etc/systemd/system/multi-user.target.wants/bunny.service
+/home/f3ban/bb/mount/nandd/lib/systemd/system/bunny.service
+f3ban@FA506NF:~/bb/nand$ cat ~/bb/mount/nandd/etc/rc.local 2>/dev/null
+-e #!/bin/sh -e
+
+
+exit 0
+f3ban@FA506NF:~/bb/nand$ ls ~/bb/mount/nandd/etc/init.d/
+README                  halt                   mountall.sh            postgresql  rsync           udev-finish
+bootlogs                hostname.sh            mountdevsubfs.sh       procps      rsyslog         umountfs
+bootmisc.sh             hwclock.sh             mountkernfs.sh         rc          screen-cleanup  umountnfs.sh
+checkfs.sh              isc-dhcp-server        mountnfs-bootclean.sh  rc.local    sendsigs        umountroot
+checkroot-bootclean.sh  killprocs              mountnfs.sh            rcS         single          urandom
+checkroot.sh            kmod                   networking             reboot      skeleton        x11-common
+cron                    motd                   ntp                    resolvconf  ssh
+dbus                    mountall-bootclean.sh  openbsd-inetd          rmnologin   udev
+f3ban@FA506NF:~/bb/nand$ grep -R "payload" ~/bb/mount/nandd/usr/local 2>/dev/null
+/home/f3ban/bb/mount/nandd/usr/local/bunny/bin/bunny_framework:function install_payload() {
+/home/f3ban/bb/mount/nandd/usr/local/bunny/bin/bunny_framework: local install_file="/root/udisk/payloads/${1}/install.sh"
+/home/f3ban/bb/mount/nandd/usr/local/bunny/bin/bunny_framework:         cp $install_file /tmp/install_payload.sh
+/home/f3ban/bb/mount/nandd/usr/local/bunny/bin/bunny_framework:         sed -i 's/\r//g' /tmp/install_payload.sh
+/home/f3ban/bb/mount/nandd/usr/local/bunny/bin/bunny_framework:         rm /tmp/install_payload.sh
+/home/f3ban/bb/mount/nandd/usr/local/bunny/bin/bunny_framework:function run_payload() {
+/home/f3ban/bb/mount/nandd/usr/local/bunny/bin/bunny_framework: local payload="/root/udisk/payloads/${1}/payload.txt"
+/home/f3ban/bb/mount/nandd/usr/local/bunny/bin/bunny_framework: [[ -f $payload ]] && {
+/home/f3ban/bb/mount/nandd/usr/local/bunny/bin/bunny_framework:         cp $payload /tmp/payload.sh
+/home/f3ban/bb/mount/nandd/usr/local/bunny/bin/bunny_framework:         sed -i 's/\r//g' /tmp/payload.sh
+/home/f3ban/bb/mount/nandd/usr/local/bunny/bin/bunny_framework:         for f in /root/udisk/payloads/extensions/*; do source $f; done
+/home/f3ban/bb/mount/nandd/usr/local/bunny/bin/bunny_framework:         PATH=$PATH bash -c '/tmp/payload.sh'
+/home/f3ban/bb/mount/nandd/usr/local/bunny/bin/bunny_framework:                 run_payload "arming" || /bin/bash -c "ATTACKMODE SERIAL STORAGE"
+/home/f3ban/bb/mount/nandd/usr/local/bunny/bin/bunny_framework:                 install_payload $switch
+/home/f3ban/bb/mount/nandd/usr/local/bunny/bin/bunny_framework:                 run_payload $switch
+/home/f3ban/bb/mount/nandd/usr/local/bunny/bin/LED:these standardized LED STATES may be used to indicate payload status:
+/home/f3ban/bb/mount/nandd/usr/local/bunny/bin/QUACK:def run_ducky_payload(duck_filename, lang_file):
+/home/f3ban/bb/mount/nandd/usr/local/bunny/bin/QUACK:    fullpath = "/root/udisk/payloads/"
+/home/f3ban/bb/mount/nandd/usr/local/bunny/bin/QUACK:            run_ducky_payload(fullpath+filename, lang_file)
+/home/f3ban/bb/mount/nandd/usr/local/bunny/bin/QUACK:            # clear context after 'Q payload.txt'
+/home/f3ban/bb/mount/nandd/usr/local/bunny/bin/Q:def run_ducky_payload(duck_filename, lang_file):
+/home/f3ban/bb/mount/nandd/usr/local/bunny/bin/Q:    fullpath = "/root/udisk/payloads/"
+/home/f3ban/bb/mount/nandd/usr/local/bunny/bin/Q:            run_ducky_payload(fullpath+filename, lang_file)
+/home/f3ban/bb/mount/nandd/usr/local/bunny/bin/Q:            # clear context after 'Q payload.txt'
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/docs/readme.txt: recommend updating to the latest framework version and payload set from the
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/docs/readme.txt: |                   Sourced by all payloads      Password: hak5bunny
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/docs/readme.txt: |-payloads/                                      Hostname: bunny
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/docs/readme.txt: | | |-payload.txt - Bunny Script executed on     BlueBlink     - Arming Mode
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/docs/readme.txt: | | |-payload.txt - Bunny Script executed on
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/docs/readme.txt: |   |-payload.txt - Override payload for
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/docs/readme.txt: |-loot/           - Where payloads store logs and data
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/docs/readme.txt:             or predefined payload state.        SHIFT
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/docs/readme.txt:             Accepts file relative to /payloads/ path        DOWNARROW/DOWN
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/docs/readme.txt: known as extensions. Sourced from payloads/library/extensions/* at run-time,
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/docs/readme.txt: payloads may make use of these command. Similar to payloads, the extensions
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/docs/readme.txt: /config.txt - Sourced by all payloads enabling globalconfigurations
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/docs/readme.txt: /payloads/switch#/
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/docs/readme.txt:                 |-payload.txt   Primary payload file executed on boot in
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/docs/readme.txt:                 |-install.sh    Installation script for complex payloads
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/docs/readme.txt: /payloads/arming/
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/docs/readme.txt:                |-payload.txt    Special payload executed when switch is in
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/docs/readme.txt: - Configure a payload.txt for ATTACKMODE RNDIS_ETHERNET
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/docs/readme.txt: - Boot Bash Bunny from RNDIS_ETHERNET set payload on the host Windows PC
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/docs/readme.txt: The multi-color LED enables at-a-glance information on payload status.
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/docs/readme.txt: The LED is controlled via the LED command, from the console or payload.txt
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/docs/readme.txt: these standardized LED STATES may be used to indicatepayload status:
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/docs/readme.txt: (\___/)      Find further documentation, repository of payloads,      (\___/)
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/payloads/extensions/wait_for_present.sh:# Pauses payload execution until specified bluetooth identifier IS present
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/payloads/extensions/wait.sh:# Waits blocks the payload from continuinguntil the switch position has changed
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/payloads/extensions/waiteject.sh:# Blocks the payload from continuing until the USB storage is ejected from the host
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/payloads/extensions/wait_for_notpresent.sh:# Pauses payload execution until specified bluetooth identifier IS NOT present
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/payloads/extensions/runpayload.sh:#  Allows selecting payloads by amount of switch changes
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/payloads/extensions/runpayload.sh:#Step1. put all your payloads into afolder
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/payloads/extensions/runpayload.sh:#Step2. in the switch folder make a payload.txt and define the payloads and the dir to use as variables. like so:
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/payloads/extensions/runpayload.sh:#scriptfolder=" /root/udisk/payloadspayloads/ "
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/payloads/extensions/runpayload.sh:#script1="payload1.txt"
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/payloads/extensions/runpayload.sh:#script2="payload2.txt"
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/payloads/extensions/runpayload.sh:#Step3. now call the extension as with the payloads you would like to use
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/payloads/extensions/runpayload.sh:# LED will go red, to let you know its ready.  It is currently about to execute the 1st given payload
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/payloads/extensions/runpayload.sh:# the LED will blue, to let you decide if you want to run that payload.  if yes do nothing, if no flick the switch.
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/payloads/extensions/runpayload.sh:# if you flicked the switch, the LEDwill flash green to indicate this, it will then flick to red and go blue,  it is now on the 2nd given payload and awaiting decision.
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/payloads/extensions/runpayload.sh:# and the payload of the given number will run.
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/payloads/extensions/runpayload.sh:# This will let you add as many payloads as you desire.
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/payloads/extensions/runpayload.sh:    payloadcount=$#
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/payloads/extensions/runpayload.sh:    payloadarray=("$@")
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/payloads/extensions/runpayload.sh:    while [ $payloadcount -ge $PAYLOAD ]; do
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/payloads/extensions/runpayload.sh:           "${payloadarray[0]}""${payloadarray["$PAYLOAD"]}"
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/payloads/switch1/payload.txt:# System default payload
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/payloads/switch2/payload.txt:# System default payload
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/payloads/library/get_payloads.html:        <meta http-equiv="refresh" content="1;url=https://payloads.hak5.org/">
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/payloads/library/get_payloads.html:            window.location.href = "https://payloads.hak5.org"
+/home/f3ban/bb/mount/nandd/usr/local/bunny/udisk/payloads/library/get_payloads.html:        If you are not redirected automatically, follow the <a href='https://payloads.hak5.org'>link to the Bash Bunny payloads</a>.
+/home/f3ban/bb/mount/nandd/usr/local/go/misc/trace/trace_viewer_lean.html:iterObjectFieldsRecursively(item.args);}};return{Model:Model};});'use strict';tr.exportTo('tr.e.importer.etw',function(){var kThreadGuid='3D6FA8D1-FE05-11D0-9DDA-00C04FD7BA7C';var kThreadDCStartOpcode=3;function Decoder(){this.payload_=new DataView(new ArrayBuffer(256));};Decoder.prototype={__proto__:Object.prototype,reset:function(base64_payload){var decoded_size=tr.b.Base64.getDecodedBufferLength(base64_payload);if(decoded_size>this.payload_.byteLength)
+/home/f3ban/bb/mount/nandd/usr/local/go/misc/trace/trace_viewer_lean.html:this.payload_=new DataView(new ArrayBuffer(decoded_size));tr.b.Base64.DecodeToTypedArray(base64_payload,this.payload_);this.position_=0;},skip:function(length){this.position_+=length;},decodeUInt8:function(){var result=this.payload_.getUint8(this.position_,true);this.position_+=1;return result;},decodeUInt16:function(){var result=this.payload_.getUint16(this.position_,true);this.position_+=2;return result;},decodeUInt32:function(){var result=this.payload_.getUint32(this.position_,true);this.position_+=4;return result;},decodeUInt64ToString:function(){var low=this.decodeUInt32();var high=this.decodeUInt32();var low_str=('0000000'+low.toString(16)).substr(-8);var high_str=('0000000'+high.toString(16)).substr(-8);var result=high_str+low_str;return result;},decodeInt8:function(){var result=this.payload_.getInt8(this.position_,true);this.position_+=1;return result;},decodeInt16:function(){var result=this.payload_.getInt16(this.position_,true);this.position_+=2;return result;},decodeInt32:function(){var result=this.payload_.getInt32(this.position_,true);this.position_+=4;return result;},decodeInt64ToString:function(){return this.decodeUInt64ToString();},decodeUInteger:function(is64){if(is64)
+/home/f3ban/bb/mount/nandd/usr/local/go/misc/trace/trace_viewer_lean.html:if(this.is64bit_==undefined&&event.hasOwnProperty('guid')&&event.hasOwnProperty('op')&&event.hasOwnProperty('ver')&&event.hasOwnProperty('payload')&&event.guid===kThreadGuid&&event.op==kThreadDCStartOpcode){var decoded_size=tr.b.Base64.getDecodedBufferLength(event.payload);if(event.ver==1){if(decoded_size>=52)
+/home/f3ban/bb/mount/nandd/usr/local/go/misc/trace/trace_viewer_lean.html:return true;},parseEvent:function(event){if(!event.hasOwnProperty('guid')||!event.hasOwnProperty('op')||!event.hasOwnProperty('ver')||!event.hasOwnProperty('cpu')||!event.hasOwnProperty('ts')||!event.hasOwnProperty('payload')){return false;}
+/home/f3ban/bb/mount/nandd/usr/local/go/misc/trace/trace_viewer_lean.html:var timestamp=this.importTimestamp(event.ts);var header={guid:event.guid,opcode:event.op,version:event.ver,cpu:event.cpu,timestamp:timestamp,is64:this.is64bit_};var decoder=this.decoder_;decoder.reset(event.payload);var handler=this.getEventHandler(header.guid,header.opcode);if(!handler)
+/home/f3ban/bb/mount/nandd/usr/local/go/misc/trace/trace_viewer_lean.html:var clockSync=syncMarks[0];var syncTs=clockSync.start;var traceTs=this.explicitSyncMark_['ts'];return syncTs-traceTs;},foundExplicitSyncMark:function(){return this.explicitSyncMark_!==undefined;}};tr.importer.Importer.register(BattorImporter);return{BattorImporter:BattorImporter,_BattorImporterTestExports:TestExports};});'use strict';tr.exportTo('tr.e.importer.ddms',function(){var kPid=0;var kCategory='java';var kMethodLutEndMarker='\n*end\n';var kThreadsStart='\n*threads\n';var kMethodsStart='\n*methods\n';var kTraceMethodEnter=0x00;var kTraceMethodExit=0x01;var kTraceUnroll=0x02;var kTraceMethodActionMask=0x03;var kTraceHeaderLength=32;var kTraceMagicValue=0x574f4c53;var kTraceVersionSingleClock=2;var kTraceVersionDualClock=3;var kTraceRecordSizeSingleClock=10;var kTraceRecordSizeDualClock=14;function Reader(string_payload){this.position_=0;this.data_=JSZip.utils.transformTo('uint8array',string_payload);}
+/home/f3ban/bb/mount/nandd/usr/local/go/src/compress/gzip/gzip_test.go:// TestEmpty tests that an empty payload still forms a valid GZIP stream.
+/home/f3ban/bb/mount/nandd/usr/local/go/src/compress/gzip/gzip_test.go: if _, err := w.Write([]byte("payload")); err !=nil {
+/home/f3ban/bb/mount/nandd/usr/local/go/src/compress/gzip/gzip_test.go: if string(b) != "payload" {
+/home/f3ban/bb/mount/nandd/usr/local/go/src/compress/gzip/gzip_test.go:         t.Fatalf("payload is %q, want %q", string(b), "payload")
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:// from the end of payload. It also returns a byte whichis equal to 255 if the
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:func extractPadding(payload []byte) (toRemove int, good byte) {
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go: if len(payload) < 1 {
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go: paddingLen := payload[len(payload)-1]
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go: t := uint(len(payload)-1) - uint(paddingLen)
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go: // if len(payload) >= (paddingLen - 1) then the MSB of t is zero
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go: if toCheck+1 > len(payload) {
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:         toCheck = len(payload) - 1
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:         b := payload[len(payload)-1-i]
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:func extractPaddingSSL30(payload []byte) (toRemove int, good byte) {
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go: if len(payload) < 1 {
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go: paddingLen := int(payload[len(payload)-1]) + 1
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go: if paddingLen > len(payload) {
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:// order to get the application payload, and an optionalalert value.
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go: // pull out payload
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go: payload := b.data[recordHeaderLen:]
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:                 c.XORKeyStream(payload, payload)
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:                 if len(payload) < explicitIVLen {
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:                 nonce := payload[:explicitIVLen]
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:                 payload = payload[explicitIVLen:]
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:                 n := len(payload) - c.Overhead()
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:                 payload, err = c.Open(payload[:0], nonce, payload, hc.additionalData[:])
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:                 b.resize(recordHeaderLen + explicitIVLen + len(payload))
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:                 if len(payload)%blockSize != 0 || len(payload) < roundUp(explicitIVLen+macSize+1, blockSize) {
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:                         c.SetIV(payload[:explicitIVLen])
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:                         payload = payload[explicitIVLen:]
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:                 c.CryptBlocks(payload, payload)
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:                         paddingLen, paddingGood = extractPaddingSSL30(payload)
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:                         paddingLen, paddingGood = extractPadding(payload)
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:         if len(payload) < macSize {
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:         // strip mac off payload, b.data
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:         n := len(payload) - macSize - paddingLen
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:         remoteMAC := payload[n : n+macSize]
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:         localMAC := hc.mac.MAC(hc.inDigestBuf, hc.seq[0:], b.data[:recordHeaderLen], payload[:n], payload[n+macSize:])
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:// padToBlockSize calculates the needed padding block, if any, for a payload.
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:// On exit, prefix aliases payload and extends to the end of the last full
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:// block of payload. finalBlock is a fresh slice which contains the contents of
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:// any suffix of payload as well as the needed padding to make finalBlock a
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:func padToBlockSize(payload []byte, blockSize int) (prefix, finalBlock []byte) {
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go: overrun := len(payload) % blockSize
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go: prefix = payload[:len(payload)-overrun]
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go: copy(finalBlock, payload[len(payload)-overrun:])
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go: payload := b.data[recordHeaderLen:]
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:                 c.XORKeyStream(payload, payload)
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:                 payloadLen := len(b.data) - recordHeaderLen - explicitIVLen
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:                 payload := b.data[recordHeaderLen+explicitIVLen:]
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:                 payload = payload[:payloadLen]
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:                 hc.additionalData[11] = byte(payloadLen>> 8)
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:                 hc.additionalData[12] = byte(payloadLen)
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:                 c.Seal(payload[:0], nonce, payload, hc.additionalData[:])
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:                         c.SetIV(payload[:explicitIVLen])
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:                         payload = payload[explicitIVLen:]
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:                 prefix, finalBlock := padToBlockSize(payload, blockSize)
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go: // Read header, payload.
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:// maxPayloadSizeForWrite returns the maximum TLS payloasize to use for the
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go: // Subtract TLS overheads to get the maximum payload size.
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go: payloadBytes := tcpMSSEstimate - recordHeaderLen - explicitIVLen
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:                 payloadBytes -= macSize
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:                 payloadBytes -= ciph.Overhead()
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:                 // The payload must fit in a multiple of blockSize, with
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:                 payloadBytes = (payloadBytes & ^(blockSize - 1)) - 1
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:                 // payload size directly.
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:                 payloadBytes -= macSize
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go: n := payloadBytes * int(pkt+1)
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:// writeRecordLocked writes a TLS record with the given type and payload to the
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/conn.go:// writeRecord writes a TLS record with the given type and payload to the
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/common.go:       maxPlaintext    = 16384        // maximum plaintext payload length
+/home/f3ban/bb/mount/nandd/usr/local/go/src/crypto/tls/common.go:       maxCiphertext   = 16384 + 2048 // maximum ciphertext payload length
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/iprawsock.go:// ReadFromIP reads an IP packet from c, copying the payload into b.
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/iprawsock.go:// ReadMsgIP reads a packet from c, copying the payload into b and the
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/iprawsock.go:// WriteToIP writes an IP packet to addr via c, copying the payload
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/iprawsock.go:// WriteMsgIP writes a packet to addr via c, copying the payload from
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/iprawsock.go:// number of payload and out-of-band bytes written.
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/udpsock.go:// ReadFromUDP reads a UDP packet from c, copying the payloainto b.
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/udpsock.go:// ReadMsgUDP reads a packet from c, copying the payload into b and
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/udpsock.go:// WriteToUDP writes a UDP packet to addr via c, copying thepayload
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/udpsock.go:// addr must be nil).  The payload is copied from b and the associated
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/udpsock.go:// payload and out-of-band bytes written.
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/rpc/client.go:// the header and payload are sent as a unit.
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/net.go: // copying the payload into b. It returns the number of
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/net.go: // WriteTo writes a packet with payload b to addr.
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/http/h2_bundle.go:// a frameParser parses a frame given its FrameHeaderand payload
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/http/h2_bundle.go:// bytes. The length of payload will always equal fh.Length (which
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/http/h2_bundle.go:type http2frameParser func(fh http2FrameHeader, payload []byte) (http2Frame, error)
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/http/h2_bundle.go:      payload := fr.getReadBuf(fh.Length)
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/http/h2_bundle.go:      if _, err := io.ReadFull(fr.r, payload); err !=nil {
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/http/h2_bundle.go:      f, err := http2typeFrameParser(fh.Type)(fh, payload)
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/http/h2_bundle.go:func http2parseDataFrame(fh http2FrameHeader, payload[]byte) (http2Frame, error) {
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/http/h2_bundle.go:              payload, padSize, err = http2readByte(payload)
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/http/h2_bundle.go:      if int(padSize) > len(payload) {
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/http/h2_bundle.go:              return nil, http2connError{http2ErrCodeProtocol, "pad size larger than data payload"}
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/http/h2_bundle.go:      f.data = payload[:len(payload)-int(padSize)]
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/http/h2_bundle.go:func http2parsePingFrame(fh http2FrameHeader, payload[]byte) (http2Frame, error) {
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/http/h2_bundle.go:      if len(payload) != 8 {
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/http/h2_bundle.go:      copy(f.Data[:], payload)
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/http/h2_bundle.go:// Payload returns the frame's payload (after the header).  It is not
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/http/h2_bundle.go:func http2parsePriorityFrame(fh http2FrameHeader, payload []byte) (http2Frame, error) {
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/http/h2_bundle.go:      if len(payload) != 5 {
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/http/h2_bundle.go:              return nil, http2connError{http2ErrCodeFrameSize, fmt.Sprintf("PRIORITY frame payload size was %d; want 5", len(payload))}
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/http/h2_bundle.go:      v := binary.BigEndian.Uint32(payload[:4])
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/http/h2_bundle.go:                      Weight:    payload[4],
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/http/h2_bundle.go:func (f *http2Framer) WriteRawFrame(t http2FrameType,flags http2Flags, streamID uint32, payload []byte) error {
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/http/h2_bundle.go:      f.writeBytes(payload)
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/http/h2_bundle.go:      bufPipe       http2pipe // buffered pipe with the flow-controlled response payload
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/http/h2_bundle.go:      // Generate a random payload
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/unixsock.go:// ReadFromUnix reads a packet from c, copying the payload into b. It
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/unixsock.go:// ReadMsgUnix reads a packet from c, copying the payload into b and
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/unixsock.go:// WriteToUnix writes a packet to addr via c, copying the payload from b.
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/unixsock.go:// WriteMsgUnix writes a packet to addr via c, copying the payload
+/home/f3ban/bb/mount/nandd/usr/local/go/src/net/unixsock.go:// the number of payload and out-of-band bytes written.
+/home/f3ban/bb/mount/nandd/usr/local/go/src/hash/crc32/crc32_generic.go:// Use slicing-by-8 when payload >= this value.
+/home/f3ban/bb/mount/nandd/usr/local/go/src/syscall/route_bsd.go:// ParseRoutingSockaddr parses msg's payload as raw sockaddrs and
+/home/f3ban/bb/mount/nandd/usr/local/go/src/syscall/netlink_linux.go:// ParseNetlinkRouteAttr parses m's payload as an array of netlink
+/home/f3ban/bb/mount/nandd/usr/local/go/src/syscall/sockcmsg_unix.go:// payload of the passed data length occupies.
+/home/f3ban/bb/mount/nandd/usr/local/go/src/image/gif/reader_test.go:                   b.WriteString("\x01\x02") // A 1-byte payload with an 0x02 byte.
+/home/f3ban/bb/mount/nandd/usr/local/go/src/image/png/reader_test.go:   // but the zlib-compressed IDAT payload contains two bytes "\x02\x00",
+/home/f3ban/bb/mount/nandd/usr/local/go/src/runtime/write_err_android.go:// writeLogdHeader populates the header and returns the length of the payload.
+f3ban@FA506NF:~/bb/nand$ cat ~/bb/mount/nandd/etc/rc.local
+ls ~/bb/mount/nandd/etc/init.d/
+find ~/bb/mount/nandd -name "*bunny*" 2>/dev/null
+-e #!/bin/sh -e
+
+
+exit 0
+README                  halt                   mountall.sh            postgresql  rsync           udev-finish
+bootlogs                hostname.sh            mountdevsubfs.sh       procps      rsyslog         umountfs
+bootmisc.sh             hwclock.sh             mountkernfs.sh         rc          screen-cleanup  umountnfs.sh
+checkfs.sh              isc-dhcp-server        mountnfs-bootclean.sh  rc.local    sendsigs        umountroot
+checkroot-bootclean.sh  killprocs              mountnfs.sh            rcS         single          urandom
+checkroot.sh            kmod                   networking             reboot      skeleton        x11-common
+cron                    motd                   ntp                    resolvconf  ssh
+dbus                    mountall-bootclean.sh  openbsd-inetd          rmnologin   udev
+/home/f3ban/bb/mount/nandd/usr/local/bunny
+/home/f3ban/bb/mount/nandd/usr/local/bunny/bin/factory_reset_bunny
+/home/f3ban/bb/mount/nandd/usr/local/bunny/bin/bunny_framework
+/home/f3ban/bb/mount/nandd/usr/local/bunny/lib/bunny_gadget.ko
+/home/f3ban/bb/mount/nandd/etc/systemd/system/multi-user.target.wants/bunny.service
+/home/f3ban/bb/mount/nandd/lib/systemd/system/bunny.service
+f3ban@FA506NF:~/bb/nand$

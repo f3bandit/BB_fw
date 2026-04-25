@@ -1,0 +1,621 @@
+f3ban@FA506NF:~/bb/nand$ grep -R "update" ~/bb/mount/nandd/etc -n
+grep -R "upgrade" ~/bb/mount/nandd -n | head -100
+grep: /home/f3ban/bb/mount/nandd/etc/group-: Permission denied
+/home/f3ban/bb/mount/nandd/etc/dhcp/dhcpd.conf:6:# The ddns-updates-style parameter controls whether or not the server will
+/home/f3ban/bb/mount/nandd/etc/dhcp/dhcpd.conf:7:# attempt to do a DNS update when a lease is confirmed. We default to the
+/home/f3ban/bb/mount/nandd/etc/dhcp/dhcpd.conf:10:ddns-update-style none;
+grep: /home/f3ban/bb/mount/nandd/etc/shadow-: Permission denied
+grep: /home/f3ban/bb/mount/nandd/etc/subgid-: Permission denied
+/home/f3ban/bb/mount/nandd/etc/rc6.d/K01resolvconf:18:# terminal ifdowns shouldn't update resolv.conf;
+/home/f3ban/bb/mount/nandd/etc/rc6.d/K01resolvconf:30:ENABLE_UPDATES_FLAGFILE="${RUN_DIR}/enable-updates"
+/home/f3ban/bb/mount/nandd/etc/rc6.d/K01resolvconf:31:POSTPONED_UPDATE_FLAGFILE="${RUN_DIR}/postponed-update"
+/home/f3ban/bb/mount/nandd/etc/rc6.d/K01resolvconf:91:  # Request a postponed update (needed in case the base file has content).
+/home/f3ban/bb/mount/nandd/etc/rc6.d/K01resolvconf:92:  :> "$POSTPONED_UPDATE_FLAGFILE" || log_action_end_msg_and_exit 1 "failed requesting update"
+/home/f3ban/bb/mount/nandd/etc/rc6.d/K01resolvconf:93:  # Enable updates and perform the postponed update.
+/home/f3ban/bb/mount/nandd/etc/rc6.d/K01resolvconf:94:  resolvconf --enable-updates || log_action_end_msg_and_exit 1 "failed to enable updates"
+/home/f3ban/bb/mount/nandd/etc/rc6.d/K01resolvconf:100: resolvconf --disable-updates || log_action_end_msg_and_exit 1 "failed to disable updates"
+/home/f3ban/bb/mount/nandd/etc/rc6.d/K01resolvconf:105: resolvconf --enable-updates || log_action_end_msg_and_exit 1 "failed to enable updates"
+/home/f3ban/bb/mount/nandd/etc/rc6.d/K01resolvconf:109: resolvconf -u || log_action_end_msg_and_exit 1 "failed to updat"
+/home/f3ban/bb/mount/nandd/etc/rc6.d/K01resolvconf:112:  enable-updates)
+/home/f3ban/bb/mount/nandd/etc/rc6.d/K01resolvconf:113: resolvconf --enable-updates || log_action_end_msg_and_exit 1 "failed to enable updates"
+/home/f3ban/bb/mount/nandd/etc/rc6.d/K01resolvconf:116:  disable-updates)
+/home/f3ban/bb/mount/nandd/etc/rc6.d/K01resolvconf:117: resolvconf --disable-updates || log_action_end_msg_and_exit 1 "failed to disable updates"
+/home/f3ban/bb/mount/nandd/etc/rc6.d/K01resolvconf:121: if resolvconf --updates-are-enabled ; then
+/home/f3ban/bb/mount/nandd/etc/rc6.d/K01resolvconf:122:         log_success_msg "resolvconf updates are enabled"
+/home/f3ban/bb/mount/nandd/etc/rc6.d/K01resolvconf:124:         log_failure_msg "resolvconf updates are disabled"
+/home/f3ban/bb/mount/nandd/etc/rc6.d/K01resolvconf:129: echo "Usage: /etc/init.d/resolvconf {start|stop|restart|reload|force-reload|enable-updates|disable-updates|status}" >&2
+/home/f3ban/bb/mount/nandd/etc/rc6.d/K04hwclock.sh:103:             verbose_log_action_msg "Hardware Clock updated to `date`"
+grep: /home/f3ban/bb/mount/nandd/etc/resolv.conf: No such file or directory
+/home/f3ban/bb/mount/nandd/etc/sgml/catalog:2:## This file is created by update-catalog with update-super.
+/home/f3ban/bb/mount/nandd/etc/sgml/catalog:3:## Please see update-catalog(8) for how to modify this file.
+/home/f3ban/bb/mount/nandd/etc/mailcap:5:#  Much of this file is generated automatically by the program "update-mime".
+/home/f3ban/bb/mount/nandd/etc/mailcap:6:#  Please see the "update-mime" man page for more information.
+/home/f3ban/bb/mount/nandd/etc/mailcap:18:#  precedence over those created by "update-mime".  DO NOT CHANGE the
+/home/f3ban/bb/mount/nandd/etc/rc3.d/README:9:number, and run 'update-rc.d script defaults' to reorder the scripts
+/home/f3ban/bb/mount/nandd/etc/rc3.d/README:13:original name beginning with 'S' and run update-rc.d again.
+grep: /home/f3ban/bb/mount/nandd/etc/systemd/system/sshd.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/systemd/system/reboot.target.wants/hwclock-save.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/systemd/system/halt.target.wants/hwclock-save.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/systemd/system/sysinit.target.wants/resolvconf.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/systemd/system/multi-user.target.wants/sysfixtime.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/systemd/system/multi-user.target.wants/inetd.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/systemd/system/multi-user.target.wants/ssh.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/systemd/system/multi-user.target.wants/postgresql.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/systemd/system/multi-user.target.wants/bunny.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/systemd/system/poweroff.target.wants/hwclock-save.service: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/.pwd.lock: Permission denied
+/home/f3ban/bb/mount/nandd/etc/rc5.d/README:9:number, and run 'update-rc.d script defaults' to reorder the scripts
+/home/f3ban/bb/mount/nandd/etc/rc5.d/README:13:original name beginning with 'S' and run update-rc.d again.
+/home/f3ban/bb/mount/nandd/etc/samba/smb.conf:108:   passwd chat = *Enter\snew\s*\spassword:* %n\n *Retype\snew\s*\spassword:* %n\n *password\supdated\ssuccessfully* .
+grep: /home/f3ban/bb/mount/nandd/etc/gshadow: Permission denied
+/home/f3ban/bb/mount/nandd/etc/skel/.bashrc:23:# update the values of LINES and COLUMNS.
+grep: /home/f3ban/bb/mount/nandd/etc/shadow: Permission denied
+/home/f3ban/bb/mount/nandd/etc/bash.bashrc:10:# update the values of LINES and COLUMNS.
+/home/f3ban/bb/mount/nandd/etc/pam.d/common-session-noninteractive:9:# As of pam 1.0.1-6, this file is managed by pam-auth-update by default.
+/home/f3ban/bb/mount/nandd/etc/pam.d/common-session-noninteractive:12:# pam-auth-update to manage selection of other modules.  See
+/home/f3ban/bb/mount/nandd/etc/pam.d/common-session-noninteractive:13:# pam-auth-update(8) for details.
+/home/f3ban/bb/mount/nandd/etc/pam.d/common-session-noninteractive:25:# end of pam-auth-update config
+/home/f3ban/bb/mount/nandd/etc/pam.d/sshd:34:session    optional     pam_motd.so noupdate
+/home/f3ban/bb/mount/nandd/etc/pam.d/common-session:9:# As of pam 1.0.1-6, this file is managed by pam-auth-update by default.
+/home/f3ban/bb/mount/nandd/etc/pam.d/common-session:12:# pam-auth-update to manage selection of other modules.  See
+/home/f3ban/bb/mount/nandd/etc/pam.d/common-session:13:# pam-auth-update(8) for details.
+/home/f3ban/bb/mount/nandd/etc/pam.d/common-session:25:# end of pam-auth-update config
+/home/f3ban/bb/mount/nandd/etc/pam.d/common-auth:10:# As of pam 1.0.1-6, this file is managed by pam-auth-update by default.
+/home/f3ban/bb/mount/nandd/etc/pam.d/common-auth:13:# pam-auth-update to manage selection of other modules.  See
+/home/f3ban/bb/mount/nandd/etc/pam.d/common-auth:14:# pam-auth-update(8) for details.
+/home/f3ban/bb/mount/nandd/etc/pam.d/common-auth:25:# end of pam-auth-update config
+/home/f3ban/bb/mount/nandd/etc/pam.d/common-password:18:# As of pam 1.0.1-6, this file is managed by pam-auth-update bydefault.
+/home/f3ban/bb/mount/nandd/etc/pam.d/common-password:21:# pam-auth-update to manage selection of other modules.  See
+/home/f3ban/bb/mount/nandd/etc/pam.d/common-password:22:# pam-auth-update(8) for details.
+/home/f3ban/bb/mount/nandd/etc/pam.d/common-password:33:# end of pam-auth-update config
+/home/f3ban/bb/mount/nandd/etc/pam.d/common-account:9:# As of pam 1.0.1-6, this file is managed by pam-auth-update by default.
+/home/f3ban/bb/mount/nandd/etc/pam.d/common-account:12:# pam-auth-update to manage selection of other modules.  See
+/home/f3ban/bb/mount/nandd/etc/pam.d/common-account:13:# pam-auth-update(8) for details.
+/home/f3ban/bb/mount/nandd/etc/pam.d/common-account:25:# end of pam-auth-update config
+grep: /home/f3ban/bb/mount/nandd/etc/network/run: No such file or directory
+/home/f3ban/bb/mount/nandd/etc/init/udev-finish.conf:1:# udev-finish - save udev log and update rules
+/home/f3ban/bb/mount/nandd/etc/init/udev-finish.conf:7:description      "save udev log and update rules"
+/home/f3ban/bb/mount/nandd/etc/init/resolvconf.conf:11: # Request a postponed update (needed in case the base file has content).
+/home/f3ban/bb/mount/nandd/etc/init/resolvconf.conf:12: touch /run/resolvconf/postponed-update
+/home/f3ban/bb/mount/nandd/etc/init/resolvconf.conf:13: # Enable updates and perform the postponed update.
+/home/f3ban/bb/mount/nandd/etc/init/resolvconf.conf:14: resolvconf --enable-updates
+/home/f3ban/bb/mount/nandd/etc/init/resolvconf.conf:18: resolvconf --disable-updates
+/home/f3ban/bb/mount/nandd/etc/ca-certificates.conf:3:# update-ca-certificates(8) will update /etc/ssl/certs by readingthis file.
+/home/f3ban/bb/mount/nandd/etc/rpc:29:ypupdated 100028  ypupdate
+/home/f3ban/bb/mount/nandd/etc/init.d/mountall.sh:49:   # /usr/share/sysvinit/update-rc.d to verify that sysvinit (and
+/home/f3ban/bb/mount/nandd/etc/init.d/mountall.sh:52:   if [ ! -p "$INITCTL" ] && [ -f "/usr/share/sysvinit/update-rc.d" ]; then
+/home/f3ban/bb/mount/nandd/etc/init.d/mountall.sh:68:   mount_run mount_noupdate
+/home/f3ban/bb/mount/nandd/etc/init.d/mountall.sh:69:   mount_lock mount_noupdate
+/home/f3ban/bb/mount/nandd/etc/init.d/mountall.sh:70:   mount_shm mount_noupdate
+/home/f3ban/bb/mount/nandd/etc/init.d/mountall.sh:75:   mount_tmp mount_noupdate
+/home/f3ban/bb/mount/nandd/etc/init.d/mountdevsubfs.sh:53:      mount_filesystems mount_noupdate
+/home/f3ban/bb/mount/nandd/etc/init.d/mountdevsubfs.sh:56:      mount_filesystems mount_noupdate
+/home/f3ban/bb/mount/nandd/etc/init.d/resolvconf:18:# terminal ifdowns shouldn't update resolv.conf;
+/home/f3ban/bb/mount/nandd/etc/init.d/resolvconf:30:ENABLE_UPDATES_FLAGFILE="${RUN_DIR}/enable-updates"
+/home/f3ban/bb/mount/nandd/etc/init.d/resolvconf:31:POSTPONED_UPDATE_FLAGFILE="${RUN_DIR}/postponed-update"
+/home/f3ban/bb/mount/nandd/etc/init.d/resolvconf:91:    # Request a postponed update (needed in case the base file has content).
+/home/f3ban/bb/mount/nandd/etc/init.d/resolvconf:92:    :> "$POSTPONED_UPDATE_FLAGFILE" || log_action_end_msg_and_exit 1 "failed requesting update"
+/home/f3ban/bb/mount/nandd/etc/init.d/resolvconf:93:    # Enable updates and perform the postponed update.
+/home/f3ban/bb/mount/nandd/etc/init.d/resolvconf:94:    resolvconf --enable-updates || log_action_end_msg_and_exit 1 "failed to enable updates"
+/home/f3ban/bb/mount/nandd/etc/init.d/resolvconf:100:   resolvconf --disable-updates || log_action_end_msg_and_exit 1 "failed to disable updates"
+/home/f3ban/bb/mount/nandd/etc/init.d/resolvconf:105:   resolvconf --enable-updates || log_action_end_msg_and_exit 1 "failed to enable updates"
+/home/f3ban/bb/mount/nandd/etc/init.d/resolvconf:109:   resolvconf -u || log_action_end_msg_and_exit 1 "failed to updat"
+/home/f3ban/bb/mount/nandd/etc/init.d/resolvconf:112:  enable-updates)
+/home/f3ban/bb/mount/nandd/etc/init.d/resolvconf:113:   resolvconf --enable-updates || log_action_end_msg_and_exit 1 "failed to enable updates"
+/home/f3ban/bb/mount/nandd/etc/init.d/resolvconf:116:  disable-updates)
+/home/f3ban/bb/mount/nandd/etc/init.d/resolvconf:117:   resolvconf --disable-updates || log_action_end_msg_and_exit 1 "failed to disable updates"
+/home/f3ban/bb/mount/nandd/etc/init.d/resolvconf:121:   if resolvconf --updates-are-enabled ; then
+/home/f3ban/bb/mount/nandd/etc/init.d/resolvconf:122:           log_success_msg "resolvconf updates are enabled"
+/home/f3ban/bb/mount/nandd/etc/init.d/resolvconf:124:           log_failure_msg "resolvconf updates are disabled"
+/home/f3ban/bb/mount/nandd/etc/init.d/resolvconf:129:   echo "Usage: /etc/init.d/resolvconf {start|stop|restart|reload|force-reload|enable-updates|disable-updates|status}" >&2
+/home/f3ban/bb/mount/nandd/etc/init.d/mountkernfs.sh:60:        mount_filesystems mount_noupdate
+/home/f3ban/bb/mount/nandd/etc/init.d/mountkernfs.sh:63:        mount_filesystems mount_noupdate
+/home/f3ban/bb/mount/nandd/etc/init.d/README:34:Use the update-rc.d command to create symbolic links in the /etc/rc?.d
+/home/f3ban/bb/mount/nandd/etc/init.d/hwclock.sh:103:               verbose_log_action_msg "Hardware Clock updated to `date`"
+/home/f3ban/bb/mount/nandd/etc/init.d/hostname.sh:11:#                    update the kernel value with this value.  If
+grep: /home/f3ban/bb/mount/nandd/etc/passwd-: Permission denied
+grep: /home/f3ban/bb/mount/nandd/etc/ssh/ssh_host_dsa_key: Permission denied
+grep: /home/f3ban/bb/mount/nandd/etc/ssh/ssh_host_ed25519_key: Permission denied
+grep: /home/f3ban/bb/mount/nandd/etc/ssh/ssh_host_ecdsa_key: Permission denied
+grep: /home/f3ban/bb/mount/nandd/etc/ssh/ssh_host_rsa_key: Permission denied
+/home/f3ban/bb/mount/nandd/etc/inetd.conf:10:# package updates just comment it out with a single '#' character.
+/home/f3ban/bb/mount/nandd/etc/inetd.conf:12:# Packages should modify this file by using update-inetd(8)
+/home/f3ban/bb/mount/nandd/etc/rc0.d/K01resolvconf:18:# terminal ifdowns shouldn't update resolv.conf;
+/home/f3ban/bb/mount/nandd/etc/rc0.d/K01resolvconf:30:ENABLE_UPDATES_FLAGFILE="${RUN_DIR}/enable-updates"
+/home/f3ban/bb/mount/nandd/etc/rc0.d/K01resolvconf:31:POSTPONED_UPDATE_FLAGFILE="${RUN_DIR}/postponed-update"
+/home/f3ban/bb/mount/nandd/etc/rc0.d/K01resolvconf:91:  # Request a postponed update (needed in case the base file has content).
+/home/f3ban/bb/mount/nandd/etc/rc0.d/K01resolvconf:92:  :> "$POSTPONED_UPDATE_FLAGFILE" || log_action_end_msg_and_exit 1 "failed requesting update"
+/home/f3ban/bb/mount/nandd/etc/rc0.d/K01resolvconf:93:  # Enable updates and perform the postponed update.
+/home/f3ban/bb/mount/nandd/etc/rc0.d/K01resolvconf:94:  resolvconf --enable-updates || log_action_end_msg_and_exit 1 "failed to enable updates"
+/home/f3ban/bb/mount/nandd/etc/rc0.d/K01resolvconf:100: resolvconf --disable-updates || log_action_end_msg_and_exit 1 "failed to disable updates"
+/home/f3ban/bb/mount/nandd/etc/rc0.d/K01resolvconf:105: resolvconf --enable-updates || log_action_end_msg_and_exit 1 "failed to enable updates"
+/home/f3ban/bb/mount/nandd/etc/rc0.d/K01resolvconf:109: resolvconf -u || log_action_end_msg_and_exit 1 "failed to updat"
+/home/f3ban/bb/mount/nandd/etc/rc0.d/K01resolvconf:112:  enable-updates)
+/home/f3ban/bb/mount/nandd/etc/rc0.d/K01resolvconf:113: resolvconf --enable-updates || log_action_end_msg_and_exit 1 "failed to enable updates"
+/home/f3ban/bb/mount/nandd/etc/rc0.d/K01resolvconf:116:  disable-updates)
+/home/f3ban/bb/mount/nandd/etc/rc0.d/K01resolvconf:117: resolvconf --disable-updates || log_action_end_msg_and_exit 1 "failed to disable updates"
+/home/f3ban/bb/mount/nandd/etc/rc0.d/K01resolvconf:121: if resolvconf --updates-are-enabled ; then
+/home/f3ban/bb/mount/nandd/etc/rc0.d/K01resolvconf:122:         log_success_msg "resolvconf updates are enabled"
+/home/f3ban/bb/mount/nandd/etc/rc0.d/K01resolvconf:124:         log_failure_msg "resolvconf updates are disabled"
+/home/f3ban/bb/mount/nandd/etc/rc0.d/K01resolvconf:129: echo "Usage: /etc/init.d/resolvconf {start|stop|restart|reload|force-reload|enable-updates|disable-updates|status}" >&2
+/home/f3ban/bb/mount/nandd/etc/rc0.d/K04hwclock.sh:103:             verbose_log_action_msg "Hardware Clock updated to `date`"
+/home/f3ban/bb/mount/nandd/etc/resolvconf/update.d/libc:3:# Script to update resolv.conf, the libc resolver configuration file,
+/home/f3ban/bb/mount/nandd/etc/resolvconf/update.d/libc:152:# symlinked to the file we have just updated.
+/home/f3ban/bb/mount/nandd/etc/resolvconf/update.d/libc:156:if [ -d "${ETCRESOLVCONF}/update-libc.d" ] ; then
+/home/f3ban/bb/mount/nandd/etc/resolvconf/update.d/libc:157:    exec run-parts "${ETCRESOLVCONF}/update-libc.d"
+grep: /home/f3ban/bb/mount/nandd/etc/resolvconf/run: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/subuid-: Permission denied
+grep: /home/f3ban/bb/mount/nandd/etc/gshadow-: Permission denied
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_FOREIGN_DATA_WRAPPER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/INSERT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/nc: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_EVENT_TRIGGER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_VIEW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/droplang.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_DOMAIN.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/editor: binary file matches
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_LARGE_OBJECT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_TRIGGER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_SERVER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CHECKPOINT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_OPERATOR_FAMILY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/mt: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_AGGREGATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/postmaster.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/pg_basebackup.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_USER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_CONVERSION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_CAST.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/w: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/nc.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/MOVE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_OPERATOR_CLASS.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/vi: binary file matches
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_FUNCTION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/postgres.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/rename: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_TEXT_SEARCH_TEMPLATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/lft.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/COPY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_TABLESPACE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/initdb.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_TEXT_SEARCH_TEMPLATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_EXTENSION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/LOCK.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_SEQUENCE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_COLLATION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/traceproto.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/PREPARE_TRANSACTION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_EXTENSION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_TYPE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/BEGIN.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_TEXT_SEARCH_CONFIGURATION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/view: binary file matches
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/pg_dumpall.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/WITH.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_OPERATOR_CLASS.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/createlang.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ROLLBACK.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_OWNED.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CLOSE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_DEFAULT_PRIVILEGES.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/traceproto: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_DOMAIN.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_TRIGGER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/traceroute6: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_OPERATOR.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/SET_TRANSACTION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_TABLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/pg_restore.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/pg_resetxlog.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ROLLBACK_TO_SAVEPOINT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/pg_ctl.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/pg_upgrade.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/SET_ROLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/RESET.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_VIEW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/traceroute6.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_DOMAIN.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_CONVERSION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/TABLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_FOREIGN_DATA_WRAPPER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/pico: binary file matches
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_OPERATOR_CLASS.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_GROUP.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/VALUES.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_SERVER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/REINDEX.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_OPERATOR.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/from.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_FOREIGN_TABLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/rview: binary file matches
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/REASSIGN_OWNED.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_RULE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_COLLATION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/lft: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/pg_isready.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_TYPE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_TABLESPACE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_TEXT_SEARCH_DICTIONARY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/REVOKE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/rename.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/netcat: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ROLLBACK_PREPARED.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/createuser.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ABORT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/reindexdb.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/SELECT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/COMMIT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_FOREIGN_DATA_WRAPPER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_TEXT_SEARCH_DICTIONARY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_EVENT_TRIGGER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/rlogin: binary file matches
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/SET_CONSTRAINTS.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/START_TRANSACTION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_TYPE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_LANGUAGE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/GRANT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/pg_controldata.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/REFRESH_MATERIALIZED_VIEW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_COLLATION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/SELECT_INTO.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_RULE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_ROLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/rsh: binary file matches
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_CAST.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_TEXT_SEARCH_DICTIONARY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/libblas.so.3: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/COMMIT_PREPARED.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/vacuumdb.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/clusterdb.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_USER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/NOTIFY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_SEQUENCE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_USER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_DATABASE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/RELEASE_SAVEPOINT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_TEXT_SEARCH_TEMPLATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/FETCH.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_FOREIGN_TABLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/libblas.so.3gf: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_OPERATOR_FAMILY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_FUNCTION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_MATERIALIZED_VIEW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/write.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/LOAD.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_MATERIALIZED_VIEW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/END.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/COMMENT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_SCHEMA.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_EVENT_TRIGGER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/from: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_DATABASE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/pg_dump.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/EXPLAIN.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/libtxc-dxtn-arm-linux-gnueabihf: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/PREPARE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_TABLE_AS.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/TRUNCATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DEALLOCATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_OPERATOR.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_TEXT_SEARCH_PARSER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_USER_MAPPING.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/VACUUM.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_TABLE.7.gz: No such file or directory
+/home/f3ban/bb/mount/nandd/etc/alternatives/README:1:Please read the update-alternatives(8) man page for information onthis
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_INDEX.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/netcat.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_OPERATOR_FAMILY.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_MATERIALIZED_VIEW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/pg_recvlogical.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_TABLESPACE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/UNLISTEN.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/w.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/SET_SESSION_AUTHORIZATION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CLUSTER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_FOREIGN_TABLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_SCHEMA.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/traceroute.sbin: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/pg_receivexlog.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_GROUP.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/dropuser.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_AGGREGATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/SET.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/SAVEPOINT.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DECLARE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/dropdb.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_SEQUENCE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/EXECUTE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_LANGUAGE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/LISTEN.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/UPDATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_SCHEMA.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_DATABASE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_SYSTEM.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_GROUP.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_AGGREGATE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ex: binary file matches
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_ROLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_VIEW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_INDEX.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/traceroute.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/createdb.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/traceroute: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/mt.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/SECURITY_LABEL.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DO.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/pg_xlogdump.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/SHOW.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_LANGUAGE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_USER_MAPPING.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_FUNCTION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_USER_MAPPING.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_ROLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_TABLE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_RULE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_EXTENSION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ANALYZE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/tcptraceroute.8.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_INDEX.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/psql.1.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_TRIGGER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/write: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DISCARD.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/tcptraceroute: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DELETE.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_TEXT_SEARCH_CONFIGURATION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_TEXT_SEARCH_PARSER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/DROP_SERVER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/ALTER_TEXT_SEARCH_PARSER.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_CONVERSION.7.gz: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/alternatives/CREATE_TEXT_SEARCH_CONFIGURATION.7.gz: No such file or directory
+/home/f3ban/bb/mount/nandd/etc/rc4.d/README:9:number, and run 'update-rc.d script defaults' to reorder the scripts
+/home/f3ban/bb/mount/nandd/etc/rc4.d/README:13:original name beginning with 'S' and run update-rc.d again.
+grep: /home/f3ban/bb/mount/nandd/etc/security/opasswd: Permission denied
+/home/f3ban/bb/mount/nandd/etc/rcS.d/S08mountall.sh:49: # /usr/share/sysvinit/update-rc.d to verify that sysvinit (and
+/home/f3ban/bb/mount/nandd/etc/rcS.d/S08mountall.sh:52: if [ ! -p "$INITCTL" ] && [ -f "/usr/share/sysvinit/update-rc.d" ]; then
+/home/f3ban/bb/mount/nandd/etc/rcS.d/S08mountall.sh:68: mount_run mount_noupdate
+/home/f3ban/bb/mount/nandd/etc/rcS.d/S08mountall.sh:69: mount_lock mount_noupdate
+/home/f3ban/bb/mount/nandd/etc/rcS.d/S08mountall.sh:70: mount_shm mount_noupdate
+/home/f3ban/bb/mount/nandd/etc/rcS.d/S08mountall.sh:75: mount_tmp mount_noupdate
+/home/f3ban/bb/mount/nandd/etc/rcS.d/S03mountdevsubfs.sh:53:    mount_filesystems mount_noupdate
+/home/f3ban/bb/mount/nandd/etc/rcS.d/S03mountdevsubfs.sh:56:    mount_filesystems mount_noupdate
+/home/f3ban/bb/mount/nandd/etc/rcS.d/S04hwclock.sh:103:             verbose_log_action_msg "Hardware Clock updated to `date`"
+/home/f3ban/bb/mount/nandd/etc/rcS.d/S01hostname.sh:11:#                    update the kernel value with this value.  If
+/home/f3ban/bb/mount/nandd/etc/rcS.d/README:9:with a 'K' and run 'update-rc.d script defaults' to update the order
+/home/f3ban/bb/mount/nandd/etc/rcS.d/S01mountkernfs.sh:60:      mount_filesystems mount_noupdate
+/home/f3ban/bb/mount/nandd/etc/rcS.d/S01mountkernfs.sh:63:      mount_filesystems mount_noupdate
+/home/f3ban/bb/mount/nandd/etc/rcS.d/S10resolvconf:18:# terminal ifdowns shouldn't update resolv.conf;
+/home/f3ban/bb/mount/nandd/etc/rcS.d/S10resolvconf:30:ENABLE_UPDATES_FLAGFILE="${RUN_DIR}/enable-updates"
+/home/f3ban/bb/mount/nandd/etc/rcS.d/S10resolvconf:31:POSTPONED_UPDATE_FLAGFILE="${RUN_DIR}/postponed-update"
+/home/f3ban/bb/mount/nandd/etc/rcS.d/S10resolvconf:91:  # Request a postponed update (needed in case the base file has content).
+/home/f3ban/bb/mount/nandd/etc/rcS.d/S10resolvconf:92:  :> "$POSTPONED_UPDATE_FLAGFILE" || log_action_end_msg_and_exit 1 "failed requesting update"
+/home/f3ban/bb/mount/nandd/etc/rcS.d/S10resolvconf:93:  # Enable updates and perform the postponed update.
+/home/f3ban/bb/mount/nandd/etc/rcS.d/S10resolvconf:94:  resolvconf --enable-updates || log_action_end_msg_and_exit 1 "failed to enable updates"
+/home/f3ban/bb/mount/nandd/etc/rcS.d/S10resolvconf:100: resolvconf --disable-updates || log_action_end_msg_and_exit 1 "failed to disable updates"
+/home/f3ban/bb/mount/nandd/etc/rcS.d/S10resolvconf:105: resolvconf --enable-updates || log_action_end_msg_and_exit 1 "failed to enable updates"
+/home/f3ban/bb/mount/nandd/etc/rcS.d/S10resolvconf:109: resolvconf -u || log_action_end_msg_and_exit 1 "failed to updat"
+/home/f3ban/bb/mount/nandd/etc/rcS.d/S10resolvconf:112:  enable-updates)
+/home/f3ban/bb/mount/nandd/etc/rcS.d/S10resolvconf:113: resolvconf --enable-updates || log_action_end_msg_and_exit 1 "failed to enable updates"
+/home/f3ban/bb/mount/nandd/etc/rcS.d/S10resolvconf:116:  disable-updates)
+/home/f3ban/bb/mount/nandd/etc/rcS.d/S10resolvconf:117: resolvconf --disable-updates || log_action_end_msg_and_exit 1 "failed to disable updates"
+/home/f3ban/bb/mount/nandd/etc/rcS.d/S10resolvconf:121: if resolvconf --updates-are-enabled ; then
+/home/f3ban/bb/mount/nandd/etc/rcS.d/S10resolvconf:122:         log_success_msg "resolvconf updates are enabled"
+/home/f3ban/bb/mount/nandd/etc/rcS.d/S10resolvconf:124:         log_failure_msg "resolvconf updates are disabled"
+/home/f3ban/bb/mount/nandd/etc/rcS.d/S10resolvconf:129: echo "Usage: /etc/init.d/resolvconf {start|stop|restart|reload|force-reload|enable-updates|disable-updates|status}" >&2
+/home/f3ban/bb/mount/nandd/etc/X11/Xwrapper.config:8:# This file is automatically updated on upgrades of the x11-commonpackage
+/home/f3ban/bb/mount/nandd/etc/X11/Xwrapper.config:11:# If you have edited this file but would like it to be automatically updated
+/home/f3ban/bb/mount/nandd/etc/rc2.d/README:9:number, and run 'update-rc.d script defaults' to reorder the scripts
+/home/f3ban/bb/mount/nandd/etc/rc2.d/README:13:original name beginning with 'S' and run update-rc.d again.
+/home/f3ban/bb/mount/nandd/etc/default/locale:1:#  File generated by update-locale
+/home/f3ban/bb/mount/nandd/etc/services:435:afs3-update 7008/tcp                        # server-to-server updater
+/home/f3ban/bb/mount/nandd/etc/services:436:afs3-update 7008/udp
+/home/f3ban/bb/mount/nandd/etc/services:501:krbupdate   760/tcp         kreg            # Kerberos registration
+/home/f3ban/bb/mount/nandd/etc/services:526:moira-update        777/tcp         moira_update    # Moira update protocol
+/home/f3ban/bb/mount/nandd/etc/apt/apt.conf.d/01autoremove-postgresql:1:// File installed by postgresql-common. Currently not updated automatically,
+/home/f3ban/bb/mount/nandd/etc/mime.types:172:application/vnd.ecdis-update
+/home/f3ban/bb/mount/nandd/etc/mime.types:175:application/vnd.ecowin.fileupdate
+/home/f3ban/bb/mount/nandd/etc/mime.types:178:application/vnd.ecowin.seriesupdate
+/home/f3ban/bb/mount/nandd/etc/mailcap.order:6:#  After modifying this file, be sure to run /usr/sbin/update-mime (as root)
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/private: Permission denied
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/aeb67534.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/Hellenic_Academic_and_Research_Institutions_RootCA_2011.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/cb156124.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/349f2832.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/5c44d531.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/TrustCor_ECA-1.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/080911ac.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/d0cddf45.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/Sonera_Class_2_Root_CA.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/40dc992e.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/GlobalSign_Root_CA_-_R2.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/2fa87019.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/Network_Solutions_Certificate_Authority.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/b1b8a7f3.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/GeoTrust_Universal_CA_2.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/9685a493.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/8867006a.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/87753b0d.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/LuxTrust_Global_Root_2.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/Hongkong_Post_Root_CA_1.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/5d3033c5.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/7c302982.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/3e45d192.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/4a6481c9.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/DST_Root_CA_X3.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/Taiwan_GRCA.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/EE_Certification_Centre_Root_CA.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/76cb8f92.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/111e6273.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/def36a68.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/1eb37bdf.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/9c2e7d30.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/343eb6cb.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/9f533518.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/7d453d8f.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/91739615.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/TrustCor_RootCert_CA-1.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/Chambers_of_Commerce_Root_-_2008.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/Staat_der_Nederlanden_EV_Root_CA.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/12d55845.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/Staat_der_Nederlanden_Root_CA_-_G2.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/E-Tugra_Certification_Authority.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/1636090b.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/OISTE_WISeKey_Global_Root_GA_CA.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/5a4d6896.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/Verisign_Class_3_Public_Primary_Certification_Authority_-_G3.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/TrustCor_RootCert_CA-2.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/4304c5e5.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/Trustis_FPS_Root_CA.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/5273a94c.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/3a3b02ce.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/3c6676aa.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/c51c224c.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/3d441de8.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/2e5ac55d.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/0c4c9b6c.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/c47d9980.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/7aaf71c0.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/3e44d2f7.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/128805a3.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/Cybertrust_Global_Root.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/03179a64.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/6410666e.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/a7605362.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/Global_Chambersign_Root_-_2008.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/QuoVadis_Root_CA.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/EC-ACC.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/c2c1704e.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/c0ff1f52.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/Staat_der_Nederlanden_Root_CA_-_G3.pem: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/1dcd6f4c.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/d853d49e.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/5a250ea7.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/c907e29b.0: No such file or directory
+grep: /home/f3ban/bb/mount/nandd/etc/ssl/certs/5cf9d536.0: No such file or directory
+/home/f3ban/bb/mount/nandd/etc/perl/sitecustomize.pl:6:# jessie security update which introduced this file, but administrators
+/home/f3ban/bb/mount/nandd/etc/perl/sitecustomize.pl:10:# It is hoped that a future update to jessie might change this default,
+/home/f3ban/bb/mount/nandd/etc/cron.daily/apt:18:#  - Enable the update/upgrade script (0=disable)
+/home/f3ban/bb/mount/nandd/etc/cron.daily/apt:48:#  - Do "apt-get update" automatically every n-days (0=disable)
+/home/f3ban/bb/mount/nandd/etc/cron.daily/apt:54:#  - Use debdelta-upgrade to download updates if available (0=disable)
+/home/f3ban/bb/mount/nandd/etc/cron.daily/apt:89:    # compare midnight today to midnight the day the stamp was updated
+/home/f3ban/bb/mount/nandd/etc/cron.daily/apt:129:update_stamp()
+/home/f3ban/bb/mount/nandd/etc/cron.daily/apt:271:          update_stamp $BACKUP_ARCHIVE_STAMP
+/home/f3ban/bb/mount/nandd/etc/cron.daily/apt:428:# include default system language so that "apt-get update" will
+/home/f3ban/bb/mount/nandd/etc/cron.daily/apt:435:# update package lists
+/home/f3ban/bb/mount/nandd/etc/cron.daily/apt:437:UPDATE_STAMP=/var/lib/apt/periodic/update-stamp
+/home/f3ban/bb/mount/nandd/etc/cron.daily/apt:439:    if eval apt-get $XAPTOPT -y update $XSTDERR; then
+/home/f3ban/bb/mount/nandd/etc/cron.daily/apt:440:      debug_echo "download updated metadata (success)."
+/home/f3ban/bb/mount/nandd/etc/cron.daily/apt:442:          if dbus-send --system / app.apt.dbus.updated boolean:true ;then
+/home/f3ban/bb/mount/nandd/etc/cron.daily/apt:450:      update_stamp $UPDATE_STAMP
+/home/f3ban/bb/mount/nandd/etc/cron.daily/apt:453:      debug_echo "download updated metadata (error)"
+/home/f3ban/bb/mount/nandd/etc/cron.daily/apt:456:    debug_echo "download updated metadata (not run)."
+/home/f3ban/bb/mount/nandd/etc/cron.daily/apt:466:      update_stamp $DOWNLOAD_UPGRADEABLE_STAMP
+/home/f3ban/bb/mount/nandd/etc/cron.daily/apt:479:      update_stamp $UPGRADE_STAMP
+/home/f3ban/bb/mount/nandd/etc/cron.daily/apt:493:      update_stamp $AUTOCLEAN_STAMP
+grep: /home/f3ban/bb/mount/nandd/var/log/btmp: Permission denied
+/home/f3ban/bb/mount/nandd/var/log/alternatives.log:66:update-alternatives 2021-01-31 02:19:43: run with --install /usr/share/man/man1/postmaster.1.gz postmaster.1.gz /usr/share/postgresql/9.4/man/man1/postmaster.1.gz 94 --slave /usr/share/man/man1/postgres.1.gz postgres.1.gz /usr/share/postgresql/9.4/man/man1/postgres.1.gz --slave /usr/share/man/man1/pg_xlogdump.1.gz pg_xlogdump.1.gz /usr/share/postgresql/9.4/man/man1/pg_xlogdump.1.gz --slave /usr/share/man/man1/pg_upgrade.1.gz pg_upgrade.1.gz /usr/share/postgresql/9.4/man/man1/pg_upgrade.1.gz --slave /usr/share/man/man1/pg_resetxlog.1.gz pg_resetxlog.1.gz /usr/share/postgresql/9.4/man/man1/pg_resetxlog.1.gz --slave /usr/share/man/man1/pg_ctl.1.gz pg_ctl.1.gz/usr/share/postgresql/9.4/man/man1/pg_ctl.1.gz --slave /usr/share/man/man1/pg_controldata.1.gz pg_controldata.1.gz /usr/share/postgresql/9.4/man/man1/pg_controldata.1.gz --slave /usr/share/man/man1/initdb.1.gz initdb.1.gz /usr/share/postgresql/9.4/man/man1/initdb.1.gz
+grep: /home/f3ban/bb/mount/nandd/var/log/dpkg.log:25:2021-01-31 02:09:45 upgrade dpkg 1.17.27 1.17.27
+/home/f3ban/bb/mount/nandd/var/log/dpkg.log:105:2021-01-31 02:09:51 upgrade base-files:armhf 8+deb8u11 8+deb8u11
+/home/f3ban/bb/mount/nandd/var/log/dpkg.log:112:2021-01-31 02:09:52 upgrade base-passwd:armhf 3.5.37 3.5.37
+/home/f3ban/bb/mount/nandd/var/log/dpkg.log:147:2021-01-31 02:09:56 upgrade debconf:all 1.5.56+deb8u1 1.5.56+deb8u1
+/home/f3ban/bb/mount/nandd/var/log/dpkg.log:166:2021-01-31 02:09:58 upgrade dpkg:armhf 1.17.27 1.17.27
+/home/f3ban/bb/mount/nandd/var/log/dpkg.log:209:2021-01-31 02:10:01 upgrade libc6:armhf 2.19-18+deb8u10 2.19-18+deb8u10
+/home/f3ban/bb/mount/nandd/var/log/dpkg.log:304:2021-01-31 02:10:06 upgrade mawk:armhf 1.3.3-17 1.3.3-17
+/home/f3ban/bb/mount/nandd/var/log/dpkg.log:351:2021-01-31 02:10:10 upgrade perl-base:armhf 5.20.2-3+deb8u11 5.20.2-3+deb8u11
+/home/f3ban/bb/mount/nandd/var/log/dpkg.log:2447:2021-01-31 02:16:38 upgrade libstdc++6:armhf 4.9.2-10+deb8u1 6.3.0-18+deb9u1
+/home/f3ban/home/f3ban/bb/mount/nandd/var/lib/python-support/bb/mount/nandd/var/log/dpkg.log:4563:2021-01-31 02:23:11 upgrade libtinfo5:armhf 5.9+20140913-1+deb8u3 6.0+20161126-1+deb9u2
+: No such file or directory/home/f3ban/bb/mount/nandd/var/log/dpkg.log:4584:2021-01-31 02:23:12 upgrade libncursesw5:armhf 5.9+20140913-1+deb8u3 6.0+20161126-1+deb9u2
+
+/home/f3ban/bb/mount/nandd/var/log/dpkg.log:4605:2021-01-31 02:23:12 upgrade libncurses5:armhf 5.9+20140913-1+deb8u3 6.0+20161126-1+deb9u2
+/home/f3ban/bb/mount/nandd/var/log/dpkg.log:4631:2021-01-31 02:23:13 upgrade libgmp10:armhf 2:6.0.0+dfsg-6 2:6.1.2+dfsg-1
+grep: /home/f3ban/bb/mount/nandd/var/lib/container: Permission denied
+grep: /home/f3ban/bb/mount/nandd/var/lib/systemd/random-seed: Permission denied
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_contrib_binary-armhf_Packages:111:Description: hardcore 3D space shooter with spaceship upgrade possibilities
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_source_Sources:63016:Binary: libdb-dev, db-util, db-upgrade-util, libdb++-dev, libdb-sql-dev, libdb-java-dev, libdb-java
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_source_Sources:63033: db-upgrade-util deb utils extra arch=all
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_source_Sources:630839:Package:unattended-upgrades
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_source_Sources:630840:Binary: unattended-upgrades
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_source_Sources:630849: 4fa33bdb52e199a24befc0bcf03a24de 1463 unattended-upgrades_0.93.1+nmu1.dsc
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_source_Sources:630850: 059027850baab7320f7319582bb360bc 91872 unattended-upgrades_0.93.1+nmu1.tar.xz
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_source_Sources:630851:Vcs-Git:https://github.com/mvo5/unattended-upgrades.git
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_source_Sources:630853: 3e19a1912c3f9e4a4995229968d0890a00edfa9e4092ded23242c8068ffb33e4 1463 unattended-upgrades_0.93.1+nmu1.dsc
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_source_Sources:630854: 753be17e5376f1934c225a3657dd9ca58c2adbd2ffdeb76fa64b5298e90e4900 91872 unattended-upgrades_0.93.1+nmu1.tar.xz
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_source_Sources:630856: unattended-upgrades deb admin optional arch=all
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_source_Sources:630858:Directory: pool/main/u/unattended-upgrades
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_source_Sources:632382:Package:upgrade-system
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_source_Sources:632383:Binary: upgrade-system
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_source_Sources:632391: ce79714894f803e6543d9c0a74813da5 1478 upgrade-system_1.7.3.0.dsc
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_source_Sources:632392: d0b73874717300456af304cda526f0e0 12664 upgrade-system_1.7.3.0.tar.xz
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_source_Sources:632394: ae77cface51afaa10c0af374e693c8623ed0342f96f54f517a9f3db6a4d2e7ed 1478 upgrade-system_1.7.3.0.dsc
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_source_Sources:632395: 0cb3fe5a96dbc6f83e5501368242c6fc9e6bb7d193a9b04661340d2c095fb781 12664 upgrade-system_1.7.3.0.tar.xz
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_source_Sources:632398: upgrade-system deb admin optional arch=all
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_source_Sources:632399:Directory: pool/main/u/upgrade-system
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_binary-armhf_Packages:81928:Description: command line tools for package upgrade problem descriptions
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_binary-armhf_Packages:81947:Description: C library to access descriptions of package upgrade problems
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_binary-armhf_Packages:81967:Description: OCaml library to access descriptions of package upgrade problems
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_binary-armhf_Packages:84723:Depends: adduser, db-upgrade-util, db-util, default-mta | mail-transport-agent, gawk, libsasl2-modules, netbase (>= 4.07), debconf (>= 0.5) | debconf-2.0, perl, libc6 (>= 2.15), libcomerr2 (>= 1.01), libdb5.3, libkrb5-3 (>= 1.6.dfsg.2), libldap-2.4-2 (>= 2.4.7), libsasl2-2, libsnmp30 (>= 5.7.2.1+dfsg-1~dfsg), libssl1.0.0 (>= 1.0.0), libwrap0 (>= 7.6-4~), libzephyr4, zlib1g (>= 1:1.1.4)
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_binary-armhf_Packages:87448:Package: db-upgrade-util
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_binary-armhf_Packages:87459:Filename: pool/main/d/db-defaults/db-upgrade-util_5.3.0_all.deb
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_binary-armhf_Packages:90590:Recommends: apt-listchanges, bash-completion, bc, bind9-host, cfengine2, cifs-utils, command-not-found, consolekit, convmv, cpufrequtils, cups, cups-browsed, debconf-utils, debian-archive-keyring, debian-edu-archive-keyring, debian-edu-config, debian-edu-doc-en, debian-edu-install, deborphan, dhcping, dmidecode, eject, etherwake, ethtool, finger, foomatic-db, foomatic-db-engine, foomatic-db-gutenprint, fping, gdb, gdebi-core | gdebi, hddtemp, hdparm, hpijs-ppds, hplip, htop, hwinfo, iftop, ijsgutenprint, iotop, iproute2 | iproute, iputils-arping | arping, less, libnss-myhostname, libpam-ck-connector, libpam-tmpdir, libwww-perl, lshw, lsscsi, man-db, manpages, mc, memtest86+, mlocate, mtools, mtr-tiny | mtr, ncftp, nictools-pci, nmap, nullidentd, openbsd-inetd, openssh-client, pciutils, printer-driver-hpijs, printer-driver-pnm2ppa, procinfo, procmail, psmisc, python-gtk2, python-vte, readahead-fedora, reportbug, resolvconf, rsync, rsyslog, screen,strace, sysfsutils, system-config-lvm, tcpdump, tcptraceroute, traceroute, unattended-upgrades, valgrind, vim, wget
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_binary-armhf_Packages:166563:Description: Dummy upgrade package for FusionForge
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_binary-armhf_Packages:239027:Description: Library to write graceful shutdown / upgrade service.
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_binary-armhf_Packages:239046:Description: Library to write graceful shutdown / upgrade service - doc
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_binary-armhf_Packages:239064:Description: Library to write graceful shutdown / upgrade service - prof
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_binary-armhf_Packages:496477:Description: minimal build daemon - 08x upgrade dummy package
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_binary-armhf_Packages:521377:Description: check which daemons need to be restarted after library upgrades
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_binary-armhf_Packages:583722:Description: transitional dummy package for smooth upgrades to python-pil.imagetk
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_binary-armhf_Packages:612941:Breaks: apt-forktracer (<< 0.3), apt-listchanges (<< 2.85), apt-p2p (<< 0.1.6), apt-xapian-index (<< 0.25), aptdaemon (<< 0.11+bzr343-1~), aptoncd (<< 0.1.98+bzr117), bcfg2 (<< 1.0.1), bzr-builddeb (<< 2.4), computer-janitor (<< 1.14.1-1+), debdelta (<< 0.41+), debpartial-mirror (<< 0.2.98), debsecan (<< 0.4.15), gdebi (<< 0.6.1), germinate (<< 1.21), gnome-codec-install (<< 0.4.5), mini-dinstall (<< 0.6.28), packagekit-backend-apt (<= 0.4.8-0ubuntu4), python-cdd (<< 0.0.10), python-dogtail (<< 0.6.1-3.1+), python-software-properties (<< 0.70.debian-1+), rebuildd (<< 0.3.9), software-center (<< 1.1.21debian2), tla-buildpackage (<< 0.9.14), ubuntu-dev-tools (<< 0.93debian1), unattended-upgrades (<< 0.42debian2), update-manager (<< 0.200.2-1), update-notifier (<< 0.99.3debian9), wajig (<< 2.0.46)
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_binary-armhf_Packages:695804:Description: transitional dummy package to ensure smooth upgrades to wheezy
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_binary-armhf_Packages:706752:Depends: python (>= 2.7), python (<< 2.8), python-apt (>= 0.6.20ubuntu16), lsb-release, unattended-upgrades, iso-codes
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_binary-armhf_Packages:706772:Depends: python3 (>= 3.2.3-3~), python3-apt (>= 0.6.20ubuntu16), lsb-release, unattended-upgrades, iso-codes
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_binary-armhf_Packages:765678:Package: unattended-upgrades
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_binary-armhf_Packages:765685:Description: automatic installation of security upgrades
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_binary-armhf_Packages:765691:Filename: pool/main/u/unattended-upgrades/unattended-upgrades_0.83.3.2+deb8u1_all.deb
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_binary-armhf_Packages:767314:Package: upgrade-system
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_binary-armhf_Packages:767330:Filename: pool/main/u/upgrade-system/upgrade-system_1.7.2.2_all.deb
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_binary-armhf_Packages:767594:Description: utility to upgrade the firmware of a Linksys NSLU2 via the network
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_binary-armhf_Packages:793279:Description: game inspired by Dynablaster (dummy upgrade package)
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_binary-armhf_Packages:793321:Description: game inspired by Dynablaster (dummy upgrade package)
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_binary-armhf_Packages:88613:Description: command line tools for package upgrade problem descriptions
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_binary-armhf_Packages:88631:Description: C library to access descriptions of package upgrade problems
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_binary-armhf_Packages:88650:Description: OCaml library to access descriptions of package upgrade problems
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_binary-armhf_Packages:91218:Depends: adduser, db-upgrade-util, db-util, default-mta | mail-transport-agent, gawk, libsasl2-modules, netbase (>= 4.07),debconf (>= 0.5) | debconf-2.0, perl:any, libc6 (>= 2.15), libcomerr2 (>= 1.01), libdb5.3, libgssapi-krb5-2 (>= 1.6.dfsg.2), libical2 (>= 2.0.0), libicu57 (>= 57.1-1~), libjansson4 (>= 2.3), libk5crypto3 (>= 1.6.dfsg.2), libkrb5-3 (>= 1.6.dfsg.2), libkrb5support0 (>= 1.7dfsg~beta2), libldap-2.4-2 (>= 2.4.7), libpcre3, libsasl2-2, libsnmp30 (>= 5.7.3+dfsg-1.7+deb9u1~dfsg), libsqlite3-0 (>= 3.6.0), libssl1.1 (>= 1.1.0), libwrap0 (>= 7.6-4~), libxml2 (>= 2.8.0), libzephyr4, zlib1g (>= 1:1.2.0)
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_binary-armhf_Packages:93807:Package: db-upgrade-util
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_binary-armhf_Packages:93818:Filename: pool/main/d/db-defaults/db-upgrade-util_5.3.1_all.deb
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_binary-armhf_Packages:97740:Recommends: apt-listchanges, bash-completion, bc, bind9-host, cfengine2, cifs-utils, command-not-found, consolekit, convmv, cups, cups-browsed, cups-filters | foomatic-filters, debconf-utils, debian-archive-keyring, debian-edu-config, debian-edu-doc-en, debian-edu-install, deborphan, dhcping, dmidecode, eject, etherwake, ethtool, finger, foomatic-db, foomatic-db-engine, foomatic-db-gutenprint, fping, gdb, gdebi-core | gdebi, hddtemp, hdparm, hpijs-ppds, hplip, htop, hwinfo, iftop, ijsgutenprint, iotop, iproute2 | iproute, iputils-arping | arping, less, libnss-myhostname, libpam-ck-connector, libpam-tmpdir, libwww-perl, lshw, lsscsi, man-db, manpages, mc, memtest86+, mlocate, mtools, mtr-tiny | mtr, ncftp, nictools-pci, nmap, nullidentd, openbsd-inetd, openssh-client, pciutils, printer-driver-hpijs, printer-driver-pnm2ppa, procinfo, procmail, psmisc, python-gtk2, python-vte, reportbug, resolvconf, rsync, rsyslog, screen, strace, sysfsutils, system-config-lvm, tcpdump, tcptraceroute, traceroute, unattended-upgrades, valgrind, vim, wget
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_binary-armhf_Packages:467705:Description: transitional package to upgrade to libreoffice-gtk2/-systray
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_binary-armhf_Packages:546637:Description: minimal build daemon - 08x upgrade dummy package
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_binary-armhf_Packages:570088:Description: check which daemons need to be restarted after library upgrades
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_binary-armhf_Packages:648324:Depends: python3-apt, python3-augeas, python3-bootstrapform, python3-cherrypy3, python3-django (>= 1.10), python3-django-stronghold, python3-psutil, python3-requests, python3-ruamel.yaml, python3:any (>= 3.3.2-2~), init-system-helpers (>= 1.18~), ldapscripts, ldap-utils, libnss-ldapd, libpam-ldapd, nslcd, slapd, unattended-upgrades, firewalld, ntp, network-manager, batctl, avahi-daemon, adduser, augeas-tools, gettext, gir1.2-glib-2.0, gir1.2-networkmanager-1.0, javascript-common, libjs-bootstrap, libjs-jquery, libjs-modernizr, ppp, pppoe, python3-gi, sudo
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_binary-armhf_Packages:673804:Description: transitional package to upgrade to the newer pysatellites
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_binary-armhf_Packages:677730:Breaks: apt-forktracer (<< 0.3), apt-listchanges (<< 2.85), apt-p2p (<< 0.1.6), apt-xapian-index (<< 0.25), aptdaemon (<<0.11+bzr343-1~), aptoncd (<< 0.1.98+bzr117), bcfg2 (<< 1.0.1), bzr-builddeb (<< 2.4), computer-janitor (<< 1.14.1-1+), debdelta (<< 0.41+), debpartial-mirror (<< 0.2.98), debsecan (<< 0.4.15), gdebi (<< 0.6.1), germinate (<< 1.21), gnome-codec-install (<< 0.4.5), mini-dinstall (<< 0.6.28), packagekit-backend-apt (<= 0.4.8-0ubuntu4), python-cdd (<< 0.0.10), python-dogtail (<< 0.6.1-3.1+), python-software-properties (<< 0.70.debian-1+), rebuildd (<< 0.3.9), software-center (<<1.1.21debian2), tla-buildpackage (<< 0.9.14), ubuntu-dev-tools (<< 0.93debian1), unattended-upgrades (<< 0.42debian2), update-manager (<< 0.200.2-1), update-notifier (<< 0.99.3debian9), wajig (<< 2.0.46)
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_binary-armhf_Packages:801261:Recommends: unattended-upgrades
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_binary-armhf_Packages:862330:Package: unattended-upgrades
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_binary-armhf_Packages:862338:Description: automatic installation of security upgrades
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_binary-armhf_Packages:862344:Filename: pool/main/u/unattended-upgrades/unattended-upgrades_0.93.1+nmu1_all.deb
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_binary-armgrep: hf_Packages:864186:Package: upgrade-system
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_binary-armhf_Packages:864202:Filename: pool/main/u/upgrade-system/upgrade-system_1.7.3.0_all.deb
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/ftp.de.debian.org_debian_dists_stretch_main_binary-armhf_Packages:864403:Description: utility to upgrade the firmware of a Linksys NSLU2 via the network
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/lock: Permission denied
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_source_Sources:62563:Binary:libdb-dev, db-util, db-upgrade-util, libdb++-dev, libdb-sql-dev, libdb-java-dev, libdb-java
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_source_Sources:62583: db-upgrade-util deb utils extra
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_source_Sources:591030:Package: unattended-upgrades
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_source_Sources:591031:Binary: unattended-upgrades
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_source_Sources:591040: 43856b35602fee06877269f73016cf8b 1784 unattended-upgrades_0.83.3.2+deb8u1.dsc
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_source_Sources:591041: 0d29a3b2f927a018f0409f8fcda92a9e 82244 unattended-upgrades_0.83.3.2+deb8u1.tar.xz
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_source_Sources:591042:Vcs-Git: https://github.com/mvo5/unattended-upgrades.git
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_source_Sources:591044: 81ae6ede1f282c94ad53786731479e03650c8251 1784 unattended-upgrades_0.83.3.2+deb8u1.dsc
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_source_Sources:591045: 74f3f27f1f4f7c6a649d45458b89604abf01b231 82244 unattended-upgrades_0.83.3.2+deb8u1.tar.xz
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_source_Sources:591047: 3f0b39efb5ef6d423cb5ae92859df3c3e6c93310a42cc69da9423992504b046c 1784 unattended-upgrades_0.83.3.2+deb8u1.dsc
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_source_Sources:591048: 22babeb9d818c50c8b07f7dcfaac95a81f804692abfd66febf84274bab51e26d 82244 unattended-upgrades_0.83.3.2+deb8u1.tar.xz
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_source_Sources:591050: unattended-upgrades deb admin optional arch=all
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_source_Sources:591052:Directory: pool/main/u/unattended-upgrades
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_source_Sources:592581:Package: upgrade-system
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_source_Sources:592582:Binary: upgrade-system
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_source_Sources:592590: 94bf8dde8914a3ca4823f18489a29e97 1478 upgrade-system_1.7.2.2.dsc
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_source_Sources:592591: afba9ab9b2f645ab1c74fbe3665dc976 12472 upgrade-system_1.7.2.2.tar.xz
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_source_Sources:592593: 798ce138233ae5c52d55103a9878b658003b08dc 1478 upgrade-system_1.7.2.2.dsc
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_source_Sources:592594: 439908ada6cce265b13abf840e1f514a51036f90 12472 upgrade-system_1.7.2.2.tar.xz
+/home/f3ban/bb/mount/nandd/var/lib/apt/lists/httpredir.debian.org_debian_dists_jessie_main_source_Sources:592596: 7b6d1c2f9f0cd98905bb07fae5f191d2bf6a405bfb42f1fb4120c9c8b44a5320 1478 upgrade-system_1.7.2.2.dsc
+f3ban@FA506NF:~/bb/nand$
